@@ -23,7 +23,7 @@ For this, we need the
 ### Analysis
 The main file needed for the analysis is the "running_Analysis.py" file which allows you to run the method for all models, datasets, and settings. It calls the activation extraction functions from the layer_extractions folder which contains one function/file for each model (and pixel extraction). It will also create all plots once the results have been fully created.
 
-*To use DINOv3 you need to request access on Huggingface, see https://huggingface.co/docs/transformers/main/en/model_doc/dinov3
+*To use DINOv3 you need to request access on Huggingface, see [here]https://huggingface.co/docs/transformers/main/en/model_doc/dinov3
 
 ### Plotting
 The plots are automatically created when running the "running_Analysis.py" file. If you just want to run the plots, you can use the "running_Plots.py" file. All plots can be found in the "Results" folder under "final_plots". 
