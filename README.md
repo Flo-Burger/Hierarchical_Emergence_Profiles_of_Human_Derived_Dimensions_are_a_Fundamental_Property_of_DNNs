@@ -16,11 +16,11 @@ For this, we need the
 
 ## Key Files
 
-# Analysis
+### Analysis
 The main file needed for the analysis is the "running_Analysis.py" file which allows you to run the method for all models, datasets, and settings. It calls the activation extraction functions from the layer_extractions folder which contains one function/file for each model (and pixel extraction). It will also create all plots once the results have been fully created.
 
 ### Plotting
-To re-create the plots, see the plotting folder which you have to run independent of the main analysis. Within each file, you can specify whether you want to plot THINGS or STUFF. To re-create figure 4, change the dataset from "THINGS" to "STUFF". 
+The plots are automatically created when running the "running_Analysis.py" file. If you just want to run the plots, you can use the "running_Plots.py" file. 
 
 ## Citation 
 
