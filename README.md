@@ -4,6 +4,10 @@
 
 In this repository, you will find all .... 
 
+## Installation 
+
+To install all required libraries, you can use the requirements.txt. To install from it, make sure you are in the right folder, and then install using "pip install -r requirements.txt"
+
 ## Datasets 
 
 To repeat the analysis, you first need to download the data for the two dataset we used: 
