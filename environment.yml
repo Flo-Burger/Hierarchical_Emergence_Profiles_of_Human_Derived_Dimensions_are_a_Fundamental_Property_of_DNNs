@@ -1,4 +1,4 @@
-name: dino_env
+name: dimension_predictions
 channels:
   - conda-forge
   - defaults
