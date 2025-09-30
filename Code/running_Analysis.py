@@ -22,23 +22,26 @@ import torchvision.transforms as T
 # ─────────────────────────────────────────────────────────────────────────────
 # Settings
 # ─────────────────────────────────────────────────────────────────────────────
-PCA_COMPONENTS_LIST = [100, 200, 0.95, 0.99]
+PCA_COMPONENTS_LIST = [100, 200, 0.95, 0.99] # List of PCA components 
+
+# List of models to use, other models can be added if of interest
 REGRESSORS = {
     "Linear": LinearRegression(),
     "SVR":    SVR(kernel='rbf', C=1.0, epsilon=0.1),
 }
 
-PCA_COMPONENTS_LIST = [100]
-REGRESSORS = {
-    "Linear": LinearRegression()
-}
+CV = 10 # Cross-validation splits for each prediction
+
+# PCA_COMPONENTS_LIST = [100]
+# REGRESSORS = {
+#     "Linear": LinearRegression()
+# }
 
 # We have not run the permutation testing for any other setting beyond 100 PCA
 # and linear regression due to the large computation time needed.
 run_permutation   = False
 n_perm            = 5000
 alpha_thresh      = 0.05   # FDR threshold
-CV = 10
 
 # which dims to label (0-based) per dataset (kept for compatibility if you use elsewhere)
 SELECTED_DIMS_MAP = {
@@ -96,8 +99,7 @@ def compute_r2_scores_with_model(X, Y, reg):
     return out
 
 # Main Analysis
-# for ds in ["THINGS", "STUFF"]:
-for ds in ["THINGS"]:
+for ds in ["THINGS", "STUFF"]:
     print(f"\n\n===== DATASET: {ds} =====")
     if ds == "THINGS":
         # For THINGS
