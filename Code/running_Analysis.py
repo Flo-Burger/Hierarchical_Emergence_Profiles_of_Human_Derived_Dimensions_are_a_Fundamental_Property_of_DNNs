@@ -32,14 +32,14 @@ REGRESSORS = {
 
 CV = 10 # Cross-validation splits for each prediction
 
-# PCA_COMPONENTS_LIST = [100]
-# REGRESSORS = {
-#     "Linear": LinearRegression()
-# }
+PCA_COMPONENTS_LIST = [100]
+REGRESSORS = {
+    "Linear": LinearRegression()
+}
 
 # We have not run the permutation testing for any other setting beyond 100 PCA
 # and linear regression due to the large computation time needed.
-run_permutation   = False
+run_permutation   = True
 n_perm            = 5000
 alpha_thresh      = 0.05   # FDR threshold
 

@@ -61,8 +61,8 @@ def plot_alexnet_lines(
 
     if display_labels is None:
         display_labels = {
-            "AlexNet":          "AlexNet (pretrained)",
-            "AlexNetUntrained": "AlexNet (untrained)",
+            "AlexNet":          "Trained)",
+            "AlexNetUntrained": "Untrained",
         }
 
     # Load CSVs
@@ -124,7 +124,7 @@ def plot_alexnet_lines(
 
     fig.savefig(out_path, dpi=dpi)
     plt.close(fig)
-    print(f"✔ Saved AlexNet lines: {out_path}")
+    print(f"Saved AlexNet lines: {out_path}")
     return out_path
 
 if __name__ == "__main__":

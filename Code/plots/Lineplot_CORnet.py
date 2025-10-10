@@ -129,9 +129,9 @@ def plot_cornet_lines(
     # Display labels
     if display_labels is None:
         display_labels = {
-            "FeedforwardCORnet": "CORnet (Feedforward)",
-            "RecurrentCORnet":   "CORnet (Recurrent)",
-            "SkipCORnet":        "CORnet (Skip)",
+            "FeedforwardCORnet": "Feedforward",
+            "RecurrentCORnet":   "Recurrent",
+            "SkipCORnet":        "Skip",
         }
 
     # Plot
@@ -164,7 +164,7 @@ def plot_cornet_lines(
 
     fig.savefig(out_path, dpi=dpi)
     plt.close(fig)
-    print(f"✔ Saved CORnet lines: {out_path}")
+    print(f"Saved CORnet lines: {out_path}")
     return out_path
 
 # Optional CLI test

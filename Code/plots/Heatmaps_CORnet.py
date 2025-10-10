@@ -190,7 +190,7 @@ def plot_cornet_heatmap(
     axes[0].set_yticks(np.arange(n_rows1)+0.5)
     axes[0].set_yticklabels(np.arange(1, n_rows1+1), rotation=0, fontsize=FONTSIZE_TICK)
     axes[0].set_ylabel("Layer", fontsize=FONTSIZE_AXIS, labelpad=5)
-    axes[0].set_title("Feedforward — R$^2$", fontsize=FONTSIZE_TITLE, pad=12, loc="center")
+    axes[0].set_title("Feedforward (R$^2$)", fontsize=FONTSIZE_TITLE, pad=12, loc="center")
 
     # Stars only if layerwise FDR p-values exist AND R²>0
     if p_feed_fdr_all is not None:
@@ -283,7 +283,7 @@ def plot_cornet_heatmap(
 
     fig.savefig(out_png, dpi=dpi, bbox_inches='tight', pad_inches=0.0)
     plt.close(fig)
-    print(f"✔ Saved: {out_png}")
+    print(f"Saved CORnet heatmaps: {out_png}")
     return out_png
 
 # Optional CLI test

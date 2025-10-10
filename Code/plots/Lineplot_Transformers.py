@@ -77,7 +77,7 @@ def plot_transformer_lines(
         display_labels = {
             "ViT":    "Vision",
             "CLIP":   "Vision + Language",
-            "DINOv3": "Unsupervised Vision",
+            "DINOv3": "Self-supervised",
         }
 
     # Load CSVs
@@ -139,7 +139,7 @@ def plot_transformer_lines(
 
     fig.savefig(out_path, dpi=dpi)
     plt.close(fig)
-    print(f"✔ Saved Transformers lines: {out_path}")
+    print(f"Saved Transformers lines: {out_path}")
     return out_path
 
 # Optional CLI test

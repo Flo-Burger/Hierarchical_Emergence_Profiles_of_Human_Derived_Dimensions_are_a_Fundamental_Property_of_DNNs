@@ -214,7 +214,7 @@ def plot_transformer_heatmap(
     axes[0].set_yticks(np.arange(n_rows1)+0.5)
     axes[0].set_yticklabels(np.arange(1, n_rows1+1), rotation=0, fontsize=FONTSIZE_TICK)
     axes[0].set_ylabel("Layer", fontsize=FONTSIZE_AXIS, labelpad=5)
-    axes[0].set_title("ViT — R$^2$", fontsize=FONTSIZE_TITLE, pad=12, loc="center")
+    axes[0].set_title("Vision (R$^2$)", fontsize=FONTSIZE_TITLE, pad=12, loc="center")
 
     # Stars only if layerwise FDR p-values exist AND R²>0
     if p_vit is not None:
@@ -256,8 +256,8 @@ def plot_transformer_heatmap(
                         ax.text(j+0.5, i+0.5, "*", ha="center", va="center",
                                 color="black", fontsize=FONTSIZE_STAR)
 
-    _draw_diff(axes[1], layers_clip_used, delta_CV, p_CV, "CLIP - ViT")
-    _draw_diff(axes[2], layers_dino_used, delta_DC, p_DC, "DINOv3 - CLIP")
+    _draw_diff(axes[1], layers_clip_used, delta_CV, p_CV, "Vision + Language - Vision")
+    _draw_diff(axes[2], layers_dino_used, delta_DC, p_DC, "Self-supervised - Vision + Language")
 
     # Bottom x-axis ticks + default annotations
     if custom_dim_labels is None:
@@ -307,7 +307,7 @@ def plot_transformer_heatmap(
 
     fig.savefig(out_png, dpi=dpi, bbox_inches='tight', pad_inches=0.0)
     plt.close(fig)
-    print(f"✔ Saved: {out_png}")
+    print(f"Saved Transformer heatmaps: {out_png}")
     return out_png
 
 # Optional CLI test

@@ -197,7 +197,7 @@ def plot_alexnet_heatmap(
     axes[0].set_yticks(np.arange(n_rows1)+0.5)
     axes[0].set_yticklabels(np.arange(1, n_rows1+1), rotation=0, fontsize=FONTSIZE_TICK)
     axes[0].set_ylabel("Layer", fontsize=FONTSIZE_AXIS, labelpad=5)
-    axes[0].set_title("Raw Pixels — R$^2$", fontsize=FONTSIZE_TITLE, pad=12, loc="center")
+    axes[0].set_title("Raw Pixels (R$^2$)", fontsize=FONTSIZE_TITLE, pad=12, loc="center")
 
     if pvals_raw is not None:
         sig_raw = (pvals_raw < alpha) & (mat_raw > 0)
@@ -286,7 +286,7 @@ def plot_alexnet_heatmap(
 
     fig.savefig(out_png, dpi=dpi, bbox_inches='tight', pad_inches=0.0)
     plt.close(fig)
-    print(f"✔ Saved: {out_png}")
+    print(f"Saved AlexNet heatmaps: {out_png}")
     return out_png
 
 # Optional CLI test
