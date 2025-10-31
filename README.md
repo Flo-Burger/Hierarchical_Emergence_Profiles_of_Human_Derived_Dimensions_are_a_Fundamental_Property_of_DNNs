@@ -18,7 +18,7 @@ To repeat the analysis, you first need to download the data for the two dataset 
 
 *THINGS*: A large-scale image dataset of 1,854 everyday object concepts with human-derived behavioral similarity ratings, used to model object-level representations in vision and cognition. You can download it under [https://osf.io/z2784/](https://osf.io/z2784/) or [THINGS](https://things-initiative.org). 
 
-*STUFF*: A curated image dataset of 600 natural and artificial material categories with human-derived perceptual dimensions, designed to study material perception. To acess the data and dimensions, see [https://osf.io/5gr73/](https://osf.io/5gr73/).   
+*STUFF*: A curated image dataset of 200 natural and artificial material categories with human-derived perceptual dimensions, designed to study material perception. To acess the data and dimensions, see [https://osf.io/5gr73/](https://osf.io/5gr73/).   
 
 ## Key Files
 
@@ -38,7 +38,7 @@ If you use any code from this repository, please cite:
 
 ## Licence 
 
-This project is licensed under the MIT License – see the LICENSE file for details.
+This project is licensed under the MIT License, see the LICENSE file for details.
 
 ## Contact 
 
