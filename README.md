@@ -20,6 +20,19 @@ To repeat the analysis, you first need to download the data for the two dataset 
 
 *STUFF*: A curated image dataset of 200 natural and artificial material categories with human-derived perceptual dimensions, designed to study material perception. To acess the data and dimensions, see [https://osf.io/5gr73/](https://osf.io/5gr73/).   
 
+Add both folders (named THINGS and STUFF) on the same level as the Results folder. To run, we need the following files in these folders: 
+
+*THINGS:*
+- spose_embedding_49d_sorted.txt
+- labels.mat
+- im.mat
+
+*STUFF:* 
+- spose_embedding36.mat
+- labels.mat
+- im.mat
+
+
 ## Key Files
 
 ### Analysis
