@@ -34,7 +34,7 @@ The plots are automatically created when running the "running_Analysis.py" file.
 
 If you use any code from this repository, please cite: 
 
-ADD CITATION 
+**ADD CITATION** 
 
 ## Licence 
 
