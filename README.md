@@ -36,7 +36,7 @@ If you use any code from this repository, please cite:
 
 **ADD CITATION** 
 
-## Licence 
+## License 
 
 This project is licensed under the MIT License, see the LICENSE file for details.
 
