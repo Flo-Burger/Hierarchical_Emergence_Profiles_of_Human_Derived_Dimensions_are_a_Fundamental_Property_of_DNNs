@@ -1,8 +1,8 @@
-# TITLE 
+# Hierarchical Emergence Profiles of Human-Derived Dimensions are a Fundamental Property of Deep Neural Networks
 
 ## Overview 
 
-In this repository, you will find all .... 
+In this repository, you will find all code related to the study "Hierarchical Emergence Profiles of Human-Derived Dimensions are a Fundamental Property of Deep Neural Networks".
 
 ## Installation 
 
@@ -41,5 +41,9 @@ ADD CITATION
 ## Licence 
 
 This project is licensed under the MIT License – see the LICENSE file for details.
+
+## Contact 
+
+Should you have any questions or trouble running the analysis, please contact me at: F.Burger@westernsydney.edu.au
 
  
