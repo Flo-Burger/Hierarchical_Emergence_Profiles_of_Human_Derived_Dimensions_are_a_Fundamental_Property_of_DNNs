@@ -16,11 +16,9 @@ To install the libraries via conda, use the "environment.yml" file. By then acti
 
 To repeat the analysis, you first need to download the data for the two dataset we used: 
 
-*THINGS*: THINGS contains bla. You can download it under: https://osf.io/z2784/
+*THINGS*: A large-scale image dataset of 1,854 everyday object concepts with human-derived behavioral similarity ratings, used to model object-level representations in vision and cognition. You can download it under [https://osf.io/z2784/](https://osf.io/z2784/) or [THINGS](https://things-initiative.org). 
 
-For this, we need the 
-
-*STUFF*: STUFF contains bla. To acess the data and dimensions, please bla. 
+*STUFF*: A curated image dataset of 600 natural and artificial material categories with human-derived perceptual dimensions, designed to study material perception. To acess the data and dimensions, see [https://osf.io/5gr73/.](https://osf.io/5gr73/).  
 
 ## Key Files
 
