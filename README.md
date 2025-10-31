@@ -20,7 +20,12 @@ To repeat the analysis, you first need to download the data for the two dataset 
 
 *STUFF*: A curated image dataset of 200 natural and artificial material categories with human-derived perceptual dimensions, designed to study material perception. To acess the data and dimensions, see [https://osf.io/5gr73/](https://osf.io/5gr73/).   
 
-Add both folders (named THINGS and STUFF) on the same level as the Results folder. To run, we need the following files in these folders: 
+## Key Files
+
+### Analysis
+The main file needed for the analysis is the "running_Analysis.py" file which allows you to run the method for all models, datasets, and settings. It calls the activation extraction functions from the layer_extractions folder which contains one function/file for each model (and pixel extraction). It will also create all plots once the results have been fully created.
+
+To access the data, you need to create two folders (named THINGS and STUFF) on the same level as the Results folder. To run, we need the following files in these folders which you can download above: 
 
 *THINGS:*
 - spose_embedding_49d_sorted.txt
@@ -31,12 +36,6 @@ Add both folders (named THINGS and STUFF) on the same level as the Results folde
 - spose_embedding36.mat
 - labels.mat
 - im.mat
-
-
-## Key Files
-
-### Analysis
-The main file needed for the analysis is the "running_Analysis.py" file which allows you to run the method for all models, datasets, and settings. It calls the activation extraction functions from the layer_extractions folder which contains one function/file for each model (and pixel extraction). It will also create all plots once the results have been fully created.
 
 **To use DINOv3 you need to request access on Huggingface, see [here](https://huggingface.co/docs/transformers/main/en/model_doc/dinov3)**
 
