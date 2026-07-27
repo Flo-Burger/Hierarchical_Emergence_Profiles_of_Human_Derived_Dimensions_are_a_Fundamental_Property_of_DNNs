@@ -115,16 +115,13 @@ def plot_cornet_lines(
     for df in (df_ff, df_rec, df_skip):
         df.columns = layers
 
-    # Mean per layer & normalize across the union to [0,1]
+    # Mean per layer (raw, no normalization)
     means = {
         m_ff:   df_ff.mean(axis=0),
         m_rec:  df_rec.mean(axis=0),
         m_skip: df_skip.mean(axis=0),
     }
     df_mean = pd.DataFrame(means, index=layers)
-    mn, mx = df_mean.values.min(), df_mean.values.max()
-    span = (mx - mn) if (mx > mn) else 1.0
-    df_mean = (df_mean - mn) / span
 
     # Display labels
     if display_labels is None:
@@ -148,8 +145,8 @@ def plot_cornet_lines(
     ax.set_xticks(x)
     ax.set_xticklabels(x, fontsize=6)
     ax.tick_params(axis='x', which='minor', length=0)
-    ax.set_ylabel("Normalized Mean R$^2$", fontsize=8)
-    ax.set_ylim(0, 1)
+    ax.set_ylabel("Mean R$^2$", fontsize=8)
+    ax.set_ylim(bottom=0)
     ax.tick_params(axis='both', which='major', labelsize=8)
     ax.legend(frameon=False, prop={'size': 5}, loc='upper left')
 

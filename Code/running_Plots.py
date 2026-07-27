@@ -31,9 +31,10 @@ from plots.Heatmaps_CORnet        import plot_cornet_heatmap
 from plots.Heatmaps_Transformers  import plot_transformer_heatmap
 
 # ── Line plotting callables ────────────────────────────────────────────────
-from plots.Lineplot_AlexNet   import plot_alexnet_lines
-from plots.Lineplot_CORnet    import plot_cornet_lines
-from plots.Lineplot_Transformers import plot_transformer_lines
+from plots.Lineplot_AlexNet       import plot_alexnet_lines
+from plots.Lineplot_CORnet        import plot_cornet_lines
+from plots.Lineplot_Transformers  import plot_transformer_lines
+from plots.Lineplot_SemanticVisual import plot_all_semantic_visual
 
 ALEXNET_REQUIRED      = {"RawPixels", "AlexNetUntrained", "AlexNet"}
 CORNET_REQUIRED       = {"FeedforwardCORnet", "RecurrentCORnet", "SkipCORnet"}
@@ -146,6 +147,23 @@ def render_all_plots(
             plot_transformer_lines(dataset=ds, combo=combo, results_root=results_root)
         except FileNotFoundError as e:
             print(f"[Transformers] Skipping {ds}/{combo}: {e}")
+
+    # Semantic vs Visual (THINGS66d only)
+    sv_combos = combos if combos is not None else None
+    if datasets is None or "THINGS66d" in datasets:
+        sv_combo_set = set(sv_combos) if sv_combos else None
+        # discover combos from any model that has THINGS66d results
+        seed_model = "AlexNet"
+        all_sv_combos = _combos_for_model_dataset(results_root, seed_model, "THINGS66d")
+        if sv_combo_set is not None:
+            all_sv_combos &= sv_combo_set
+        print(f"Semantic/Visual: {len(all_sv_combos)} combo(s) to plot.")
+        for combo in sorted(all_sv_combos):
+            plot_all_semantic_visual(
+                combo=combo,
+                dataset="THINGS66d",
+                results_root=results_root,
+            )
 
 
 if __name__ == "__main__":

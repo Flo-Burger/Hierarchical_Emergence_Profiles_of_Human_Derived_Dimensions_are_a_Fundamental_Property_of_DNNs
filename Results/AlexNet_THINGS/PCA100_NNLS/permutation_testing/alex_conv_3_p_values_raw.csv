@@ -1,0 +1,50 @@
+dimension,p_value_raw
+made of metal / artificial / hard,1.0
+food-related / eating-related / kitchen-related,0.000999000999000999
+animal-related / organic,0.000999000999000999
+clothing-related / fabric / covering,0.000999000999000999
+furniture-related / household-related / artifact,1.0
+plant-related / green,0.000999000999000999
+outdoors-related,0.000999000999000999
+transportation / motorized / dynamic,0.001998001998001998
+wood-related / brownish,0.000999000999000999
+body part-related,0.000999000999000999
+colorful,0.000999000999000999
+valuable / special occasion-related,0.9300699300699301
+electronic / technology,1.0
+sport-related / recreational activity-related,1.0
+disc-shaped / round,0.000999000999000999
+tool-related,0.000999000999000999
+many small things / course pattern,0.12887112887112886
+paper-related / thin / flat / text-related,1.0
+fluid-related / drink-related,0.33966033966033965
+long / thin,0.000999000999000999
+water-related / blue,0.46853146853146854
+powdery / fine-scale pattern,0.000999000999000999
+red,0.000999000999000999
+feminine (stereotypically) / decorative,0.000999000999000999
+bathroom-related / sanitary,0.33466533466533466
+black / noble,0.8251748251748252
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.000999000999000999
+spherical / ellipsoid / rounded / voluminous,0.000999000999000999
+repetitive,0.06993006993006994
+flat / patterned,0.001998001998001998
+white,0.002997002997002997
+thin / flat,0.05194805194805195
+disgusting / bugs,0.975024975024975
+string-related,0.38461538461538464
+arms/legs/skin-related,0.5674325674325674
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,0.996003996003996
+beams-related,0.02097902097902098
+seating-related / put things on top,0.022977022977022976
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,1.0
+handicraft-related,1.0
+cylindrical / conical,1.0

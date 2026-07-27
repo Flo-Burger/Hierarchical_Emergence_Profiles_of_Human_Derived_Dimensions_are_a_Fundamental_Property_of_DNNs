@@ -1,0 +1,37 @@
+dimension,p_value_fdr
+mineral,1.0
+wood,0.003232722333845929
+metallic,1.0
+fabric,0.003232722333845929
+white colour,0.003232722333845929
+grainy,0.003232722333845929
+crystalline,0.003232722333845929
+"straw, fibrous",1.0
+cloudy,1.0
+small,1.0
+"beige colour, tan colour",1.0
+viscous,1.0
+black colour,0.003232722333845929
+brick,0.003232722333845929
+swirly,0.7237070621686006
+maroon colour,0.22777222777222778
+"lines, long, tubular, vertical",1.0
+mesh,0.003232722333845929
+yellow colour,0.0253863783275548
+multi-coloured,0.003232722333845929
+thin,1.0
+bulbous,1.0
+green colour,0.6585914085914086
+blue colour,1.0
+shell,1.0
+"gemstone, smooth",0.003232722333845929
+sheet,0.5754245754245755
+hair,1.0
+spongy,1.0
+golden,1.0
+red colour,0.003232722333845929
+"round, smooth",0.15492200107584725
+cream colour,1.0
+bumpy,1.0
+hot,1.0
+turquoise colour,0.4710128581096322

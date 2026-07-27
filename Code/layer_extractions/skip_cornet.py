@@ -1,16 +1,10 @@
 # feedforward_cornet_s.py
 
-import sys
 import torch
 import numpy as np
 from tqdm import tqdm
 import torchvision.transforms as T
 from PIL import Image
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Make sure Python can find the CORnet code
-# ─────────────────────────────────────────────────────────────────────────────
-sys.path.append("/Users/22119216/Desktop/PhD_First_Year/Projects/Old_or_Random/Generative_EEG/CORnet")
 from cornet import cornet_s
 
 def extract_skip_cornet_activations(images, device):
@@ -68,7 +62,7 @@ def extract_skip_cornet_activations(images, device):
         img = Image.fromarray(img_arr.astype(np.uint8))
         inp = preprocess(img).unsqueeze(0).to(device)
         with torch.no_grad():
-            _ = model(inp)
+            _ = base(inp)
         for L in layers:
             activations[L].append(cornet_temp[L])
 

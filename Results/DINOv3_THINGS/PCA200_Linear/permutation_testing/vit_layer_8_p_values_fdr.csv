@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,0.0026341371632851453
+food-related / eating-related / kitchen-related,0.0026341371632851453
+animal-related / organic,0.0026341371632851453
+clothing-related / fabric / covering,0.0026341371632851453
+furniture-related / household-related / artifact,0.0026341371632851453
+plant-related / green,0.0026341371632851453
+outdoors-related,0.0026341371632851453
+transportation / motorized / dynamic,0.0026341371632851453
+wood-related / brownish,0.0026341371632851453
+body part-related,0.0026341371632851453
+colorful,0.0026341371632851453
+valuable / special occasion-related,0.0026341371632851453
+electronic / technology,0.0026341371632851453
+sport-related / recreational activity-related,1.0
+disc-shaped / round,0.0026341371632851453
+tool-related,0.0026341371632851453
+many small things / course pattern,0.0026341371632851453
+paper-related / thin / flat / text-related,0.0026341371632851453
+fluid-related / drink-related,0.0026341371632851453
+long / thin,0.0026341371632851453
+water-related / blue,0.0026341371632851453
+powdery / fine-scale pattern,0.0026341371632851453
+red,0.0026341371632851453
+feminine (stereotypically) / decorative,0.017647588463039106
+bathroom-related / sanitary,1.0
+black / noble,1.0
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.0026341371632851453
+spherical / ellipsoid / rounded / voluminous,0.0026341371632851453
+repetitive,0.0026341371632851453
+flat / patterned,1.0
+white,0.017647588463039106
+thin / flat,1.0
+disgusting / bugs,0.0026341371632851453
+string-related,1.0
+arms/legs/skin-related,0.03965654598565991
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,0.0026341371632851453
+beams-related,0.04669807180267431
+seating-related / put things on top,0.8523241464417934
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,1.0
+handicraft-related,1.0
+cylindrical / conical,1.0

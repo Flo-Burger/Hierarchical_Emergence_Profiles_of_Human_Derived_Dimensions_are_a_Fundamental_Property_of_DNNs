@@ -37,9 +37,12 @@ def extract_CLIP(images, device):
 
     def make_hook(name):
         def hook(module, inp, outp):
-            # outp may be ModelOutput or tuple
             hs = outp.last_hidden_state if hasattr(outp, "last_hidden_state") else outp[0]
-            cls = hs[:, 0, :].detach().cpu().numpy().squeeze()
+            # newer transformers may drop the batch dim → (seq, hidden); older keeps (batch, seq, hidden)
+            if hs.dim() == 3:
+                cls = hs[0, 0, :].detach().cpu().numpy()
+            else:
+                cls = hs[0, :].detach().cpu().numpy()
             vision_activations[name].append(cls)
         return hook
 

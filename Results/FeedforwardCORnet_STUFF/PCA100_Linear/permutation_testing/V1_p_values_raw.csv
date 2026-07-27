@@ -1,9 +1,9 @@
 dimension,p_value_raw
-mineral,0.0001999600079984003
-wood,0.9996000799840032
-metallic,0.9234153169366127
+mineral,1.0
+wood,1.0
+metallic,1.0
 fabric,1.0
-white colour,0.0001999600079984003
+white colour,1.0
 grainy,1.0
 crystalline,1.0
 "straw, fibrous",1.0
@@ -17,7 +17,7 @@ swirly,1.0
 maroon colour,1.0
 "lines, long, tubular, vertical",1.0
 mesh,1.0
-yellow colour,0.9522095580883824
+yellow colour,1.0
 multi-coloured,1.0
 thin,1.0
 bulbous,1.0

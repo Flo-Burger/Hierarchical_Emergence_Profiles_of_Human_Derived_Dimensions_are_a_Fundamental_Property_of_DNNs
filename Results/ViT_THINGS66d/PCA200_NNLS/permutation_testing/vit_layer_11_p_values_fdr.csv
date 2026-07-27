@@ -1,0 +1,67 @@
+dimension,p_value_fdr
+metallic/artificial,1.0
+food-related,1.0
+animal-related,0.0032830240299119968
+textile,0.0032830240299119968
+plant-related,1.0
+house-related/furnishing-related,0.018400204446716074
+valuable/precious,0.053540444517888135
+transportation-/movement-related,0.0032830240299119968
+body-/people-related,0.0032830240299119968
+wood-related/brown,1.0
+electronics/technology,0.22054600451812997
+colorful/playful,0.0032830240299119968
+outdoors,0.09425953108263578
+circular/round,1.0
+paper-related/flat,0.0032830240299119968
+sports-/playing-related,1.0
+tools/handheld/elongated,0.0032830240299119968
+fluid-related/drink-related,0.0032830240299119968
+water-related,1.0
+oriented/many things,1.0
+powdery/earth-related,1.0
+white,1.0
+coarse pattern/many things,0.0032830240299119968
+red,1.0
+long/thin,0.0032830240299119968
+weapon-/danger-related,1.0
+black,1.0
+household,1.0
+feminine (stereotypical),0.006304452519591962
+body part-related,0.0032830240299119968
+tubular,0.0032830240299119968
+music-/hearing-/hobby-related/loud,0.0032830240299119968
+grid-/grating-related,1.0
+repetitive/spiky,1.0
+construction-/craftsmanship-related,1.0
+spherical/voluminous,0.024344885883347423
+string-related/curved,0.0032830240299119968
+seating-/standing-/lying-related,1.0
+flying-/sky-related,1.0
+bug-related/non-mammalian/disgusting,1.0
+transparent/shiny/crystalline,1.0
+sand-colored,1.0
+green,1.0
+bathroom-/wetness-related,1.0
+yellow,1.0
+heat-/fire-/light-related,0.0032830240299119968
+beams-/mesh-related,1.0
+foot-/walking-related,1.0
+box-related/container,1.0
+stick-shaped/container,1.0
+head-related,1.0
+upright/elongated/volumous,1.0
+pointed/spiky,0.0032830240299119968
+child-/toy-related/cute,1.0
+farm-related/historical,1.0
+seeing-related,1.0
+medicine-/health-related,1.0
+sweet / dessert-related,0.0032830240299119968
+orange,1.0
+thin/flat/wrapping,0.7989657401422107
+cylindrical/conical/cushioning,1.0
+coldness-related/winter-related,1.0
+measurement-related/numbers-related,1.0
+fluffy/soft,1.0
+masculine (stereotypical),1.0
+fine-grained pattern,1.0

@@ -2,8 +2,6 @@ import torch
 from torchvision import transforms as T
 from PIL import Image
 from tqdm import tqdm
-import sys
-sys.path.append("/Users/22119216/Desktop/PhD_First_Year/Projects/Old_or_Random/Generative_EEG/CORnet")
 from cornet import cornet_z
 
 def extract_feedforward_cornet_activations(images, device):

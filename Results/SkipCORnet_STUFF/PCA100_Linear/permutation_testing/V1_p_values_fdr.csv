@@ -1,15 +1,15 @@
 dimension,p_value_fdr
-mineral,0.0004880379856232143
-wood,0.0004880379856232143
-metallic,0.0004880379856232143
+mineral,1.0
+wood,1.0
+metallic,1.0
 fabric,1.0
-white colour,0.0004880379856232143
-grainy,0.3098604159765062
+white colour,1.0
+grainy,1.0
 crystalline,1.0
 "straw, fibrous",1.0
 cloudy,1.0
 small,1.0
-"beige colour, tan colour",0.6368608631214934
+"beige colour, tan colour",1.0
 viscous,1.0
 black colour,1.0
 brick,1.0
@@ -17,7 +17,7 @@ swirly,1.0
 maroon colour,1.0
 "lines, long, tubular, vertical",1.0
 mesh,1.0
-yellow colour,0.0023221162219169067
+yellow colour,1.0
 multi-coloured,1.0
 thin,1.0
 bulbous,1.0

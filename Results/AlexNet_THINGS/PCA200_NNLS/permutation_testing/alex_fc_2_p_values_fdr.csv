@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,0.004256612952265126
+food-related / eating-related / kitchen-related,0.004256612952265126
+animal-related / organic,1.0
+clothing-related / fabric / covering,0.004256612952265126
+furniture-related / household-related / artifact,0.004256612952265126
+plant-related / green,0.004256612952265126
+outdoors-related,0.027689482234936783
+transportation / motorized / dynamic,0.004256612952265126
+wood-related / brownish,0.004256612952265126
+body part-related,0.004256612952265126
+colorful,0.004256612952265126
+valuable / special occasion-related,0.004256612952265126
+electronic / technology,0.004256612952265126
+sport-related / recreational activity-related,1.0
+disc-shaped / round,0.004256612952265126
+tool-related,0.004256612952265126
+many small things / course pattern,0.004256612952265126
+paper-related / thin / flat / text-related,0.004256612952265126
+fluid-related / drink-related,0.004256612952265126
+long / thin,0.004256612952265126
+water-related / blue,0.004256612952265126
+powdery / fine-scale pattern,0.14141414141414144
+red,0.004256612952265126
+feminine (stereotypically) / decorative,0.004256612952265126
+bathroom-related / sanitary,0.027689482234936783
+black / noble,0.25874125874125875
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.004256612952265126
+spherical / ellipsoid / rounded / voluminous,0.004256612952265126
+repetitive,1.0
+flat / patterned,1.0
+white,0.004256612952265126
+thin / flat,0.004256612952265126
+disgusting / bugs,1.0
+string-related,1.0
+arms/legs/skin-related,1.0
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,0.579185520361991
+seating-related / put things on top,1.0
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,0.46925488304798646
+handicraft-related,1.0
+cylindrical / conical,1.0

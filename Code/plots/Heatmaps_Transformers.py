@@ -204,7 +204,7 @@ def plot_transformer_heatmap(
     )
 
     # Panel 1: ViT — R²
-    vmin_r2, vmax_r2 = -0.2, 1.0
+    vmin_r2, vmax_r2 = 0.0, 1.0
     mat_vit = df_vit[layers_vit].T.values
     sns.heatmap(mat_vit, ax=axes[0], cmap="RdBu_r", center=0, square=True,
                 linewidths=0.3, linecolor="white", vmin=vmin_r2, vmax=vmax_r2, cbar=False)

@@ -1,0 +1,67 @@
+dimension,p_value_fdr
+metallic/artificial,0.0019250822170530201
+food-related,0.5485067080159105
+animal-related,0.0019250822170530201
+textile,1.0
+plant-related,0.0019250822170530201
+house-related/furnishing-related,0.0019250822170530201
+valuable/precious,0.0019250822170530201
+transportation-/movement-related,0.0019250822170530201
+body-/people-related,0.0019250822170530201
+wood-related/brown,0.2918531362028164
+electronics/technology,0.0019250822170530201
+colorful/playful,0.32451269660571985
+outdoors,0.0019250822170530201
+circular/round,1.0
+paper-related/flat,1.0
+sports-/playing-related,1.0
+tools/handheld/elongated,0.046021093000958774
+fluid-related/drink-related,0.14307261366084895
+water-related,1.0
+oriented/many things,0.0784237788643075
+powdery/earth-related,0.0019250822170530201
+white,0.0019250822170530201
+coarse pattern/many things,0.0019250822170530201
+red,0.0019250822170530201
+long/thin,0.014618176280993832
+weapon-/danger-related,1.0
+black,0.0019250822170530201
+household,1.0
+feminine (stereotypical),1.0
+body part-related,0.023376623376623377
+tubular,1.0
+music-/hearing-/hobby-related/loud,1.0
+grid-/grating-related,1.0
+repetitive/spiky,1.0
+construction-/craftsmanship-related,1.0
+spherical/voluminous,1.0
+string-related/curved,1.0
+seating-/standing-/lying-related,1.0
+flying-/sky-related,0.0019250822170530201
+bug-related/non-mammalian/disgusting,1.0
+transparent/shiny/crystalline,1.0
+sand-colored,0.9586102520234256
+green,0.0019250822170530201
+bathroom-/wetness-related,1.0
+yellow,1.0
+heat-/fire-/light-related,1.0
+beams-/mesh-related,0.0037947663846944423
+foot-/walking-related,1.0
+box-related/container,1.0
+stick-shaped/container,1.0
+head-related,1.0
+upright/elongated/volumous,0.0019250822170530201
+pointed/spiky,1.0
+child-/toy-related/cute,1.0
+farm-related/historical,1.0
+seeing-related,1.0
+medicine-/health-related,1.0
+sweet / dessert-related,1.0
+orange,1.0
+thin/flat/wrapping,1.0
+cylindrical/conical/cushioning,1.0
+coldness-related/winter-related,1.0
+measurement-related/numbers-related,1.0
+fluffy/soft,1.0
+masculine (stereotypical),1.0
+fine-grained pattern,1.0

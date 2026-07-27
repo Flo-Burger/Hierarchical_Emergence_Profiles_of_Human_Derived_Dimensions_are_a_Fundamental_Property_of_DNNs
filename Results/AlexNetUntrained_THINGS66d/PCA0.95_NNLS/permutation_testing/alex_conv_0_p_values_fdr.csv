@@ -1,0 +1,67 @@
+dimension,p_value_fdr
+metallic/artificial,1.0
+food-related,0.0038501644341060403
+animal-related,1.0
+textile,0.23875072296124927
+plant-related,0.0038501644341060403
+house-related/furnishing-related,0.010620252230990486
+valuable/precious,0.041811846689895474
+transportation-/movement-related,1.0
+body-/people-related,1.0
+wood-related/brown,0.0038501644341060403
+electronics/technology,1.0
+colorful/playful,0.43346752257643345
+outdoors,1.0
+circular/round,1.0
+paper-related/flat,0.0038501644341060403
+sports-/playing-related,1.0
+tools/handheld/elongated,0.0038501644341060403
+fluid-related/drink-related,0.017237664296487824
+water-related,1.0
+oriented/many things,0.0038501644341060403
+powdery/earth-related,1.0
+white,0.0038501644341060403
+coarse pattern/many things,0.0038501644341060403
+red,0.0038501644341060403
+long/thin,0.0038501644341060403
+weapon-/danger-related,1.0
+black,1.0
+household,0.0038501644341060403
+feminine (stereotypical),0.0038501644341060403
+body part-related,0.014065934065934064
+tubular,0.39895130250460203
+music-/hearing-/hobby-related/loud,1.0
+grid-/grating-related,1.0
+repetitive/spiky,0.0072754831375521035
+construction-/craftsmanship-related,1.0
+spherical/voluminous,0.41406593406593406
+string-related/curved,1.0
+seating-/standing-/lying-related,1.0
+flying-/sky-related,1.0
+bug-related/non-mammalian/disgusting,1.0
+transparent/shiny/crystalline,1.0
+sand-colored,0.0038501644341060403
+green,1.0
+bathroom-/wetness-related,0.0038501644341060403
+yellow,0.0038501644341060403
+heat-/fire-/light-related,1.0
+beams-/mesh-related,1.0
+foot-/walking-related,1.0
+box-related/container,1.0
+stick-shaped/container,0.0072754831375521035
+head-related,1.0
+upright/elongated/volumous,1.0
+pointed/spiky,1.0
+child-/toy-related/cute,1.0
+farm-related/historical,1.0
+seeing-related,1.0
+medicine-/health-related,0.09778985059883938
+sweet / dessert-related,0.0072754831375521035
+orange,0.0038501644341060403
+thin/flat/wrapping,0.0038501644341060403
+cylindrical/conical/cushioning,1.0
+coldness-related/winter-related,0.09778985059883938
+measurement-related/numbers-related,1.0
+fluffy/soft,1.0
+masculine (stereotypical),1.0
+fine-grained pattern,1.0

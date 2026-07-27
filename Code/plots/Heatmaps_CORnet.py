@@ -180,7 +180,7 @@ def plot_cornet_heatmap(
     )
 
     # Panel 1: Feedforward R²
-    vmin_r2, vmax_r2 = -0.2, 1.0
+    vmin_r2, vmax_r2 = 0.0, 1.0
     mat_feed = df_feed[layers_feed_all].T.values
     sns.heatmap(mat_feed, ax=axes[0], cmap="RdBu_r", center=0, square=True,
                 linewidths=0.3, linecolor="white", vmin=vmin_r2, vmax=vmax_r2, cbar=False)

@@ -1,0 +1,50 @@
+dimension,p_value_raw
+made of metal / artificial / hard,0.000999000999000999
+food-related / eating-related / kitchen-related,0.000999000999000999
+animal-related / organic,0.000999000999000999
+clothing-related / fabric / covering,0.000999000999000999
+furniture-related / household-related / artifact,0.000999000999000999
+plant-related / green,0.000999000999000999
+outdoors-related,0.000999000999000999
+transportation / motorized / dynamic,0.000999000999000999
+wood-related / brownish,0.000999000999000999
+body part-related,0.005994005994005994
+colorful,0.000999000999000999
+valuable / special occasion-related,0.000999000999000999
+electronic / technology,0.04195804195804196
+sport-related / recreational activity-related,1.0
+disc-shaped / round,1.0
+tool-related,1.0
+many small things / course pattern,0.000999000999000999
+paper-related / thin / flat / text-related,0.3876123876123876
+fluid-related / drink-related,0.2947052947052947
+long / thin,1.0
+water-related / blue,0.006993006993006993
+powdery / fine-scale pattern,0.001998001998001998
+red,0.000999000999000999
+feminine (stereotypically) / decorative,0.7092907092907093
+bathroom-related / sanitary,0.000999000999000999
+black / noble,0.000999000999000999
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.000999000999000999
+spherical / ellipsoid / rounded / voluminous,1.0
+repetitive,0.06993006993006994
+flat / patterned,1.0
+white,0.000999000999000999
+thin / flat,0.000999000999000999
+disgusting / bugs,1.0
+string-related,1.0
+arms/legs/skin-related,1.0
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,1.0
+seating-related / put things on top,1.0
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,0.25374625374625376
+handicraft-related,1.0
+cylindrical / conical,1.0

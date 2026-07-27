@@ -103,11 +103,8 @@ def plot_transformer_lines(
 
     layers = dfs[labels[0]].columns.tolist()
 
-    # Mean per layer & normalize to [0,1] over union
+    # Mean per layer (raw, no normalization)
     df_mean = pd.DataFrame({lbl: df.mean(axis=0) for lbl, df in dfs.items()}, index=layers)
-    mn, mx = df_mean.values.min(), df_mean.values.max()
-    span = (mx - mn) if (mx > mn) else 1.0
-    df_mean = (df_mean - mn) / span
 
     # Plot
     x = np.arange(1, n_layers + 1)
@@ -123,8 +120,8 @@ def plot_transformer_lines(
     ax.set_xticks(x)
     ax.set_xticklabels(x, fontsize=6)
     ax.tick_params(axis='x', which='minor', length=0)
-    ax.set_ylabel("Normalized Mean R$^2$", fontsize=8)
-    ax.set_ylim(0, 1)
+    ax.set_ylabel("Mean R$^2$", fontsize=8)
+    ax.set_ylim(bottom=0)
     ax.tick_params(axis='both', which='major', labelsize=8)
     ax.legend(frameon=False, prop={'size': 5}, loc='upper left')
 

@@ -1,0 +1,67 @@
+dimension,p_value_raw
+metallic/artificial,0.9790209790209791
+food-related,0.000999000999000999
+animal-related,0.005994005994005994
+textile,1.0
+plant-related,0.000999000999000999
+house-related/furnishing-related,0.22977022977022976
+valuable/precious,0.000999000999000999
+transportation-/movement-related,0.000999000999000999
+body-/people-related,0.3776223776223776
+wood-related/brown,0.000999000999000999
+electronics/technology,0.3886113886113886
+colorful/playful,0.000999000999000999
+outdoors,0.000999000999000999
+circular/round,1.0
+paper-related/flat,1.0
+sports-/playing-related,1.0
+tools/handheld/elongated,0.06593406593406594
+fluid-related/drink-related,0.6453546453546454
+water-related,1.0
+oriented/many things,0.000999000999000999
+powdery/earth-related,0.04295704295704296
+white,0.000999000999000999
+coarse pattern/many things,0.000999000999000999
+red,0.000999000999000999
+long/thin,0.5814185814185814
+weapon-/danger-related,1.0
+black,0.000999000999000999
+household,1.0
+feminine (stereotypical),0.006993006993006993
+body part-related,0.07792207792207792
+tubular,1.0
+music-/hearing-/hobby-related/loud,0.6943056943056943
+grid-/grating-related,0.000999000999000999
+repetitive/spiky,0.000999000999000999
+construction-/craftsmanship-related,1.0
+spherical/voluminous,0.7202797202797203
+string-related/curved,1.0
+seating-/standing-/lying-related,0.986013986013986
+flying-/sky-related,0.000999000999000999
+bug-related/non-mammalian/disgusting,1.0
+transparent/shiny/crystalline,1.0
+sand-colored,0.000999000999000999
+green,0.000999000999000999
+bathroom-/wetness-related,1.0
+yellow,0.000999000999000999
+heat-/fire-/light-related,1.0
+beams-/mesh-related,0.000999000999000999
+foot-/walking-related,1.0
+box-related/container,1.0
+stick-shaped/container,0.973026973026973
+head-related,1.0
+upright/elongated/volumous,0.47052947052947053
+pointed/spiky,1.0
+child-/toy-related/cute,1.0
+farm-related/historical,0.942057942057942
+seeing-related,1.0
+medicine-/health-related,1.0
+sweet / dessert-related,1.0
+orange,0.000999000999000999
+thin/flat/wrapping,1.0
+cylindrical/conical/cushioning,1.0
+coldness-related/winter-related,1.0
+measurement-related/numbers-related,1.0
+fluffy/soft,1.0
+masculine (stereotypical),1.0
+fine-grained pattern,1.0

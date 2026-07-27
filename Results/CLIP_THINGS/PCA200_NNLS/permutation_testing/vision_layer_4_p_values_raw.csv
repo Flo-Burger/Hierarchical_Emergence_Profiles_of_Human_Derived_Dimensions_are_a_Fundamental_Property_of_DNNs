@@ -1,0 +1,50 @@
+dimension,p_value_raw
+made of metal / artificial / hard,1.0
+food-related / eating-related / kitchen-related,0.13186813186813187
+animal-related / organic,1.0
+clothing-related / fabric / covering,0.9010989010989011
+furniture-related / household-related / artifact,0.000999000999000999
+plant-related / green,0.000999000999000999
+outdoors-related,0.000999000999000999
+transportation / motorized / dynamic,0.000999000999000999
+wood-related / brownish,0.016983016983016984
+body part-related,0.000999000999000999
+colorful,0.000999000999000999
+valuable / special occasion-related,1.0
+electronic / technology,0.005994005994005994
+sport-related / recreational activity-related,1.0
+disc-shaped / round,1.0
+tool-related,1.0
+many small things / course pattern,0.6923076923076923
+paper-related / thin / flat / text-related,0.2217782217782218
+fluid-related / drink-related,1.0
+long / thin,1.0
+water-related / blue,1.0
+powdery / fine-scale pattern,1.0
+red,0.000999000999000999
+feminine (stereotypically) / decorative,1.0
+bathroom-related / sanitary,1.0
+black / noble,1.0
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.952047952047952
+spherical / ellipsoid / rounded / voluminous,1.0
+repetitive,0.991008991008991
+flat / patterned,1.0
+white,1.0
+thin / flat,1.0
+disgusting / bugs,1.0
+string-related,1.0
+arms/legs/skin-related,1.0
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,1.0
+seating-related / put things on top,1.0
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,1.0
+handicraft-related,1.0
+cylindrical / conical,1.0

@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,0.0012995853703818307
+food-related / eating-related / kitchen-related,0.0012995853703818307
+animal-related / organic,0.0012995853703818307
+clothing-related / fabric / covering,0.0012995853703818307
+furniture-related / household-related / artifact,0.0012995853703818307
+plant-related / green,0.0012995853703818307
+outdoors-related,0.0012995853703818307
+transportation / motorized / dynamic,0.0012995853703818307
+wood-related / brownish,0.0012995853703818307
+body part-related,0.0012995853703818307
+colorful,0.0012995853703818307
+valuable / special occasion-related,0.0012995853703818307
+electronic / technology,0.0012995853703818307
+sport-related / recreational activity-related,0.10467519901482165
+disc-shaped / round,1.0
+tool-related,0.07172616856827384
+many small things / course pattern,0.0012995853703818307
+paper-related / thin / flat / text-related,0.0012995853703818307
+fluid-related / drink-related,1.0
+long / thin,0.3076923076923077
+water-related / blue,0.0012995853703818307
+powdery / fine-scale pattern,0.0012995853703818307
+red,0.0012995853703818307
+feminine (stereotypically) / decorative,0.0012995853703818307
+bathroom-related / sanitary,0.0012995853703818307
+black / noble,0.0012995853703818307
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.0012995853703818307
+spherical / ellipsoid / rounded / voluminous,1.0
+repetitive,0.0012995853703818307
+flat / patterned,0.0012995853703818307
+white,0.0012995853703818307
+thin / flat,0.0012995853703818307
+disgusting / bugs,1.0
+string-related,1.0
+arms/legs/skin-related,1.0
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,0.0012995853703818307
+seating-related / put things on top,1.0
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,0.37987632202508237
+handicraft-related,1.0
+cylindrical / conical,1.0

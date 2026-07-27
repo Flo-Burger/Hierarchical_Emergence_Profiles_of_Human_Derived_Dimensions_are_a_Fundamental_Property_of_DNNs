@@ -1,0 +1,67 @@
+dimension,p_value_raw
+metallic/artificial,1.0
+food-related,1.0
+animal-related,0.000999000999000999
+textile,0.000999000999000999
+plant-related,0.9410589410589411
+house-related/furnishing-related,0.005994005994005994
+valuable/precious,0.017982017982017984
+transportation-/movement-related,0.000999000999000999
+body-/people-related,0.000999000999000999
+wood-related/brown,1.0
+electronics/technology,0.07992007992007992
+colorful/playful,0.000999000999000999
+outdoors,0.03296703296703297
+circular/round,1.0
+paper-related/flat,0.000999000999000999
+sports-/playing-related,1.0
+tools/handheld/elongated,0.000999000999000999
+fluid-related/drink-related,0.000999000999000999
+water-related,1.0
+oriented/many things,0.5224775224775224
+powdery/earth-related,0.9600399600399601
+white,0.8191808191808192
+coarse pattern/many things,0.000999000999000999
+red,1.0
+long/thin,0.000999000999000999
+weapon-/danger-related,1.0
+black,1.0
+household,0.999000999000999
+feminine (stereotypical),0.001998001998001998
+body part-related,0.000999000999000999
+tubular,0.000999000999000999
+music-/hearing-/hobby-related/loud,0.000999000999000999
+grid-/grating-related,1.0
+repetitive/spiky,1.0
+construction-/craftsmanship-related,1.0
+spherical/voluminous,0.007992007992007992
+string-related/curved,0.000999000999000999
+seating-/standing-/lying-related,0.7872127872127872
+flying-/sky-related,1.0
+bug-related/non-mammalian/disgusting,1.0
+transparent/shiny/crystalline,0.8701298701298701
+sand-colored,1.0
+green,1.0
+bathroom-/wetness-related,0.8641358641358642
+yellow,1.0
+heat-/fire-/light-related,0.000999000999000999
+beams-/mesh-related,1.0
+foot-/walking-related,1.0
+box-related/container,1.0
+stick-shaped/container,0.5584415584415584
+head-related,1.0
+upright/elongated/volumous,1.0
+pointed/spiky,0.000999000999000999
+child-/toy-related/cute,1.0
+farm-related/historical,1.0
+seeing-related,1.0
+medicine-/health-related,1.0
+sweet / dessert-related,0.000999000999000999
+orange,1.0
+thin/flat/wrapping,0.3086913086913087
+cylindrical/conical/cushioning,1.0
+coldness-related/winter-related,1.0
+measurement-related/numbers-related,1.0
+fluffy/soft,1.0
+masculine (stereotypical),1.0
+fine-grained pattern,1.0

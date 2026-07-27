@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import ssl
+import certifi
+ssl._create_default_https_context = lambda: ssl.create_default_context(cafile=certifi.where())
 
 import os
 import sys
@@ -11,9 +14,9 @@ import pandas as pd
 from tqdm import tqdm
 
 from sklearn.linear_model import LinearRegression, Ridge, Lasso
-from sklearn.svm import SVR
-from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import cross_val_score, KFold
 from sklearn.decomposition import PCA
+from scipy.optimize import nnls as scipy_nnls
 
 from joblib import Parallel, delayed
 from PIL import Image
@@ -22,26 +25,27 @@ import torchvision.transforms as T
 # ─────────────────────────────────────────────────────────────────────────────
 # Settings
 # ─────────────────────────────────────────────────────────────────────────────
-PCA_COMPONENTS_LIST = [100, 200, 0.95, 0.99] # List of PCA components 
+DEBUG_N_DIMS = None  # set to an int to restrict to N dimensions for testing
 
-# List of models to use, other models can be added if of interest
+START_FROM_MODEL = None  # set to None to run all models
+
+OVERWRITE = True  # set to True to recompute and overwrite existing results
+
+PCA_COMPONENTS_LIST = [0.95, 50, 100, 200]
+
 REGRESSORS = {
     "Linear": LinearRegression(),
-    "SVR":    SVR(kernel='rbf', C=1.0, epsilon=0.1),
+    "Ridge":  Ridge(alpha=1.0),
+    "NNLS":   LinearRegression(positive=True),
 }
 
 CV = 10 # Cross-validation splits for each prediction
 
-PCA_COMPONENTS_LIST = [100]
-REGRESSORS = {
-    "Linear": LinearRegression()
-}
-
-# We have not run the permutation testing for any other setting beyond 100 PCA
-# and linear regression due to the large computation time needed.
-run_permutation   = True
-n_perm            = 5000
+# Permutation testing is computationally expensive
+run_permutation = True
+n_perm            = 1000
 alpha_thresh      = 0.05   # FDR threshold
+
 
 # which dims to label (0-based) per dataset (kept for compatibility if you use elsewhere)
 SELECTED_DIMS_MAP = {
@@ -90,19 +94,73 @@ def safe_loadmat(filepath, key):
     except Exception as e:
         raise ValueError(f"Error loading {filepath} with key '{key}': {e}")
 
-def compute_r2_scores_with_model(X, Y, reg):
+def compute_r2_scores_with_model(X, Y, reg, dim_names=None):
     out = np.zeros(Y.shape[1])
-    for j in range(Y.shape[1]):
+    labels = dim_names if dim_names is not None else [str(j) for j in range(Y.shape[1])]
+    pbar = tqdm(enumerate(labels), total=len(labels), desc="  dims", leave=False)
+    for j, name in pbar:
+        pbar.set_postfix(dim=name)
         out[j] = cross_val_score(
             reg, X, Y[:, j], cv=CV, scoring="r2", n_jobs=-1
         ).mean()
     return out
 
+
+def compute_r2_linear_kfold(X, Y, k=10):
+    """Vectorized K-fold CV for multi-output OLS — solves all dims per fold."""
+    kf = KFold(n_splits=k, shuffle=False)
+    Y_mean = Y.mean(axis=0)
+    ss_res = np.zeros(Y.shape[1])
+    ss_tot = np.zeros(Y.shape[1])
+    for train_idx, test_idx in kf.split(X):
+        B, _, _, _ = np.linalg.lstsq(X[train_idx], Y[train_idx], rcond=None)
+        pred = X[test_idx] @ B
+        ss_res += ((Y[test_idx] - pred) ** 2).sum(axis=0)
+        ss_tot += ((Y[test_idx] - Y_mean) ** 2).sum(axis=0)
+    return 1.0 - ss_res / np.maximum(ss_tot, 1e-10)
+
+
+def _nnls_pgd(XtX, XtY, step, max_iter=3000, tol=1e-8):
+    """FISTA projected gradient descent solving NNLS for all dims simultaneously.
+
+    Minimises ||XB - Y||^2 s.t. B >= 0 for all columns of Y at once.
+    XtX: (p,p), XtY: (p,d), step: 1/lambda_max(XtX) → B: (p,d) with B >= 0.
+    """
+    B = np.zeros_like(XtY)
+    B_prev = B.copy()
+    t = 1.0
+    for _ in range(max_iter):
+        t_new = 0.5 * (1.0 + np.sqrt(1.0 + 4.0 * t * t))
+        M = B + ((t - 1.0) / t_new) * (B - B_prev)
+        B_new = np.maximum(M - step * (XtX @ M - XtY), 0.0)
+        if np.linalg.norm(B_new - B, "fro") < tol * max(1.0, np.linalg.norm(B_new, "fro")):
+            return B_new
+        B_prev, B, t = B, B_new, t_new
+    return B
+
+
+def compute_r2_nnls_kfold(X, Y, k=10):
+    """Vectorized K-fold CV for multi-output NNLS — solves all dims per fold."""
+    kf = KFold(n_splits=k, shuffle=False)
+    Y_mean = Y.mean(axis=0)
+    ss_res = np.zeros(Y.shape[1])
+    ss_tot = np.zeros(Y.shape[1])
+    for train_idx, test_idx in kf.split(X):
+        Xtr = X[train_idx]
+        XtX = Xtr.T @ Xtr
+        step = 1.0 / max(float(np.linalg.eigvalsh(XtX)[-1]), 1e-12)
+        B = _nnls_pgd(XtX, Xtr.T @ Y[train_idx], step)
+        pred = X[test_idx] @ B
+        ss_res += ((Y[test_idx] - pred) ** 2).sum(axis=0)
+        ss_tot += ((Y[test_idx] - Y_mean) ** 2).sum(axis=0)
+    return 1.0 - ss_res / np.maximum(ss_tot, 1e-10)
+
+
 # Main Analysis
-for ds in ["THINGS", "STUFF"]:
+for ds in ["THINGS66d", "THINGS", "STUFF"]:
     print(f"\n\n===== DATASET: {ds} =====")
     if ds == "THINGS":
-        # For THINGS
+        # For THINGS (49d SPOSE embedding)
         embedding_file = os.path.join(THINGS_DIR, "spose_embedding_49d_sorted.txt")
         labels_file    = os.path.join(THINGS_DIR, "labels.mat")
         images_file    = os.path.join(THINGS_DIR, "im.mat")
@@ -112,7 +170,19 @@ for ds in ["THINGS", "STUFF"]:
         images    = safe_loadmat(images_file, 'im').flatten()
         assert Y.shape[0] == len(images)
 
-    else: 
+    elif ds == "THINGS66d":
+        # For THINGS (66d SPOSE embedding, semantic/visual analysis)
+        embedding_file = os.path.join(THINGS_DIR, "spose_embedding_66d_sorted.txt")
+        labels_file    = os.path.join(THINGS_DIR, "labels_spose_66d_short.txt")
+        images_file    = os.path.join(THINGS_DIR, "im.mat")
+
+        Y         = np.loadtxt(embedding_file)
+        with open(labels_file) as f:
+            dim_names = [l.strip() for l in f.readlines()]
+        images    = safe_loadmat(images_file, 'im').flatten()
+        assert Y.shape[0] == len(images)
+
+    else:
         # For STUFF
         embedding_file = os.path.join(STUFF_DIR, "spose_embedding36.mat")
         labels_file    = os.path.join(STUFF_DIR, "labels.mat")
@@ -123,13 +193,31 @@ for ds in ["THINGS", "STUFF"]:
         images    = safe_loadmat(images_file, 'im').flatten()
         assert Y.shape[0] == len(images)
 
-    device = torch.device("cpu")
+    if DEBUG_N_DIMS is not None:
+        Y = Y[:, :DEBUG_N_DIMS]
+        dim_names = dim_names[:DEBUG_N_DIMS]
+
+    if torch.backends.mps.is_available():
+        device = torch.device("mps")
+    elif torch.cuda.is_available():
+        device = torch.device("cuda")
+    else:
+        device = torch.device("cpu")
+    print(f"Using device: {device}")
     torch.manual_seed(42); np.random.seed(42)
 
     # kept in case used downstream
-    selected_dims = SELECTED_DIMS_MAP[ds]
+    selected_dims = SELECTED_DIMS_MAP.get(ds, [])
 
+    reached_start = (START_FROM_MODEL is None)
     for model_name, extract_fn in MODEL_EXTRACTORS.items():
+        if not reached_start:
+            if model_name == START_FROM_MODEL:
+                reached_start = True
+            else:
+                print(f"\n--- Skipping {model_name} on {ds} (before START_FROM_MODEL) ---")
+                continue
+
         print(f"\n--- Model: {model_name} on {ds} ---")
         base_out = os.path.join(RESULTS_ROOT, f"{model_name}_{ds}")
         os.makedirs(base_out, exist_ok=True)
@@ -139,26 +227,39 @@ for ds in ["THINGS", "STUFF"]:
         layers       = list(activations.keys())
 
         for PCA_K in PCA_COMPONENTS_LIST:
-            time.sleep(10)  # avoid file system issues
+            # Compute PCA features once per PCA_K, shared across all regressors
+            print(f"  Computing PCA (k={PCA_K})…", end="", flush=True)
+            pca_feats = {}
+            for L in layers:
+                arr = np.stack(activations[L], axis=0)
+                k   = min(PCA_K, arr.shape[1]) if isinstance(PCA_K, (int, float)) else arr.shape[1]
+                pca = PCA(n_components=k,
+                          svd_solver="full" if isinstance(PCA_K, float) else "auto")
+                pca_feats[L] = pca.fit_transform(arr)
+            print(" done.")
+
             for reg_name, reg in REGRESSORS.items():
                 combo = f"PCA{PCA_K}_{reg_name}"
                 outd  = os.path.join(base_out, combo)
                 os.makedirs(outd, exist_ok=True)
 
+                csv_path = os.path.join(outd, f"r2_{model_name}_{ds}_{combo}_layers.csv")
+                if os.path.exists(csv_path) and not OVERWRITE:
+                    print(f"  Skipping {combo} (results already exist)")
+                    continue
+
                 print(f"  Running {combo}…", end="", flush=True)
-                feats = {}
-                for L in layers:
-                    arr = np.stack(activations[L], axis=0)
-                    k = min(PCA_K, arr.shape[1]) if isinstance(PCA_K, (int,float)) else arr.shape[1]
-                    pca = PCA(n_components=k,
-                              svd_solver="full" if isinstance(PCA_K,float) else "auto")
-                    feats[L] = pca.fit_transform(arr)
 
                 # original R²
-                r2_dict = {
-                    L: compute_r2_scores_with_model(feats[L], Y, reg)
-                    for L in layers
-                }
+                if isinstance(reg, LinearRegression) and not getattr(reg, 'positive', False):
+                    r2_dict = {L: compute_r2_linear_kfold(pca_feats[L], Y, k=CV) for L in layers}
+                elif getattr(reg, 'positive', False):  # NNLS
+                    r2_dict = {L: compute_r2_nnls_kfold(pca_feats[L], Y, k=CV) for L in layers}
+                else:
+                    r2_dict = {
+                        L: compute_r2_scores_with_model(pca_feats[L], Y, reg, dim_names=dim_names)
+                        for L in layers
+                    }
                 df_r2 = pd.DataFrame(r2_dict, columns=layers, index=dim_names)
                 df_r2.to_csv(
                     os.path.join(outd, f"r2_{model_name}_{ds}_{combo}_layers.csv"),
@@ -179,11 +280,11 @@ for ds in ["THINGS", "STUFF"]:
                         return compute_r2_scores_with_model(X, Yp, reg)
 
                     for L in layers:
-                        X = feats[L]
+                        X = pca_feats[L]
                         print(f"\n    → Layer {L}: starting permutation test")
                         layer_start = time.time()
 
-                        if isinstance(reg, (LinearRegression, Ridge)):
+                        if isinstance(reg, (LinearRegression, Ridge)) and not getattr(reg, 'positive', False):
                             # 1) pseudo-inverse
                             X_pinv = np.linalg.pinv(X)
 
@@ -199,7 +300,7 @@ for ds in ["THINGS", "STUFF"]:
                                 perm_idx[i] = rng.permutation(n_samples)
                             Yp_all = Y[perm_idx]  # shape (n_perm, n_samples, n_dims)
 
-                            # 4) solve all B’s & predict
+                            # 4) solve all B's & predict
                             B_all    = np.einsum('fn,pnd->pfd', X_pinv, Yp_all)
                             Yhat_all = np.einsum('nf,pfd->pnd',    X,    B_all)
 
@@ -209,8 +310,38 @@ for ds in ["THINGS", "STUFF"]:
                             # 6) R²
                             perms   = 1.0 - ss_res / ss_tot[None,:]
 
+                        elif getattr(reg, 'positive', False):
+                            n_samples, n_dims = Y.shape
+                            Y_mean_perm = Y.mean(axis=0)
+                            ss_tot_perm = np.maximum(((Y - Y_mean_perm) ** 2).sum(axis=0), 1e-10)
+
+                            # precompute XtX and step size once for all perms on this layer
+                            _XtX = X.T @ X
+                            _step = 1.0 / max(float(np.linalg.eigvalsh(_XtX)[-1]), 1e-12)
+
+                            def nnls_perm_batch(seeds):
+                                out = []
+                                for seed in seeds:
+                                    rs = np.random.RandomState(seed)
+                                    Yp = Y[rs.permutation(n_samples)]
+                                    B = _nnls_pgd(_XtX, X.T @ Yp, _step, max_iter=1000, tol=1e-6)
+                                    ss_res = ((Yp - X @ B) ** 2).sum(axis=0)
+                                    out.append(1.0 - ss_res / ss_tot_perm)
+                                return out
+
+                            n_workers = os.cpu_count() or 4
+                            chunk = max(1, n_perm // (n_workers * 4))
+                            batches = [list(range(i, min(i + chunk, n_perm)))
+                                       for i in range(0, n_perm, chunk)]
+                            # prefer threads: numpy releases the GIL, avoids pickling large arrays
+                            raw = Parallel(n_jobs=-1, prefer="threads")(
+                                delayed(nnls_perm_batch)(b)
+                                for b in tqdm(batches, desc=f"{L} NNLS-perms", leave=False)
+                            )
+                            perms = np.vstack([r for batch in raw for r in batch])
+
                         else:
-                            # fallback for SVR (or any non-linear regressor)
+                            # fallback for any non-linear regressor
                             def single_perm(X, Y, reg, seed):
                                 rs   = np.random.RandomState(seed)
                                 perm = rs.permutation(Y.shape[0])
@@ -221,7 +352,7 @@ for ds in ["THINGS", "STUFF"]:
                             seeds = list(range(n_perm))
                             perms = Parallel(n_jobs=-1)(
                                 delayed(single_perm)(X, Y, reg, seed)
-                                for seed in tqdm(seeds, desc=f"{L} SVR-perms", leave=False)
+                                for seed in tqdm(seeds, desc=f"{L} Ridge-perms", leave=False)
                             )
                             perms = np.vstack(perms)
 
@@ -258,6 +389,7 @@ for ds in ["THINGS", "STUFF"]:
                         )
 
                 print(" done.")
+                time.sleep(5)
         print(f"All {model_name} on {ds} done.")
     print(f"Finished dataset {ds}")
 

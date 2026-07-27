@@ -1,50 +1,50 @@
 dimension,p_value_fdr
-made of metal / artificial / hard,0.00020483708136421496
-food-related / eating-related / kitchen-related,0.00020483708136421496
-animal-related / organic,0.00020483708136421496
-clothing-related / fabric / covering,0.00020483708136421496
-furniture-related / household-related / artifact,0.00020483708136421496
-plant-related / green,0.00020483708136421496
-outdoors-related,0.00020483708136421496
-transportation / motorized / dynamic,0.00020483708136421496
-wood-related / brownish,0.00020483708136421496
-body part-related,0.00020483708136421496
-colorful,0.00020483708136421496
-valuable / special occasion-related,0.00020483708136421496
-electronic / technology,0.00020483708136421496
-sport-related / recreational activity-related,0.00020483708136421496
-disc-shaped / round,0.00020483708136421496
-tool-related,0.00020483708136421496
-many small things / course pattern,0.00020483708136421496
-paper-related / thin / flat / text-related,0.00020483708136421496
-fluid-related / drink-related,0.00020483708136421496
-long / thin,0.00020483708136421496
-water-related / blue,0.00020483708136421496
-powdery / fine-scale pattern,0.00020483708136421496
-red,0.00020483708136421496
-feminine (stereotypically) / decorative,0.00020483708136421496
-bathroom-related / sanitary,0.00020483708136421496
-black / noble,0.00020483708136421496
-weapon / danger-related / violence,0.00020483708136421496
-musical instrument-related / noise-related,0.00020483708136421496
-sky-related / flying-related / floating-related,0.00020483708136421496
-spherical / ellipsoid / rounded / voluminous,0.00020483708136421496
-repetitive,0.00020483708136421496
-flat / patterned,0.00020483708136421496
-white,0.00020483708136421496
-thin / flat,0.00020483708136421496
-disgusting / bugs,0.00020483708136421496
-string-related,0.00020483708136421496
-arms/legs/skin-related,0.00020483708136421496
-shiny / transparent,0.00020483708136421496
-construction-related / physical work-related,0.00020483708136421496
-fire-related / heat-related,0.00020483708136421496
-head-related / face-related,0.00020483708136421496
-beams-related,0.00020483708136421496
-seating-related / put things on top,0.027133034931475244
-container-related / hollow,0.00020483708136421496
-child-related / toy-related,0.012100495852801995
-medicine-related,0.005076704866280629
-has grating,0.1883623275344931
-handicraft-related,0.00020483708136421496
-cylindrical / conical,0.00020483708136421496
+made of metal / artificial / hard,1.0
+food-related / eating-related / kitchen-related,0.0016977242410768424
+animal-related / organic,1.0
+clothing-related / fabric / covering,1.0
+furniture-related / household-related / artifact,1.0
+plant-related / green,0.0016977242410768424
+outdoors-related,0.0016977242410768424
+transportation / motorized / dynamic,1.0
+wood-related / brownish,1.0
+body part-related,1.0
+colorful,0.0016977242410768424
+valuable / special occasion-related,1.0
+electronic / technology,1.0
+sport-related / recreational activity-related,1.0
+disc-shaped / round,1.0
+tool-related,1.0
+many small things / course pattern,1.0
+paper-related / thin / flat / text-related,1.0
+fluid-related / drink-related,1.0
+long / thin,1.0
+water-related / blue,1.0
+powdery / fine-scale pattern,1.0
+red,0.0016977242410768424
+feminine (stereotypically) / decorative,1.0
+bathroom-related / sanitary,1.0
+black / noble,1.0
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.0016977242410768424
+spherical / ellipsoid / rounded / voluminous,1.0
+repetitive,1.0
+flat / patterned,1.0
+white,1.0
+thin / flat,1.0
+disgusting / bugs,1.0
+string-related,1.0
+arms/legs/skin-related,1.0
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,1.0
+seating-related / put things on top,1.0
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,1.0
+handicraft-related,1.0
+cylindrical / conical,1.0

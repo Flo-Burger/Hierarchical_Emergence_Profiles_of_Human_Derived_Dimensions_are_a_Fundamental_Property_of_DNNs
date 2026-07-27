@@ -1,50 +1,50 @@
 dimension,p_value_raw
-made of metal / artificial / hard,0.0001999600079984003
-food-related / eating-related / kitchen-related,0.0001999600079984003
-animal-related / organic,0.0001999600079984003
-clothing-related / fabric / covering,0.0001999600079984003
-furniture-related / household-related / artifact,0.0001999600079984003
-plant-related / green,0.0001999600079984003
-outdoors-related,0.0001999600079984003
-transportation / motorized / dynamic,0.0001999600079984003
-wood-related / brownish,0.0001999600079984003
-body part-related,0.0001999600079984003
-colorful,0.0001999600079984003
-valuable / special occasion-related,0.0001999600079984003
-electronic / technology,0.0001999600079984003
-sport-related / recreational activity-related,0.0001999600079984003
-disc-shaped / round,0.0001999600079984003
-tool-related,0.0001999600079984003
-many small things / course pattern,0.0001999600079984003
-paper-related / thin / flat / text-related,0.0001999600079984003
-fluid-related / drink-related,0.0001999600079984003
-long / thin,0.0001999600079984003
-water-related / blue,0.0001999600079984003
-powdery / fine-scale pattern,0.0001999600079984003
-red,0.0001999600079984003
-feminine (stereotypically) / decorative,0.0001999600079984003
-bathroom-related / sanitary,0.0001999600079984003
-black / noble,0.0001999600079984003
-weapon / danger-related / violence,0.0001999600079984003
-musical instrument-related / noise-related,0.0001999600079984003
-sky-related / flying-related / floating-related,0.0001999600079984003
-spherical / ellipsoid / rounded / voluminous,0.0001999600079984003
-repetitive,0.0001999600079984003
-flat / patterned,0.0001999600079984003
-white,0.0001999600079984003
-thin / flat,0.0001999600079984003
-disgusting / bugs,0.0009998000399920016
-string-related,0.0001999600079984003
-arms/legs/skin-related,0.0005998800239952009
-shiny / transparent,0.0001999600079984003
-construction-related / physical work-related,0.0001999600079984003
-fire-related / heat-related,0.9976004799040192
-head-related / face-related,0.0001999600079984003
-beams-related,0.0001999600079984003
-seating-related / put things on top,0.6742651469706059
-container-related / hollow,0.01739652069586083
-child-related / toy-related,0.15436912617476506
-medicine-related,0.0647870425914817
-has grating,0.8420315936812638
-handicraft-related,0.0003999200159968006
-cylindrical / conical,0.0007998400319936012
+made of metal / artificial / hard,1.0
+food-related / eating-related / kitchen-related,0.000999000999000999
+animal-related / organic,0.03696303696303696
+clothing-related / fabric / covering,1.0
+furniture-related / household-related / artifact,1.0
+plant-related / green,0.000999000999000999
+outdoors-related,0.000999000999000999
+transportation / motorized / dynamic,1.0
+wood-related / brownish,1.0
+body part-related,1.0
+colorful,0.000999000999000999
+valuable / special occasion-related,1.0
+electronic / technology,1.0
+sport-related / recreational activity-related,1.0
+disc-shaped / round,1.0
+tool-related,1.0
+many small things / course pattern,0.9330669330669331
+paper-related / thin / flat / text-related,1.0
+fluid-related / drink-related,1.0
+long / thin,1.0
+water-related / blue,1.0
+powdery / fine-scale pattern,0.9340659340659341
+red,0.000999000999000999
+feminine (stereotypically) / decorative,1.0
+bathroom-related / sanitary,1.0
+black / noble,1.0
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.04995004995004995
+spherical / ellipsoid / rounded / voluminous,1.0
+repetitive,1.0
+flat / patterned,1.0
+white,1.0
+thin / flat,1.0
+disgusting / bugs,1.0
+string-related,1.0
+arms/legs/skin-related,1.0
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,1.0
+seating-related / put things on top,1.0
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,1.0
+handicraft-related,1.0
+cylindrical / conical,1.0

@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,0.0014908948919101204
+food-related / eating-related / kitchen-related,0.013821472645002057
+animal-related / organic,0.0014908948919101204
+clothing-related / fabric / covering,0.0014908948919101204
+furniture-related / household-related / artifact,0.0014908948919101204
+plant-related / green,0.0014908948919101204
+outdoors-related,0.0014908948919101204
+transportation / motorized / dynamic,0.0014908948919101204
+wood-related / brownish,0.0014908948919101204
+body part-related,0.0014908948919101204
+colorful,0.0014908948919101204
+valuable / special occasion-related,0.6257221039829736
+electronic / technology,0.0014908948919101204
+sport-related / recreational activity-related,0.0014908948919101204
+disc-shaped / round,1.0
+tool-related,0.0014908948919101204
+many small things / course pattern,0.0014908948919101204
+paper-related / thin / flat / text-related,0.0014908948919101204
+fluid-related / drink-related,0.008411636096600297
+long / thin,0.0014908948919101204
+water-related / blue,0.0014908948919101204
+powdery / fine-scale pattern,0.0014908948919101204
+red,0.0014908948919101204
+feminine (stereotypically) / decorative,0.0014908948919101204
+bathroom-related / sanitary,0.005661808071446626
+black / noble,0.0014908948919101204
+weapon / danger-related / violence,0.002907983106002908
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.0014908948919101204
+spherical / ellipsoid / rounded / voluminous,0.4817813765182187
+repetitive,0.0014908948919101204
+flat / patterned,0.0014908948919101204
+white,0.0014908948919101204
+thin / flat,0.0014908948919101204
+disgusting / bugs,0.0014908948919101204
+string-related,0.9823326778929317
+arms/legs/skin-related,0.45314685314685316
+shiny / transparent,0.10778212613074997
+construction-related / physical work-related,0.28914765943590776
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,0.0014908948919101204
+seating-related / put things on top,0.0014908948919101204
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,0.0014908948919101204
+handicraft-related,1.0
+cylindrical / conical,1.0

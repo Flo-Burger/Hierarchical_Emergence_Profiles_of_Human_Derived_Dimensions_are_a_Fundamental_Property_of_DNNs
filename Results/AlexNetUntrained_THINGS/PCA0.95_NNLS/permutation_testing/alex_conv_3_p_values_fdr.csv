@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,1.0
+food-related / eating-related / kitchen-related,0.004400094287734737
+animal-related / organic,0.004400094287734737
+clothing-related / fabric / covering,1.0
+furniture-related / household-related / artifact,0.02848061029879212
+plant-related / green,0.004400094287734737
+outdoors-related,0.004400094287734737
+transportation / motorized / dynamic,0.004400094287734737
+wood-related / brownish,0.004400094287734737
+body part-related,1.0
+colorful,0.004400094287734737
+valuable / special occasion-related,0.004400094287734737
+electronic / technology,1.0
+sport-related / recreational activity-related,1.0
+disc-shaped / round,1.0
+tool-related,1.0
+many small things / course pattern,0.004400094287734737
+paper-related / thin / flat / text-related,1.0
+fluid-related / drink-related,0.02848061029879212
+long / thin,0.03496503496503497
+water-related / blue,0.004400094287734737
+powdery / fine-scale pattern,0.004400094287734737
+red,0.004400094287734737
+feminine (stereotypically) / decorative,0.04767406506536941
+bathroom-related / sanitary,0.004400094287734737
+black / noble,0.004400094287734737
+weapon / danger-related / violence,0.6747306747306747
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,1.0
+spherical / ellipsoid / rounded / voluminous,0.23035787741670094
+repetitive,0.004400094287734737
+flat / patterned,0.004400094287734737
+white,0.004400094287734737
+thin / flat,0.004400094287734737
+disgusting / bugs,0.012366580787633419
+string-related,1.0
+arms/legs/skin-related,0.1243201243201243
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,0.9393644330353191
+seating-related / put things on top,0.09709298965497314
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,0.004400094287734737
+handicraft-related,1.0
+cylindrical / conical,0.16740511396999946

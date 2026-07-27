@@ -3,14 +3,10 @@
 # /…/Final_Code/layer_exctractions/feedforward_cornet.py
 # ─────────────────────────────────────────────────────────────────────────────
 
-import sys
 import torch
 from torchvision import transforms as T
 from PIL import Image
 from tqdm import tqdm
-
-# 1. point at your local CORnet checkout
-sys.path.append("/Users/22119216/Desktop/PhD_First_Year/Projects/Old_or_Random/Generative_EEG/CORnet")
 from cornet import cornet_rt
 
 def extract_recurrent_cornet_activations(images, device):
@@ -57,7 +53,7 @@ def extract_recurrent_cornet_activations(images, device):
         img = Image.fromarray(images[i].astype("uint8"))
         inp = preprocess(img).unsqueeze(0).to(device)
         with torch.no_grad():
-            _ = model(inp)
+            _ = core(inp)
         for L in layers:
             activations[L].append(cornet_temp[L])
 

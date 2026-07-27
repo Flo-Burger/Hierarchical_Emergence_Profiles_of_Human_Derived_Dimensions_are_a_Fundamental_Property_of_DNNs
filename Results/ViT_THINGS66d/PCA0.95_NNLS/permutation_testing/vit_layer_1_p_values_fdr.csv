@@ -1,0 +1,67 @@
+dimension,p_value_fdr
+metallic/artificial,0.004300047778308648
+food-related,0.004300047778308648
+animal-related,0.004300047778308648
+textile,0.004300047778308648
+plant-related,0.004300047778308648
+house-related/furnishing-related,0.004300047778308648
+valuable/precious,0.004300047778308648
+transportation-/movement-related,0.004300047778308648
+body-/people-related,0.004300047778308648
+wood-related/brown,0.004300047778308648
+electronics/technology,0.012427363212703527
+colorful/playful,0.004300047778308648
+outdoors,0.004300047778308648
+circular/round,0.004300047778308648
+paper-related/flat,0.004300047778308648
+sports-/playing-related,0.004300047778308648
+tools/handheld/elongated,0.5685742828599971
+fluid-related/drink-related,0.02028740490278952
+water-related,0.004300047778308648
+oriented/many things,0.004300047778308648
+powdery/earth-related,0.004300047778308648
+white,1.0
+coarse pattern/many things,0.004300047778308648
+red,0.004300047778308648
+long/thin,0.004300047778308648
+weapon-/danger-related,0.6350044804980428
+black,0.004300047778308648
+household,0.06846999154691462
+feminine (stereotypical),0.004300047778308648
+body part-related,0.004300047778308648
+tubular,1.0
+music-/hearing-/hobby-related/loud,0.5367671975601491
+grid-/grating-related,0.004300047778308648
+repetitive/spiky,0.004300047778308648
+construction-/craftsmanship-related,0.016313583323892603
+spherical/voluminous,0.012427363212703527
+string-related/curved,1.0
+seating-/standing-/lying-related,0.9598270581877139
+flying-/sky-related,0.004300047778308648
+bug-related/non-mammalian/disgusting,0.0463146609488073
+transparent/shiny/crystalline,0.2985014985014985
+sand-colored,0.004300047778308648
+green,0.004300047778308648
+bathroom-/wetness-related,1.0
+yellow,0.004300047778308648
+heat-/fire-/light-related,1.0
+beams-/mesh-related,0.004300047778308648
+foot-/walking-related,1.0
+box-related/container,0.2271062271062271
+stick-shaped/container,1.0
+head-related,0.004300047778308648
+upright/elongated/volumous,0.004300047778308648
+pointed/spiky,1.0
+child-/toy-related/cute,0.5597197562263064
+farm-related/historical,0.004300047778308648
+seeing-related,1.0
+medicine-/health-related,1.0
+sweet / dessert-related,0.07571375992428624
+orange,0.004300047778308648
+thin/flat/wrapping,1.0
+cylindrical/conical/cushioning,0.016313583323892603
+coldness-related/winter-related,0.7609071779284545
+measurement-related/numbers-related,1.0
+fluffy/soft,1.0
+masculine (stereotypical),1.0
+fine-grained pattern,0.004300047778308648

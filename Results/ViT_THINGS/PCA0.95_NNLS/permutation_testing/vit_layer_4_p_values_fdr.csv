@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,0.004625295963878642
+food-related / eating-related / kitchen-related,1.0
+animal-related / organic,0.004625295963878642
+clothing-related / fabric / covering,0.004625295963878642
+furniture-related / household-related / artifact,0.004625295963878642
+plant-related / green,0.004625295963878642
+outdoors-related,0.004625295963878642
+transportation / motorized / dynamic,0.004625295963878642
+wood-related / brownish,0.04023373886387585
+body part-related,0.004625295963878642
+colorful,0.004625295963878642
+valuable / special occasion-related,0.004625295963878642
+electronic / technology,0.004625295963878642
+sport-related / recreational activity-related,1.0
+disc-shaped / round,1.0
+tool-related,1.0
+many small things / course pattern,0.004625295963878642
+paper-related / thin / flat / text-related,0.004625295963878642
+fluid-related / drink-related,1.0
+long / thin,0.004625295963878642
+water-related / blue,1.0
+powdery / fine-scale pattern,0.004625295963878642
+red,0.004625295963878642
+feminine (stereotypically) / decorative,0.20819686642471452
+bathroom-related / sanitary,1.0
+black / noble,1.0
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,1.0
+spherical / ellipsoid / rounded / voluminous,1.0
+repetitive,0.008968131105535685
+flat / patterned,1.0
+white,0.004625295963878642
+thin / flat,1.0
+disgusting / bugs,1.0
+string-related,1.0
+arms/legs/skin-related,1.0
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,0.004625295963878642
+seating-related / put things on top,1.0
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,1.0
+handicraft-related,1.0
+cylindrical / conical,1.0

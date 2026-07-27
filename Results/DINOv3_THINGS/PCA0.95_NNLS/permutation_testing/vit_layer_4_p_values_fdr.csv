@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,0.00223350793692999
+food-related / eating-related / kitchen-related,1.0
+animal-related / organic,0.00223350793692999
+clothing-related / fabric / covering,0.00223350793692999
+furniture-related / household-related / artifact,0.00223350793692999
+plant-related / green,0.00223350793692999
+outdoors-related,0.00223350793692999
+transportation / motorized / dynamic,0.00223350793692999
+wood-related / brownish,0.06122867360652377
+body part-related,0.00223350793692999
+colorful,0.00223350793692999
+valuable / special occasion-related,1.0
+electronic / technology,0.00223350793692999
+sport-related / recreational activity-related,0.012195417039707697
+disc-shaped / round,1.0
+tool-related,0.06843641795098107
+many small things / course pattern,0.00223350793692999
+paper-related / thin / flat / text-related,0.00223350793692999
+fluid-related / drink-related,0.8049728049728049
+long / thin,0.00223350793692999
+water-related / blue,0.2389170462564958
+powdery / fine-scale pattern,0.008361745016549288
+red,0.00223350793692999
+feminine (stereotypically) / decorative,0.9500332070164471
+bathroom-related / sanitary,0.21982925050409713
+black / noble,1.0
+weapon / danger-related / violence,0.637222426696111
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.00223350793692999
+spherical / ellipsoid / rounded / voluminous,1.0
+repetitive,0.00223350793692999
+flat / patterned,0.00223350793692999
+white,0.00223350793692999
+thin / flat,0.9108195175610906
+disgusting / bugs,0.3602560581412545
+string-related,1.0
+arms/legs/skin-related,1.0
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,1.0
+beams-related,0.00223350793692999
+seating-related / put things on top,0.04488534721092861
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,0.008361745016549288
+handicraft-related,1.0
+cylindrical / conical,1.0

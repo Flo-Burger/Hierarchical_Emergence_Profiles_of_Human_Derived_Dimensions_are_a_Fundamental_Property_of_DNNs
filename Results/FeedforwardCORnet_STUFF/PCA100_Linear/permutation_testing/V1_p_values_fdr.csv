@@ -1,9 +1,9 @@
 dimension,p_value_fdr
-mineral,0.0007198560287942411
+mineral,1.0
 wood,1.0
 metallic,1.0
 fabric,1.0
-white colour,0.0007198560287942411
+white colour,1.0
 grainy,1.0
 crystalline,1.0
 "straw, fibrous",1.0

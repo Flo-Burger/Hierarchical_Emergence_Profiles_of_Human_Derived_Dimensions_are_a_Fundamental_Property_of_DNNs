@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,0.003300070715801053
+food-related / eating-related / kitchen-related,1.0
+animal-related / organic,1.0
+clothing-related / fabric / covering,0.003300070715801053
+furniture-related / household-related / artifact,0.003300070715801053
+plant-related / green,0.003300070715801053
+outdoors-related,0.003300070715801053
+transportation / motorized / dynamic,0.003300070715801053
+wood-related / brownish,0.003300070715801053
+body part-related,0.003300070715801053
+colorful,0.003300070715801053
+valuable / special occasion-related,0.003300070715801053
+electronic / technology,0.003300070715801053
+sport-related / recreational activity-related,0.061678321678321685
+disc-shaped / round,0.003300070715801053
+tool-related,0.003300070715801053
+many small things / course pattern,0.003300070715801053
+paper-related / thin / flat / text-related,0.003300070715801053
+fluid-related / drink-related,0.003300070715801053
+long / thin,0.003300070715801053
+water-related / blue,0.003300070715801053
+powdery / fine-scale pattern,1.0
+red,0.003300070715801053
+feminine (stereotypically) / decorative,0.003300070715801053
+bathroom-related / sanitary,1.0
+black / noble,0.003300070715801053
+weapon / danger-related / violence,1.0
+musical instrument-related / noise-related,1.0
+sky-related / flying-related / floating-related,0.003300070715801053
+spherical / ellipsoid / rounded / voluminous,0.1573928463880617
+repetitive,1.0
+flat / patterned,0.003300070715801053
+white,0.003300070715801053
+thin / flat,0.8713286713286713
+disgusting / bugs,1.0
+string-related,1.0
+arms/legs/skin-related,0.027679127155566946
+shiny / transparent,1.0
+construction-related / physical work-related,1.0
+fire-related / heat-related,1.0
+head-related / face-related,0.03347947389398167
+beams-related,0.003300070715801053
+seating-related / put things on top,0.030594405594405596
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,0.662401428358875
+handicraft-related,1.0
+cylindrical / conical,1.0

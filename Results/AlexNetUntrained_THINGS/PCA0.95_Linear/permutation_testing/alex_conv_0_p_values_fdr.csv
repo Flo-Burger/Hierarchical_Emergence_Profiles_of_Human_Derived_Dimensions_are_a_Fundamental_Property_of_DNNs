@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,0.0026107226107226107
+food-related / eating-related / kitchen-related,0.0026107226107226107
+animal-related / organic,0.018759683430342112
+clothing-related / fabric / covering,0.0026107226107226107
+furniture-related / household-related / artifact,0.0026107226107226107
+plant-related / green,0.0026107226107226107
+outdoors-related,0.0026107226107226107
+transportation / motorized / dynamic,0.0026107226107226107
+wood-related / brownish,0.0026107226107226107
+body part-related,1.0
+colorful,0.5814185814185814
+valuable / special occasion-related,0.1660079051383399
+electronic / technology,0.0026107226107226107
+sport-related / recreational activity-related,0.007388837577516823
+disc-shaped / round,1.0
+tool-related,0.04951370468611849
+many small things / course pattern,0.0026107226107226107
+paper-related / thin / flat / text-related,0.027642945290004113
+fluid-related / drink-related,0.034151894617010896
+long / thin,0.07964916439492711
+water-related / blue,0.0026107226107226107
+powdery / fine-scale pattern,0.007388837577516823
+red,0.0026107226107226107
+feminine (stereotypically) / decorative,0.0026107226107226107
+bathroom-related / sanitary,0.0026107226107226107
+black / noble,0.005119063942593354
+weapon / danger-related / violence,0.0026107226107226107
+musical instrument-related / noise-related,0.8125874125874126
+sky-related / flying-related / floating-related,0.0026107226107226107
+spherical / ellipsoid / rounded / voluminous,0.3356643356643356
+repetitive,1.0
+flat / patterned,0.0026107226107226107
+white,0.0026107226107226107
+thin / flat,0.0026107226107226107
+disgusting / bugs,1.0
+string-related,1.0
+arms/legs/skin-related,0.9441251817489442
+shiny / transparent,0.9273910169432558
+construction-related / physical work-related,1.0
+fire-related / heat-related,0.9741982155775258
+head-related / face-related,1.0
+beams-related,0.0026107226107226107
+seating-related / put things on top,0.49455698940235027
+container-related / hollow,1.0
+child-related / toy-related,1.0
+medicine-related,1.0
+has grating,1.0
+handicraft-related,1.0
+cylindrical / conical,0.5201362739824278
