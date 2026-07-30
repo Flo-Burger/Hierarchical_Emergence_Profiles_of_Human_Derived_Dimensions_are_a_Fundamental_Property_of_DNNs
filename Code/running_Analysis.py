@@ -369,7 +369,7 @@ for ds in ["THINGS66d", "THINGS", "STUFF"]:
                                     Yc_train = Yp_train - y_mean
                                     XtY_all  = np.einsum('nf,bnd->bfd', Xc_train, Yc_train)
 
-                                    B_all = _nnls_pgd_batch(XtX, XtY_all, step, max_iter=1000, tol=1e-6)
+                                    B_all = _nnls_pgd_batch(XtX, XtY_all, step, max_iter=200, tol=1e-4)
                                     pred  = np.einsum('nf,bfd->bnd', Xc_test, B_all) + y_mean
                                     ss_res[start:stop] += ((Yp_all[start:stop, test_idx, :] - pred) ** 2).sum(axis=1)
 
@@ -424,6 +424,8 @@ for ds in ["THINGS66d", "THINGS", "STUFF"]:
                         )
 
                 print(" done.")
+
+                # Added for memory reasons
                 time.sleep(5)
         print(f"All {model_name} on {ds} done.")
     print(f"Finished dataset {ds}")
