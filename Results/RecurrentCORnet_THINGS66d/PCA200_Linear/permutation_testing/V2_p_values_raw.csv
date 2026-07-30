@@ -1,46 +1,46 @@
 dimension,p_value_raw
-metallic/artificial,1.0
+metallic/artificial,0.000999000999000999
 food-related,0.000999000999000999
 animal-related,0.000999000999000999
-textile,1.0
-plant-related,0.002997002997002997
-house-related/furnishing-related,0.9660339660339661
+textile,0.46353646353646355
+plant-related,0.000999000999000999
+house-related/furnishing-related,0.000999000999000999
 valuable/precious,1.0
-transportation-/movement-related,1.0
-body-/people-related,1.0
-wood-related/brown,1.0
-electronics/technology,1.0
-colorful/playful,0.7312687312687313
-outdoors,0.013986013986013986
+transportation-/movement-related,0.000999000999000999
+body-/people-related,0.8421578421578422
+wood-related/brown,0.8091908091908092
+electronics/technology,0.3436563436563437
+colorful/playful,0.000999000999000999
+outdoors,0.000999000999000999
 circular/round,1.0
-paper-related/flat,1.0
+paper-related/flat,0.988011988011988
 sports-/playing-related,1.0
-tools/handheld/elongated,1.0
+tools/handheld/elongated,0.26073926073926074
 fluid-related/drink-related,1.0
 water-related,1.0
-oriented/many things,1.0
-powdery/earth-related,1.0
-white,1.0
-coarse pattern/many things,1.0
+oriented/many things,0.999000999000999
+powdery/earth-related,0.000999000999000999
+white,0.000999000999000999
+coarse pattern/many things,0.999000999000999
 red,0.000999000999000999
-long/thin,1.0
+long/thin,0.007992007992007992
 weapon-/danger-related,1.0
-black,1.0
+black,0.026973026973026972
 household,1.0
 feminine (stereotypical),1.0
-body part-related,1.0
+body part-related,0.6243756243756243
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,1.0
-repetitive/spiky,1.0
+grid-/grating-related,0.05194805194805195
+repetitive/spiky,0.8361638361638362
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
 seating-/standing-/lying-related,1.0
-flying-/sky-related,0.14985014985014986
+flying-/sky-related,0.000999000999000999
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,1.0
+sand-colored,0.7492507492507493
 green,0.000999000999000999
 bathroom-/wetness-related,1.0
 yellow,1.0

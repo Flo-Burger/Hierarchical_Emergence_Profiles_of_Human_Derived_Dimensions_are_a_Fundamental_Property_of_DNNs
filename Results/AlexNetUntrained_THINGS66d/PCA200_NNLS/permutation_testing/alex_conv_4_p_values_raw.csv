@@ -1,38 +1,38 @@
 dimension,p_value_raw
 metallic/artificial,1.0
 food-related,0.000999000999000999
-animal-related,1.0
+animal-related,0.973026973026973
 textile,1.0
 plant-related,0.000999000999000999
 house-related/furnishing-related,1.0
 valuable/precious,1.0
-transportation-/movement-related,1.0
+transportation-/movement-related,0.4835164835164835
 body-/people-related,1.0
-wood-related/brown,1.0
+wood-related/brown,0.3226773226773227
 electronics/technology,1.0
-colorful/playful,1.0
-outdoors,1.0
+colorful/playful,0.000999000999000999
+outdoors,0.998001998001998
 circular/round,1.0
 paper-related/flat,1.0
 sports-/playing-related,1.0
 tools/handheld/elongated,1.0
 fluid-related/drink-related,1.0
 water-related,1.0
-oriented/many things,1.0
+oriented/many things,0.9820179820179821
 powdery/earth-related,1.0
-white,1.0
-coarse pattern/many things,0.5504495504495505
+white,0.03296703296703297
+coarse pattern/many things,0.000999000999000999
 red,0.000999000999000999
 long/thin,1.0
 weapon-/danger-related,1.0
-black,0.004995004995004995
+black,0.000999000999000999
 household,1.0
 feminine (stereotypical),1.0
 body part-related,1.0
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,1.0
-repetitive/spiky,1.0
+grid-/grating-related,0.998001998001998
+repetitive/spiky,0.19080919080919082
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
@@ -40,7 +40,7 @@ seating-/standing-/lying-related,1.0
 flying-/sky-related,1.0
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,0.5184815184815185
+sand-colored,0.000999000999000999
 green,0.000999000999000999
 bathroom-/wetness-related,1.0
 yellow,0.000999000999000999

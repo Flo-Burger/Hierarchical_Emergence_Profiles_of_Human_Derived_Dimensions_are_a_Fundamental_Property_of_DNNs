@@ -1,36 +1,36 @@
 dimension,p_value_raw
-metallic/artificial,0.002997002997002997
+metallic/artificial,0.000999000999000999
 food-related,0.000999000999000999
-animal-related,0.004995004995004995
-textile,0.9430569430569431
+animal-related,0.001998001998001998
+textile,0.025974025974025976
 plant-related,0.000999000999000999
-house-related/furnishing-related,0.9170829170829171
-valuable/precious,1.0
-transportation-/movement-related,0.998001998001998
+house-related/furnishing-related,0.16983016983016982
+valuable/precious,0.3926073926073926
+transportation-/movement-related,0.6513486513486514
 body-/people-related,1.0
-wood-related/brown,0.13886113886113885
-electronics/technology,1.0
+wood-related/brown,0.004995004995004995
+electronics/technology,0.8901098901098901
 colorful/playful,1.0
-outdoors,0.003996003996003996
+outdoors,0.000999000999000999
 circular/round,1.0
-paper-related/flat,0.5794205794205795
+paper-related/flat,0.00999000999000999
 sports-/playing-related,1.0
-tools/handheld/elongated,1.0
+tools/handheld/elongated,0.961038961038961
 fluid-related/drink-related,1.0
 water-related,1.0
 oriented/many things,1.0
 powdery/earth-related,1.0
-white,1.0
+white,0.2597402597402597
 coarse pattern/many things,1.0
 red,0.000999000999000999
 long/thin,1.0
 weapon-/danger-related,1.0
 black,0.000999000999000999
 household,1.0
-feminine (stereotypical),1.0
+feminine (stereotypical),0.8631368631368631
 body part-related,1.0
 tubular,1.0
-music-/hearing-/hobby-related/loud,1.0
+music-/hearing-/hobby-related/loud,0.8931068931068931
 grid-/grating-related,1.0
 repetitive/spiky,1.0
 construction-/craftsmanship-related,1.0
@@ -43,7 +43,7 @@ transparent/shiny/crystalline,1.0
 sand-colored,0.000999000999000999
 green,0.000999000999000999
 bathroom-/wetness-related,1.0
-yellow,0.5594405594405595
+yellow,0.02097902097902098
 heat-/fire-/light-related,1.0
 beams-/mesh-related,1.0
 foot-/walking-related,1.0

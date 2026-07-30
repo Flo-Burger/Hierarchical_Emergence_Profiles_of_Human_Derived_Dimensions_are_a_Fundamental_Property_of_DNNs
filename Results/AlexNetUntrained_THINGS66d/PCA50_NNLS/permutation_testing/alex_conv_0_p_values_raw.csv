@@ -1,48 +1,48 @@
 dimension,p_value_raw
-metallic/artificial,1.0
+metallic/artificial,0.12887112887112886
 food-related,0.000999000999000999
 animal-related,0.000999000999000999
-textile,0.5004995004995005
+textile,0.003996003996003996
 plant-related,0.000999000999000999
-house-related/furnishing-related,0.04295704295704296
-valuable/precious,1.0
+house-related/furnishing-related,0.000999000999000999
+valuable/precious,0.04795204795204795
 transportation-/movement-related,1.0
 body-/people-related,1.0
 wood-related/brown,0.000999000999000999
-electronics/technology,1.0
+electronics/technology,0.942057942057942
 colorful/playful,1.0
 outdoors,0.000999000999000999
 circular/round,1.0
 paper-related/flat,0.000999000999000999
 sports-/playing-related,1.0
-tools/handheld/elongated,1.0
-fluid-related/drink-related,0.995004995004995
+tools/handheld/elongated,0.5154845154845155
+fluid-related/drink-related,1.0
 water-related,1.0
-oriented/many things,0.986013986013986
+oriented/many things,0.06793206793206794
 powdery/earth-related,1.0
 white,0.000999000999000999
 coarse pattern/many things,0.000999000999000999
 red,0.000999000999000999
 long/thin,1.0
 weapon-/danger-related,1.0
-black,0.002997002997002997
-household,0.5184815184815185
-feminine (stereotypical),0.01898101898101898
-body part-related,0.22377622377622378
+black,0.000999000999000999
+household,0.14185814185814186
+feminine (stereotypical),0.00999000999000999
+body part-related,0.18681318681318682
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
 grid-/grating-related,1.0
-repetitive/spiky,0.9690309690309691
+repetitive/spiky,0.13286713286713286
 construction-/craftsmanship-related,1.0
-spherical/voluminous,1.0
+spherical/voluminous,0.932067932067932
 string-related/curved,1.0
 seating-/standing-/lying-related,1.0
-flying-/sky-related,1.0
-bug-related/non-mammalian/disgusting,0.34565434565434566
-transparent/shiny/crystalline,0.9300699300699301
+flying-/sky-related,0.998001998001998
+bug-related/non-mammalian/disgusting,0.4115884115884116
+transparent/shiny/crystalline,0.6173826173826173
 sand-colored,0.000999000999000999
 green,0.000999000999000999
-bathroom-/wetness-related,0.06593406593406594
+bathroom-/wetness-related,0.09090909090909091
 yellow,0.000999000999000999
 heat-/fire-/light-related,1.0
 beams-/mesh-related,1.0
@@ -54,9 +54,9 @@ upright/elongated/volumous,1.0
 pointed/spiky,1.0
 child-/toy-related/cute,1.0
 farm-related/historical,1.0
-seeing-related,1.0
-medicine-/health-related,0.9630369630369631
-sweet / dessert-related,0.06793206793206794
+seeing-related,0.998001998001998
+medicine-/health-related,0.6623376623376623
+sweet / dessert-related,0.005994005994005994
 orange,0.000999000999000999
 thin/flat/wrapping,0.000999000999000999
 cylindrical/conical/cushioning,1.0

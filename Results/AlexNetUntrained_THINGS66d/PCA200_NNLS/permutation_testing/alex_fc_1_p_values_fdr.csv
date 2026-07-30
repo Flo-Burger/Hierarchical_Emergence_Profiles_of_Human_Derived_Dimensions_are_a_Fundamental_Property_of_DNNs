@@ -3,15 +3,15 @@ metallic/artificial,1.0
 food-related,1.0
 animal-related,1.0
 textile,1.0
-plant-related,1.0
+plant-related,0.007128007128007129
 house-related/furnishing-related,1.0
 valuable/precious,1.0
 transportation-/movement-related,1.0
 body-/people-related,1.0
 wood-related/brown,1.0
 electronics/technology,1.0
-colorful/playful,1.0
-outdoors,1.0
+colorful/playful,0.14816644030127177
+outdoors,0.031775453462200454
 circular/round,1.0
 paper-related/flat,1.0
 sports-/playing-related,1.0
@@ -20,9 +20,9 @@ fluid-related/drink-related,1.0
 water-related,1.0
 oriented/many things,1.0
 powdery/earth-related,1.0
-white,0.012266802964477384
-coarse pattern/many things,1.0
-red,0.1822177822177822
+white,0.007128007128007129
+coarse pattern/many things,0.5382372729311505
+red,0.007128007128007129
 long/thin,1.0
 weapon-/danger-related,1.0
 black,1.0
@@ -31,8 +31,8 @@ feminine (stereotypical),1.0
 body part-related,1.0
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,1.0
-repetitive/spiky,1.0
+grid-/grating-related,0.5382372729311505
+repetitive/spiky,0.6606209324655926
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
@@ -41,7 +41,7 @@ flying-/sky-related,1.0
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
 sand-colored,1.0
-green,0.012266802964477384
+green,0.007128007128007129
 bathroom-/wetness-related,1.0
 yellow,1.0
 heat-/fire-/light-related,1.0

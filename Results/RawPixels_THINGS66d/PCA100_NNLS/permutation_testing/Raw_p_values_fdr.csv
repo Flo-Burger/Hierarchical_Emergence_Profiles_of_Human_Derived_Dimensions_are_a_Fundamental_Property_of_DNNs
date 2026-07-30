@@ -1,9 +1,9 @@
 dimension,p_value_fdr
-metallic/artificial,1.0
-food-related,0.016483516483516484
-animal-related,1.0
+metallic/artificial,0.03296703296703297
+food-related,0.013186813186813187
+animal-related,0.18956043956043955
 textile,1.0
-plant-related,0.5274725274725275
+plant-related,0.013186813186813187
 house-related/furnishing-related,1.0
 valuable/precious,1.0
 transportation-/movement-related,1.0
@@ -22,10 +22,10 @@ oriented/many things,1.0
 powdery/earth-related,1.0
 white,1.0
 coarse pattern/many things,1.0
-red,0.016483516483516484
+red,0.013186813186813187
 long/thin,1.0
 weapon-/danger-related,1.0
-black,0.016483516483516484
+black,0.013186813186813187
 household,1.0
 feminine (stereotypical),1.0
 body part-related,1.0
@@ -40,8 +40,8 @@ seating-/standing-/lying-related,1.0
 flying-/sky-related,1.0
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,1.0
-green,0.016483516483516484
+sand-colored,0.5567765567765568
+green,0.013186813186813187
 bathroom-/wetness-related,1.0
 yellow,1.0
 heat-/fire-/light-related,1.0
@@ -57,7 +57,7 @@ farm-related/historical,1.0
 seeing-related,1.0
 medicine-/health-related,1.0
 sweet / dessert-related,1.0
-orange,1.0
+orange,0.10361067503924647
 thin/flat/wrapping,1.0
 cylindrical/conical/cushioning,1.0
 coldness-related/winter-related,1.0

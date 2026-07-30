@@ -1,16 +1,16 @@
 dimension,p_value_fdr
 metallic/artificial,1.0
-food-related,1.0
+food-related,0.0036630036630036634
 animal-related,1.0
 textile,1.0
 plant-related,1.0
-house-related/furnishing-related,1.0
+house-related/furnishing-related,0.8522845575477154
 valuable/precious,1.0
 transportation-/movement-related,1.0
-body-/people-related,1.0
+body-/people-related,0.22693585484283157
 wood-related/brown,1.0
 electronics/technology,1.0
-colorful/playful,1.0
+colorful/playful,0.0036630036630036634
 outdoors,1.0
 circular/round,1.0
 paper-related/flat,1.0
@@ -20,15 +20,15 @@ fluid-related/drink-related,1.0
 water-related,1.0
 oriented/many things,1.0
 powdery/earth-related,1.0
-white,0.006593406593406593
+white,0.0036630036630036634
 coarse pattern/many things,1.0
-red,0.006593406593406593
+red,0.0036630036630036634
 long/thin,1.0
 weapon-/danger-related,1.0
 black,1.0
 household,1.0
 feminine (stereotypical),1.0
-body part-related,1.0
+body part-related,0.0036630036630036634
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
 grid-/grating-related,1.0
@@ -40,8 +40,8 @@ seating-/standing-/lying-related,1.0
 flying-/sky-related,1.0
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,0.06746741630462562
-green,0.006593406593406593
+sand-colored,0.0036630036630036634
+green,0.0036630036630036634
 bathroom-/wetness-related,1.0
 yellow,1.0
 heat-/fire-/light-related,1.0

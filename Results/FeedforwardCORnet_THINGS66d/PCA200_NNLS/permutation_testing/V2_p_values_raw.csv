@@ -1,10 +1,10 @@
 dimension,p_value_raw
 metallic/artificial,1.0
-food-related,1.0
+food-related,0.000999000999000999
 animal-related,0.000999000999000999
 textile,1.0
 plant-related,0.000999000999000999
-house-related/furnishing-related,0.999000999000999
+house-related/furnishing-related,0.000999000999000999
 valuable/precious,1.0
 transportation-/movement-related,1.0
 body-/people-related,1.0
@@ -15,15 +15,15 @@ outdoors,0.000999000999000999
 circular/round,1.0
 paper-related/flat,1.0
 sports-/playing-related,1.0
-tools/handheld/elongated,1.0
+tools/handheld/elongated,0.21978021978021978
 fluid-related/drink-related,1.0
-water-related,1.0
-oriented/many things,1.0
-powdery/earth-related,0.9500499500499501
-white,1.0
-coarse pattern/many things,1.0
+water-related,0.999000999000999
+oriented/many things,0.08691308691308691
+powdery/earth-related,0.04895104895104895
+white,0.9600399600399601
+coarse pattern/many things,0.4885114885114885
 red,0.000999000999000999
-long/thin,1.0
+long/thin,0.957042957042957
 weapon-/danger-related,1.0
 black,1.0
 household,1.0
@@ -31,19 +31,19 @@ feminine (stereotypical),1.0
 body part-related,1.0
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,1.0
-repetitive/spiky,0.995004995004995
+grid-/grating-related,0.026973026973026972
+repetitive/spiky,0.4945054945054945
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
 seating-/standing-/lying-related,1.0
-flying-/sky-related,0.1038961038961039
+flying-/sky-related,0.007992007992007992
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
 sand-colored,1.0
 green,0.000999000999000999
 bathroom-/wetness-related,1.0
-yellow,1.0
+yellow,0.17782217782217782
 heat-/fire-/light-related,1.0
 beams-/mesh-related,1.0
 foot-/walking-related,1.0

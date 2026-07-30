@@ -1,17 +1,17 @@
 dimension,p_value_fdr
-metallic/artificial,1.0
-food-related,1.0
-animal-related,1.0
+metallic/artificial,0.0028057049333645077
+food-related,0.0028057049333645077
+animal-related,0.0028057049333645077
 textile,1.0
-plant-related,1.0
-house-related/furnishing-related,1.0
+plant-related,0.0028057049333645077
+house-related/furnishing-related,0.1267962806424345
 valuable/precious,1.0
 transportation-/movement-related,1.0
 body-/people-related,1.0
 wood-related/brown,1.0
 electronics/technology,1.0
-colorful/playful,1.0
-outdoors,1.0
+colorful/playful,0.0028057049333645077
+outdoors,0.0028057049333645077
 circular/round,1.0
 paper-related/flat,1.0
 sports-/playing-related,1.0
@@ -20,12 +20,12 @@ fluid-related/drink-related,1.0
 water-related,1.0
 oriented/many things,1.0
 powdery/earth-related,1.0
-white,1.0
+white,0.0028057049333645077
 coarse pattern/many things,1.0
-red,0.005171299288946348
+red,0.0028057049333645077
 long/thin,1.0
 weapon-/danger-related,1.0
-black,1.0
+black,0.0028057049333645077
 household,1.0
 feminine (stereotypical),1.0
 body part-related,1.0
@@ -37,11 +37,11 @@ construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
 seating-/standing-/lying-related,1.0
-flying-/sky-related,1.0
+flying-/sky-related,0.0028057049333645077
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,1.0
-green,0.005171299288946348
+sand-colored,0.11522458124399872
+green,0.0028057049333645077
 bathroom-/wetness-related,1.0
 yellow,1.0
 heat-/fire-/light-related,1.0

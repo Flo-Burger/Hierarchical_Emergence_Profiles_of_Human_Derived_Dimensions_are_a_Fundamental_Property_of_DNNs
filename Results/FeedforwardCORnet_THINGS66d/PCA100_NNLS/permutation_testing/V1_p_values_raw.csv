@@ -1,56 +1,56 @@
 dimension,p_value_raw
-metallic/artificial,1.0
+metallic/artificial,0.001998001998001998
 food-related,0.000999000999000999
-animal-related,0.7562437562437563
-textile,0.9170829170829171
+animal-related,0.09290709290709291
+textile,0.024975024975024976
 plant-related,0.000999000999000999
-house-related/furnishing-related,0.11688311688311688
-valuable/precious,1.0
-transportation-/movement-related,0.8661338661338661
+house-related/furnishing-related,0.000999000999000999
+valuable/precious,0.012987012987012988
+transportation-/movement-related,0.07492507492507493
 body-/people-related,1.0
-wood-related/brown,0.9760239760239761
-electronics/technology,0.27172827172827174
+wood-related/brown,0.2087912087912088
+electronics/technology,0.000999000999000999
 colorful/playful,0.000999000999000999
 outdoors,0.000999000999000999
 circular/round,1.0
-paper-related/flat,1.0
+paper-related/flat,0.6593406593406593
 sports-/playing-related,1.0
 tools/handheld/elongated,1.0
 fluid-related/drink-related,1.0
 water-related,1.0
-oriented/many things,0.00999000999000999
-powdery/earth-related,1.0
+oriented/many things,0.000999000999000999
+powdery/earth-related,0.995004995004995
 white,0.000999000999000999
 coarse pattern/many things,0.000999000999000999
 red,0.000999000999000999
-long/thin,1.0
+long/thin,0.5344655344655345
 weapon-/danger-related,1.0
-black,0.03696303696303696
+black,0.000999000999000999
 household,1.0
-feminine (stereotypical),0.995004995004995
+feminine (stereotypical),0.45754245754245754
 body part-related,1.0
 tubular,1.0
-music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,0.12687312687312688
+music-/hearing-/hobby-related/loud,0.6153846153846154
+grid-/grating-related,0.000999000999000999
 repetitive/spiky,0.000999000999000999
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
 seating-/standing-/lying-related,1.0
-flying-/sky-related,0.35064935064935066
+flying-/sky-related,0.07292707292707293
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,0.003996003996003996
+sand-colored,0.000999000999000999
 green,0.000999000999000999
 bathroom-/wetness-related,1.0
 yellow,0.000999000999000999
 heat-/fire-/light-related,1.0
-beams-/mesh-related,1.0
+beams-/mesh-related,0.5914085914085914
 foot-/walking-related,1.0
-box-related/container,1.0
+box-related/container,0.998001998001998
 stick-shaped/container,1.0
 head-related,1.0
-upright/elongated/volumous,0.5514485514485514
+upright/elongated/volumous,0.004995004995004995
 pointed/spiky,1.0
 child-/toy-related/cute,1.0
 farm-related/historical,1.0

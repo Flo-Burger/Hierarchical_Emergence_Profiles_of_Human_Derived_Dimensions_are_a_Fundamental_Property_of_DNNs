@@ -1,6 +1,6 @@
 dimension,p_value_raw
 metallic/artificial,1.0
-food-related,1.0
+food-related,0.993006993006993
 animal-related,1.0
 textile,1.0
 plant-related,1.0
@@ -20,12 +20,12 @@ fluid-related/drink-related,1.0
 water-related,1.0
 oriented/many things,1.0
 powdery/earth-related,1.0
-white,1.0
+white,0.004995004995004995
 coarse pattern/many things,1.0
-red,1.0
+red,0.000999000999000999
 long/thin,1.0
 weapon-/danger-related,1.0
-black,1.0
+black,0.9150849150849151
 household,1.0
 feminine (stereotypical),1.0
 body part-related,1.0
@@ -41,7 +41,7 @@ flying-/sky-related,1.0
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
 sand-colored,1.0
-green,1.0
+green,0.000999000999000999
 bathroom-/wetness-related,1.0
 yellow,1.0
 heat-/fire-/light-related,1.0

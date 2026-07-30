@@ -30,7 +30,7 @@ household,0.000999000999000999
 feminine (stereotypical),0.000999000999000999
 body part-related,0.000999000999000999
 tubular,0.000999000999000999
-music-/hearing-/hobby-related/loud,0.08091908091908091
+music-/hearing-/hobby-related/loud,0.000999000999000999
 grid-/grating-related,0.000999000999000999
 repetitive/spiky,0.000999000999000999
 construction-/craftsmanship-related,0.000999000999000999
@@ -42,26 +42,26 @@ bug-related/non-mammalian/disgusting,0.000999000999000999
 transparent/shiny/crystalline,0.000999000999000999
 sand-colored,0.000999000999000999
 green,0.000999000999000999
-bathroom-/wetness-related,0.5734265734265734
+bathroom-/wetness-related,0.000999000999000999
 yellow,0.000999000999000999
-heat-/fire-/light-related,1.0
+heat-/fire-/light-related,0.000999000999000999
 beams-/mesh-related,0.000999000999000999
-foot-/walking-related,0.025974025974025976
+foot-/walking-related,0.000999000999000999
 box-related/container,0.000999000999000999
 stick-shaped/container,0.000999000999000999
 head-related,0.000999000999000999
 upright/elongated/volumous,0.000999000999000999
-pointed/spiky,0.030969030969030968
-child-/toy-related/cute,1.0
+pointed/spiky,0.000999000999000999
+child-/toy-related/cute,0.000999000999000999
 farm-related/historical,0.000999000999000999
-seeing-related,0.7582417582417582
-medicine-/health-related,0.989010989010989
-sweet / dessert-related,0.00999000999000999
+seeing-related,0.000999000999000999
+medicine-/health-related,0.000999000999000999
+sweet / dessert-related,0.000999000999000999
 orange,0.000999000999000999
-thin/flat/wrapping,0.8461538461538461
-cylindrical/conical/cushioning,0.053946053946053944
-coldness-related/winter-related,1.0
+thin/flat/wrapping,0.000999000999000999
+cylindrical/conical/cushioning,0.000999000999000999
+coldness-related/winter-related,0.000999000999000999
 measurement-related/numbers-related,0.000999000999000999
 fluffy/soft,0.000999000999000999
-masculine (stereotypical),1.0
-fine-grained pattern,0.014985014985014986
+masculine (stereotypical),0.000999000999000999
+fine-grained pattern,0.000999000999000999

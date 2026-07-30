@@ -1,6 +1,6 @@
 dimension,p_value_raw
 metallic/artificial,1.0
-food-related,1.0
+food-related,0.14685314685314685
 animal-related,1.0
 textile,1.0
 plant-related,1.0
@@ -22,10 +22,10 @@ oriented/many things,1.0
 powdery/earth-related,1.0
 white,1.0
 coarse pattern/many things,1.0
-red,1.0
+red,0.002997002997002997
 long/thin,1.0
 weapon-/danger-related,1.0
-black,0.8181818181818182
+black,0.000999000999000999
 household,1.0
 feminine (stereotypical),1.0
 body part-related,1.0

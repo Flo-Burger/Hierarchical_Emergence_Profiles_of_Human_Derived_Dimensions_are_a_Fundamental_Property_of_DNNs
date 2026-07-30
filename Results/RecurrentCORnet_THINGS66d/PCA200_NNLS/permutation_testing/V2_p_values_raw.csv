@@ -1,37 +1,37 @@
 dimension,p_value_raw
-metallic/artificial,1.0
+metallic/artificial,0.000999000999000999
 food-related,1.0
 animal-related,1.0
-textile,1.0
+textile,0.000999000999000999
 plant-related,1.0
 house-related/furnishing-related,0.000999000999000999
 valuable/precious,1.0
-transportation-/movement-related,0.03796203796203796
-body-/people-related,1.0
-wood-related/brown,1.0
-electronics/technology,1.0
-colorful/playful,1.0
-outdoors,0.13286713286713286
+transportation-/movement-related,0.000999000999000999
+body-/people-related,0.15684315684315683
+wood-related/brown,0.948051948051948
+electronics/technology,0.08091908091908091
+colorful/playful,0.006993006993006993
+outdoors,0.000999000999000999
 circular/round,1.0
-paper-related/flat,1.0
+paper-related/flat,0.03696303696303696
 sports-/playing-related,1.0
-tools/handheld/elongated,0.987012987012987
+tools/handheld/elongated,0.000999000999000999
 fluid-related/drink-related,1.0
 water-related,1.0
-oriented/many things,1.0
-powdery/earth-related,1.0
-white,0.8411588411588412
+oriented/many things,0.5814185814185814
+powdery/earth-related,0.9560439560439561
+white,0.000999000999000999
 coarse pattern/many things,1.0
 red,0.000999000999000999
-long/thin,0.02097902097902098
+long/thin,0.000999000999000999
 weapon-/danger-related,1.0
-black,1.0
+black,0.052947052947052944
 household,1.0
 feminine (stereotypical),1.0
-body part-related,1.0
+body part-related,0.5874125874125874
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,0.985014985014985
+grid-/grating-related,0.004995004995004995
 repetitive/spiky,1.0
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
@@ -40,17 +40,17 @@ seating-/standing-/lying-related,1.0
 flying-/sky-related,0.000999000999000999
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,1.0
+sand-colored,0.0959040959040959
 green,0.000999000999000999
 bathroom-/wetness-related,1.0
 yellow,1.0
 heat-/fire-/light-related,1.0
-beams-/mesh-related,1.0
+beams-/mesh-related,0.7962037962037962
 foot-/walking-related,1.0
 box-related/container,1.0
 stick-shaped/container,1.0
 head-related,1.0
-upright/elongated/volumous,1.0
+upright/elongated/volumous,0.5844155844155844
 pointed/spiky,1.0
 child-/toy-related/cute,1.0
 farm-related/historical,1.0

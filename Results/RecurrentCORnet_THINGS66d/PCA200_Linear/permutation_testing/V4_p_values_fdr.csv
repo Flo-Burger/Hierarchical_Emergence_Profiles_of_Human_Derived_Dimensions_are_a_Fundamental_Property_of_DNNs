@@ -1,47 +1,47 @@
 dimension,p_value_fdr
-metallic/artificial,1.0
-food-related,0.005171299288946348
-animal-related,0.005171299288946348
-textile,1.0
-plant-related,0.005171299288946348
-house-related/furnishing-related,0.005171299288946348
+metallic/artificial,0.0028057049333645077
+food-related,0.0028057049333645077
+animal-related,0.0028057049333645077
+textile,0.0028057049333645077
+plant-related,0.0028057049333645077
+house-related/furnishing-related,0.0028057049333645077
 valuable/precious,1.0
-transportation-/movement-related,0.005171299288946348
-body-/people-related,0.014928467758656439
-wood-related/brown,1.0
-electronics/technology,1.0
-colorful/playful,0.005171299288946348
-outdoors,0.005171299288946348
-circular/round,1.0
-paper-related/flat,1.0
+transportation-/movement-related,0.0028057049333645077
+body-/people-related,0.0028057049333645077
+wood-related/brown,0.026373626373626374
+electronics/technology,0.0028057049333645077
+colorful/playful,0.0028057049333645077
+outdoors,0.0028057049333645077
+circular/round,0.0190325138778747
+paper-related/flat,0.0028057049333645077
 sports-/playing-related,1.0
-tools/handheld/elongated,1.0
+tools/handheld/elongated,0.0028057049333645077
 fluid-related/drink-related,1.0
 water-related,1.0
-oriented/many things,1.0
-powdery/earth-related,0.6258148631029987
-white,0.7177085209872095
-coarse pattern/many things,0.019536019536019536
-red,0.005171299288946348
-long/thin,1.0
+oriented/many things,0.0028057049333645077
+powdery/earth-related,0.0028057049333645077
+white,0.0028057049333645077
+coarse pattern/many things,0.0028057049333645077
+red,0.0028057049333645077
+long/thin,0.0028057049333645077
 weapon-/danger-related,1.0
-black,1.0
+black,0.0028057049333645077
 household,1.0
 feminine (stereotypical),1.0
-body part-related,0.15731636784268363
+body part-related,0.0028057049333645077
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,1.0
-repetitive/spiky,1.0
+grid-/grating-related,0.0028057049333645077
+repetitive/spiky,0.0028057049333645077
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
 seating-/standing-/lying-related,1.0
-flying-/sky-related,1.0
+flying-/sky-related,0.0028057049333645077
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,1.0
-green,0.005171299288946348
+sand-colored,0.0028057049333645077
+green,0.0028057049333645077
 bathroom-/wetness-related,1.0
 yellow,1.0
 heat-/fire-/light-related,1.0

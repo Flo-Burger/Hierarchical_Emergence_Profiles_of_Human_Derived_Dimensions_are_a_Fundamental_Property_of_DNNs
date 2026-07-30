@@ -1,17 +1,17 @@
 dimension,p_value_raw
-metallic/artificial,1.0
+metallic/artificial,0.002997002997002997
 food-related,0.000999000999000999
-animal-related,0.7062937062937062
+animal-related,0.022977022977022976
 textile,1.0
-plant-related,0.03996003996003996
+plant-related,0.000999000999000999
 house-related/furnishing-related,1.0
 valuable/precious,1.0
 transportation-/movement-related,1.0
 body-/people-related,1.0
-wood-related/brown,1.0
+wood-related/brown,0.988011988011988
 electronics/technology,1.0
 colorful/playful,1.0
-outdoors,1.0
+outdoors,0.4205794205794206
 circular/round,1.0
 paper-related/flat,1.0
 sports-/playing-related,1.0
@@ -40,10 +40,10 @@ seating-/standing-/lying-related,1.0
 flying-/sky-related,1.0
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,0.8851148851148851
+sand-colored,0.07592407592407592
 green,0.000999000999000999
 bathroom-/wetness-related,1.0
-yellow,1.0
+yellow,0.999000999000999
 heat-/fire-/light-related,1.0
 beams-/mesh-related,1.0
 foot-/walking-related,1.0
@@ -57,7 +57,7 @@ farm-related/historical,1.0
 seeing-related,1.0
 medicine-/health-related,1.0
 sweet / dessert-related,1.0
-orange,0.2757242757242757
+orange,0.01098901098901099
 thin/flat/wrapping,1.0
 cylindrical/conical/cushioning,1.0
 coldness-related/winter-related,1.0

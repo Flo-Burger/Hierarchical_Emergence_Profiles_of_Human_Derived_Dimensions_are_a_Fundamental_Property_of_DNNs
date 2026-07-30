@@ -1,51 +1,51 @@
 dimension,p_value_raw
-metallic/artificial,1.0
+metallic/artificial,0.000999000999000999
 food-related,0.000999000999000999
 animal-related,0.000999000999000999
-textile,1.0
+textile,0.000999000999000999
 plant-related,0.000999000999000999
 house-related/furnishing-related,0.000999000999000999
-valuable/precious,1.0
+valuable/precious,0.9920079920079921
 transportation-/movement-related,0.000999000999000999
-body-/people-related,0.002997002997002997
-wood-related/brown,1.0
-electronics/technology,1.0
+body-/people-related,0.000999000999000999
+wood-related/brown,0.00999000999000999
+electronics/technology,0.000999000999000999
 colorful/playful,0.000999000999000999
 outdoors,0.000999000999000999
-circular/round,1.0
-paper-related/flat,1.0
+circular/round,0.006993006993006993
+paper-related/flat,0.000999000999000999
 sports-/playing-related,1.0
-tools/handheld/elongated,1.0
-fluid-related/drink-related,1.0
+tools/handheld/elongated,0.000999000999000999
+fluid-related/drink-related,0.9630369630369631
 water-related,1.0
-oriented/many things,1.0
-powdery/earth-related,0.13986013986013987
-white,0.16583416583416583
-coarse pattern/many things,0.003996003996003996
+oriented/many things,0.000999000999000999
+powdery/earth-related,0.000999000999000999
+white,0.000999000999000999
+coarse pattern/many things,0.000999000999000999
 red,0.000999000999000999
-long/thin,0.994005994005994
+long/thin,0.000999000999000999
 weapon-/danger-related,1.0
-black,0.4115884115884116
-household,1.0
+black,0.000999000999000999
+household,0.998001998001998
 feminine (stereotypical),1.0
-body part-related,0.03396603396603397
+body part-related,0.000999000999000999
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,0.34965034965034963
-repetitive/spiky,0.9760239760239761
+grid-/grating-related,0.000999000999000999
+repetitive/spiky,0.000999000999000999
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
 seating-/standing-/lying-related,1.0
-flying-/sky-related,0.46553446553446554
+flying-/sky-related,0.000999000999000999
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
-sand-colored,1.0
+sand-colored,0.000999000999000999
 green,0.000999000999000999
 bathroom-/wetness-related,1.0
 yellow,1.0
 heat-/fire-/light-related,1.0
-beams-/mesh-related,1.0
+beams-/mesh-related,0.983016983016983
 foot-/walking-related,1.0
 box-related/container,1.0
 stick-shaped/container,1.0

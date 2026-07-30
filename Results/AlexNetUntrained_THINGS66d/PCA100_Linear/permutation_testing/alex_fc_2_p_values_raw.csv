@@ -1,43 +1,43 @@
 dimension,p_value_raw
-metallic/artificial,1.0
+metallic/artificial,0.000999000999000999
 food-related,0.000999000999000999
-animal-related,1.0
-textile,1.0
+animal-related,0.3306693306693307
+textile,0.9600399600399601
 plant-related,0.000999000999000999
-house-related/furnishing-related,1.0
+house-related/furnishing-related,0.000999000999000999
 valuable/precious,1.0
-transportation-/movement-related,0.46853146853146854
+transportation-/movement-related,0.000999000999000999
 body-/people-related,1.0
 wood-related/brown,1.0
 electronics/technology,1.0
 colorful/playful,0.000999000999000999
-outdoors,0.9820179820179821
+outdoors,0.000999000999000999
 circular/round,1.0
 paper-related/flat,1.0
 sports-/playing-related,1.0
-tools/handheld/elongated,1.0
+tools/handheld/elongated,0.059940059940059943
 fluid-related/drink-related,1.0
-water-related,1.0
-oriented/many things,1.0
-powdery/earth-related,1.0
+water-related,0.17182817182817184
+oriented/many things,0.37362637362637363
+powdery/earth-related,0.006993006993006993
 white,0.000999000999000999
-coarse pattern/many things,0.8851148851148851
+coarse pattern/many things,0.000999000999000999
 red,0.000999000999000999
-long/thin,1.0
+long/thin,0.8421578421578422
 weapon-/danger-related,1.0
 black,0.000999000999000999
 household,1.0
-feminine (stereotypical),1.0
-body part-related,1.0
+feminine (stereotypical),0.998001998001998
+body part-related,0.36663336663336665
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,0.0919080919080919
-repetitive/spiky,0.3156843156843157
+grid-/grating-related,0.000999000999000999
+repetitive/spiky,0.000999000999000999
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
 seating-/standing-/lying-related,1.0
-flying-/sky-related,0.7302697302697303
+flying-/sky-related,0.002997002997002997
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
 sand-colored,0.000999000999000999
@@ -45,7 +45,7 @@ green,0.000999000999000999
 bathroom-/wetness-related,1.0
 yellow,0.000999000999000999
 heat-/fire-/light-related,1.0
-beams-/mesh-related,1.0
+beams-/mesh-related,0.999000999000999
 foot-/walking-related,1.0
 box-related/container,1.0
 stick-shaped/container,1.0

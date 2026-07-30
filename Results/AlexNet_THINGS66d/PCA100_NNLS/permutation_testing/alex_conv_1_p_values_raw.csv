@@ -1,22 +1,22 @@
 dimension,p_value_raw
-metallic/artificial,1.0
+metallic/artificial,0.000999000999000999
 food-related,0.000999000999000999
 animal-related,0.000999000999000999
-textile,1.0
+textile,0.6023976023976024
 plant-related,0.000999000999000999
-house-related/furnishing-related,0.9660339660339661
-valuable/precious,1.0
-transportation-/movement-related,0.906093906093906
-body-/people-related,1.0
+house-related/furnishing-related,0.000999000999000999
+valuable/precious,0.060939060939060936
+transportation-/movement-related,0.025974025974025976
+body-/people-related,0.38161838161838163
 wood-related/brown,0.000999000999000999
-electronics/technology,1.0
+electronics/technology,0.9760239760239761
 colorful/playful,1.0
-outdoors,1.0
+outdoors,0.4195804195804196
 circular/round,1.0
-paper-related/flat,1.0
+paper-related/flat,0.7082917082917083
 sports-/playing-related,1.0
-tools/handheld/elongated,1.0
-fluid-related/drink-related,1.0
+tools/handheld/elongated,0.0999000999000999
+fluid-related/drink-related,0.991008991008991
 water-related,1.0
 oriented/many things,1.0
 powdery/earth-related,0.000999000999000999
@@ -26,29 +26,29 @@ red,0.000999000999000999
 long/thin,1.0
 weapon-/danger-related,1.0
 black,0.000999000999000999
-household,1.0
-feminine (stereotypical),1.0
+household,0.44155844155844154
+feminine (stereotypical),0.057942057942057944
 body part-related,0.000999000999000999
 tubular,1.0
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,1.0
-repetitive/spiky,1.0
+grid-/grating-related,0.008991008991008992
+repetitive/spiky,0.000999000999000999
 construction-/craftsmanship-related,1.0
 spherical/voluminous,1.0
 string-related/curved,1.0
 seating-/standing-/lying-related,1.0
-flying-/sky-related,0.903096903096903
+flying-/sky-related,0.03196803196803197
 bug-related/non-mammalian/disgusting,1.0
 transparent/shiny/crystalline,1.0
 sand-colored,0.000999000999000999
-green,0.942057942057942
-bathroom-/wetness-related,1.0
-yellow,0.0989010989010989
+green,0.00999000999000999
+bathroom-/wetness-related,0.9010989010989011
+yellow,0.000999000999000999
 heat-/fire-/light-related,1.0
-beams-/mesh-related,1.0
+beams-/mesh-related,0.99000999000999
 foot-/walking-related,1.0
 box-related/container,1.0
-stick-shaped/container,1.0
+stick-shaped/container,0.995004995004995
 head-related,1.0
 upright/elongated/volumous,1.0
 pointed/spiky,1.0
@@ -56,10 +56,10 @@ child-/toy-related/cute,1.0
 farm-related/historical,1.0
 seeing-related,1.0
 medicine-/health-related,1.0
-sweet / dessert-related,1.0
+sweet / dessert-related,0.34865134865134867
 orange,0.000999000999000999
 thin/flat/wrapping,1.0
-cylindrical/conical/cushioning,1.0
+cylindrical/conical/cushioning,0.24575424575424576
 coldness-related/winter-related,1.0
 measurement-related/numbers-related,1.0
 fluffy/soft,1.0

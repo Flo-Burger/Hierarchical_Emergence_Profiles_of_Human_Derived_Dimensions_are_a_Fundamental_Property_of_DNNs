@@ -13,10 +13,9 @@ from statsmodels.stats.multitest import multipletests
 import pandas as pd
 from tqdm import tqdm
 
-from sklearn.linear_model import LinearRegression, Ridge, Lasso
+from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.model_selection import cross_val_score, KFold
 from sklearn.decomposition import PCA
-from scipy.optimize import nnls as scipy_nnls
 
 from joblib import Parallel, delayed
 from PIL import Image
@@ -40,18 +39,13 @@ REGRESSORS = {
 }
 
 CV = 10 # Cross-validation splits for each prediction
-
 # Permutation testing is computationally expensive
 run_permutation = True
 n_perm            = 1000
+
+
 alpha_thresh      = 0.05   # FDR threshold
 
-
-# which dims to label (0-based) per dataset (kept for compatibility if you use elsewhere)
-SELECTED_DIMS_MAP = {
-    "THINGS": [2, 12, 22, 34, 45],
-    "STUFF":  [0, 4, 23, 33]
-}
 
 # Paths
 SCRIPT_DIR   = os.path.dirname(os.path.abspath(__file__))
@@ -106,15 +100,24 @@ def compute_r2_scores_with_model(X, Y, reg, dim_names=None):
     return out
 
 
-def compute_r2_linear_kfold(X, Y, k=10):
-    """Vectorized K-fold CV for multi-output OLS — solves all dims per fold."""
+def compute_r2_linear_kfold(X, Y, k=10, alpha=0.0):
+    """Vectorized K-fold CV for multi-output OLS/Ridge (with intercept) — solves all dims per fold.
+    alpha=0 -> OLS, alpha>0 -> Ridge (centered normal equations, same as sklearn Ridge)."""
     kf = KFold(n_splits=k, shuffle=False)
     Y_mean = Y.mean(axis=0)
     ss_res = np.zeros(Y.shape[1])
     ss_tot = np.zeros(Y.shape[1])
+    p = X.shape[1]
     for train_idx, test_idx in kf.split(X):
-        B, _, _, _ = np.linalg.lstsq(X[train_idx], Y[train_idx], rcond=None)
-        pred = X[test_idx] @ B
+        x_mean = X[train_idx].mean(axis=0)
+        y_mean = Y[train_idx].mean(axis=0)
+        Xc = X[train_idx] - x_mean
+        Yc = Y[train_idx] - y_mean
+        if alpha == 0.0:
+            B, _, _, _ = np.linalg.lstsq(Xc, Yc, rcond=None)
+        else:
+            B = np.linalg.solve(Xc.T @ Xc + alpha * np.eye(p), Xc.T @ Yc)
+        pred = (X[test_idx] - x_mean) @ B + y_mean
         ss_res += ((Y[test_idx] - pred) ** 2).sum(axis=0)
         ss_tot += ((Y[test_idx] - Y_mean) ** 2).sum(axis=0)
     return 1.0 - ss_res / np.maximum(ss_tot, 1e-10)
@@ -139,18 +142,37 @@ def _nnls_pgd(XtX, XtY, step, max_iter=3000, tol=1e-8):
     return B
 
 
+def _nnls_pgd_batch(XtX, XtY_all, step, max_iter=3000, tol=1e-8):
+    """Same as _nnls_pgd but for a batch of right-hand sides sharing the same XtX.
+    XtX: (p,p), XtY_all: (batch,p,d) -> B_all: (batch,p,d) with B_all >= 0."""
+    B = np.zeros_like(XtY_all)
+    B_prev = B.copy()
+    t = 1.0
+    for _ in range(max_iter):
+        t_new = 0.5 * (1.0 + np.sqrt(1.0 + 4.0 * t * t))
+        M = B + ((t - 1.0) / t_new) * (B - B_prev)
+        B_new = np.maximum(M - step * (np.einsum('pq,bqd->bpd', XtX, M) - XtY_all), 0.0)
+        if np.linalg.norm(B_new - B) < tol * max(1.0, np.linalg.norm(B_new)):
+            return B_new
+        B_prev, B, t = B, B_new, t_new
+    return B
+
+
 def compute_r2_nnls_kfold(X, Y, k=10):
-    """Vectorized K-fold CV for multi-output NNLS — solves all dims per fold."""
+    """Vectorized K-fold CV for multi-output NNLS (with intercept) — solves all dims per fold."""
     kf = KFold(n_splits=k, shuffle=False)
     Y_mean = Y.mean(axis=0)
     ss_res = np.zeros(Y.shape[1])
     ss_tot = np.zeros(Y.shape[1])
     for train_idx, test_idx in kf.split(X):
-        Xtr = X[train_idx]
-        XtX = Xtr.T @ Xtr
+        x_mean = X[train_idx].mean(axis=0)
+        y_mean = Y[train_idx].mean(axis=0)
+        Xc = X[train_idx] - x_mean
+        Yc = Y[train_idx] - y_mean
+        XtX = Xc.T @ Xc
         step = 1.0 / max(float(np.linalg.eigvalsh(XtX)[-1]), 1e-12)
-        B = _nnls_pgd(XtX, Xtr.T @ Y[train_idx], step)
-        pred = X[test_idx] @ B
+        B = _nnls_pgd(XtX, Xc.T @ Yc, step)
+        pred = (X[test_idx] - x_mean) @ B + y_mean
         ss_res += ((Y[test_idx] - pred) ** 2).sum(axis=0)
         ss_tot += ((Y[test_idx] - Y_mean) ** 2).sum(axis=0)
     return 1.0 - ss_res / np.maximum(ss_tot, 1e-10)
@@ -206,9 +228,6 @@ for ds in ["THINGS66d", "THINGS", "STUFF"]:
     print(f"Using device: {device}")
     torch.manual_seed(42); np.random.seed(42)
 
-    # kept in case used downstream
-    selected_dims = SELECTED_DIMS_MAP.get(ds, [])
-
     reached_start = (START_FROM_MODEL is None)
     for model_name, extract_fn in MODEL_EXTRACTORS.items():
         if not reached_start:
@@ -251,8 +270,10 @@ for ds in ["THINGS66d", "THINGS", "STUFF"]:
                 print(f"  Running {combo}…", end="", flush=True)
 
                 # original R²
-                if isinstance(reg, LinearRegression) and not getattr(reg, 'positive', False):
-                    r2_dict = {L: compute_r2_linear_kfold(pca_feats[L], Y, k=CV) for L in layers}
+                if isinstance(reg, (LinearRegression, Ridge)) and not getattr(reg, 'positive', False):
+                    # alpha=0 for Linear, reg.alpha for Ridge
+                    alpha = getattr(reg, 'alpha', 0.0)
+                    r2_dict = {L: compute_r2_linear_kfold(pca_feats[L], Y, k=CV, alpha=alpha) for L in layers}
                 elif getattr(reg, 'positive', False):  # NNLS
                     r2_dict = {L: compute_r2_nnls_kfold(pca_feats[L], Y, k=CV) for L in layers}
                 else:
@@ -273,72 +294,86 @@ for ds in ["THINGS66d", "THINGS", "STUFF"]:
                     os.makedirs(perm_folder, exist_ok=True)
                     pvals_raw = {}
 
-                    def single_perm(X, Y, reg, seed):
-                        rs = np.random.RandomState(seed)
-                        perm = rs.permutation(Y.shape[0])
-                        Yp   = Y[perm]
-                        return compute_r2_scores_with_model(X, Yp, reg)
-
                     for L in layers:
                         X = pca_feats[L]
                         print(f"\n    → Layer {L}: starting permutation test")
                         layer_start = time.time()
 
                         if isinstance(reg, (LinearRegression, Ridge)) and not getattr(reg, 'positive', False):
-                            # 1) pseudo-inverse
-                            X_pinv = np.linalg.pinv(X)
-
-                            # 2) total SS
-                            Y_mean = Y.mean(axis=0, keepdims=True)
-                            ss_tot = ((Y - Y_mean)**2).sum(axis=0)
-
-                            # 3) generate all permuted Ys with a progress bar
+                            alpha = getattr(reg, 'alpha', 0.0)
                             n_samples, n_dims = Y.shape
+
+                            # global mean, same for every permutation
+                            Y_mean_global = Y.mean(axis=0, keepdims=True)
+                            ss_tot = ((Y - Y_mean_global) ** 2).sum(axis=0)
+
+                            # generate all permuted Ys with a progress bar
                             rng = np.random.RandomState(42)
                             perm_idx = np.empty((n_perm, n_samples), dtype=int)
                             for i in tqdm(range(n_perm), desc=f"{L} perm-idx", leave=False):
                                 perm_idx[i] = rng.permutation(n_samples)
                             Yp_all = Y[perm_idx]  # shape (n_perm, n_samples, n_dims)
 
-                            # 4) solve all B's & predict
-                            B_all    = np.einsum('fn,pnd->pfd', X_pinv, Yp_all)
-                            Yhat_all = np.einsum('nf,pfd->pnd',    X,    B_all)
+                            # null via k-fold CV (not in-sample), same folds as the true R²
+                            kf = KFold(n_splits=CV, shuffle=False)
+                            ss_res = np.zeros((n_perm, n_dims))
+                            p = X.shape[1]
+                            perm_chunk = 100
+                            for train_idx, test_idx in tqdm(list(kf.split(X)), desc=f"{L} {reg_name}-perm-folds", leave=False):
+                                x_mean   = X[train_idx].mean(axis=0)
+                                Xc_train = X[train_idx] - x_mean
+                                Xc_test  = X[test_idx]  - x_mean
+                                if alpha == 0:
+                                    pinv = np.linalg.pinv(Xc_train)
+                                else:
+                                    pinv = np.linalg.solve(Xc_train.T @ Xc_train + alpha * np.eye(p), Xc_train.T)
 
-                            # 5) residual SS
-                            ss_res = ((Yp_all - Yhat_all)**2).sum(axis=1)
+                                for start in range(0, n_perm, perm_chunk):
+                                    stop = min(start + perm_chunk, n_perm)
+                                    Yp_train = Yp_all[start:stop, train_idx, :]
+                                    y_mean   = Yp_train.mean(axis=1, keepdims=True)
+                                    Yc_train = Yp_train - y_mean
 
-                            # 6) R²
-                            perms   = 1.0 - ss_res / ss_tot[None,:]
+                                    B_all = np.einsum('fn,bnd->bfd', pinv, Yc_train)
+                                    pred  = np.einsum('nf,bfd->bnd', Xc_test, B_all) + y_mean
+                                    ss_res[start:stop] += ((Yp_all[start:stop, test_idx, :] - pred) ** 2).sum(axis=1)
+
+                            perms = 1.0 - ss_res / ss_tot[None, :]
 
                         elif getattr(reg, 'positive', False):
                             n_samples, n_dims = Y.shape
-                            Y_mean_perm = Y.mean(axis=0)
-                            ss_tot_perm = np.maximum(((Y - Y_mean_perm) ** 2).sum(axis=0), 1e-10)
+                            Y_mean_global = Y.mean(axis=0, keepdims=True)
+                            ss_tot = np.maximum(((Y - Y_mean_global) ** 2).sum(axis=0), 1e-10)
 
-                            # precompute XtX and step size once for all perms on this layer
-                            _XtX = X.T @ X
-                            _step = 1.0 / max(float(np.linalg.eigvalsh(_XtX)[-1]), 1e-12)
+                            rng = np.random.RandomState(42)
+                            perm_idx = np.empty((n_perm, n_samples), dtype=int)
+                            for i in tqdm(range(n_perm), desc=f"{L} perm-idx", leave=False):
+                                perm_idx[i] = rng.permutation(n_samples)
+                            Yp_all = Y[perm_idx]  # shape (n_perm, n_samples, n_dims)
 
-                            def nnls_perm_batch(seeds):
-                                out = []
-                                for seed in seeds:
-                                    rs = np.random.RandomState(seed)
-                                    Yp = Y[rs.permutation(n_samples)]
-                                    B = _nnls_pgd(_XtX, X.T @ Yp, _step, max_iter=1000, tol=1e-6)
-                                    ss_res = ((Yp - X @ B) ** 2).sum(axis=0)
-                                    out.append(1.0 - ss_res / ss_tot_perm)
-                                return out
+                            # same k-fold CV null as above, solved via batched PGD
+                            kf = KFold(n_splits=CV, shuffle=False)
+                            ss_res = np.zeros((n_perm, n_dims))
+                            perm_chunk = 100
+                            for train_idx, test_idx in tqdm(list(kf.split(X)), desc=f"{L} NNLS-perm-folds", leave=False):
+                                x_mean   = X[train_idx].mean(axis=0)
+                                Xc_train = X[train_idx] - x_mean
+                                Xc_test  = X[test_idx]  - x_mean
+                                XtX  = Xc_train.T @ Xc_train
+                                step = 1.0 / max(float(np.linalg.eigvalsh(XtX)[-1]), 1e-12)
 
-                            n_workers = os.cpu_count() or 4
-                            chunk = max(1, n_perm // (n_workers * 4))
-                            batches = [list(range(i, min(i + chunk, n_perm)))
-                                       for i in range(0, n_perm, chunk)]
-                            # prefer threads: numpy releases the GIL, avoids pickling large arrays
-                            raw = Parallel(n_jobs=-1, prefer="threads")(
-                                delayed(nnls_perm_batch)(b)
-                                for b in tqdm(batches, desc=f"{L} NNLS-perms", leave=False)
-                            )
-                            perms = np.vstack([r for batch in raw for r in batch])
+                                for start in range(0, n_perm, perm_chunk):
+                                    stop = min(start + perm_chunk, n_perm)
+                                    Yp_train = Yp_all[start:stop, train_idx, :]
+                                    y_mean   = Yp_train.mean(axis=1, keepdims=True)
+                                    Yc_train = Yp_train - y_mean
+                                    XtY_all  = np.einsum('nf,bnd->bfd', Xc_train, Yc_train)
+
+                                    B_all = _nnls_pgd_batch(XtX, XtY_all, step, max_iter=1000, tol=1e-6)
+                                    pred  = np.einsum('nf,bfd->bnd', Xc_test, B_all) + y_mean
+                                    ss_res[start:stop] += ((Yp_all[start:stop, test_idx, :] - pred) ** 2).sum(axis=1)
+
+                            perms = 1.0 - ss_res / ss_tot[None, :]
 
                         else:
                             # fallback for any non-linear regressor
