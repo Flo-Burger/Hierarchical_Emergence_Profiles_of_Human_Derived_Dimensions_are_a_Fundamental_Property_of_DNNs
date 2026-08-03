@@ -30,22 +30,28 @@ START_FROM_MODEL = None  # set to None to run all models
 
 OVERWRITE = True  # set to True to recompute and overwrite existing results
 
-PCA_COMPONENTS_LIST = [0.95, 50, 100, 200]
+PCA_COMPONENTS_LIST = [0.95]
 
 REGRESSORS = {
-    "Linear": LinearRegression(),
+    # "Linear": LinearRegression(),
     "Ridge":  Ridge(alpha=1.0),
-    "NNLS":   LinearRegression(positive=True),
+    # "NNLS":   LinearRegression(positive=True),
 }
 
 CV = 10 # Cross-validation splits for each prediction
 # Permutation testing is computationally expensive
 run_permutation = True
-n_perm            = 1000
-
-
+n_perm            = 5000
 alpha_thresh      = 0.05   # FDR threshold
 
+# Ridge regularization strength is no longer fixed. It is selected via
+# closed-form leave-one-out CV on the training fold only (nested CV), so it
+# never sees the outer test fold and gets re-selected independently for every
+# permutation. This grid was validated empirically on THINGS/RawPixels+CORnet-Z:
+# a narrower grid caused alpha to hit the upper bound for the majority of
+# (fold, dimension) pairs on high-dimensional layers, which silently capped
+# regularization strength and produced badly overfit (strongly negative) R².
+RIDGE_ALPHA_GRID = np.logspace(-1, 7, 20)
 
 # Paths
 SCRIPT_DIR   = os.path.dirname(os.path.abspath(__file__))
@@ -118,6 +124,47 @@ def compute_r2_linear_kfold(X, Y, k=10, alpha=0.0):
         else:
             B = np.linalg.solve(Xc.T @ Xc + alpha * np.eye(p), Xc.T @ Yc)
         pred = (X[test_idx] - x_mean) @ B + y_mean
+        ss_res += ((Y[test_idx] - pred) ** 2).sum(axis=0)
+        ss_tot += ((Y[test_idx] - Y_mean) ** 2).sum(axis=0)
+    return 1.0 - ss_res / np.maximum(ss_tot, 1e-10)
+
+
+def compute_r2_ridge_loo_kfold(X, Y, k=10, alphas=RIDGE_ALPHA_GRID):
+    """Vectorized K-fold CV for multi-output Ridge where alpha is selected per
+    fold, per output dimension, via closed-form leave-one-out CV on the
+    training fold only (nested CV — LOO never touches the outer test fold).
+    Uses the SVD's natural rank truncation, so it is correct even when the
+    fold's training size is smaller than the number of PCA components."""
+    kf = KFold(n_splits=k, shuffle=False)
+    Y_mean = Y.mean(axis=0)
+    ss_res = np.zeros(Y.shape[1])
+    ss_tot = np.zeros(Y.shape[1])
+    K = len(alphas)
+    for train_idx, test_idx in kf.split(X):
+        x_mean = X[train_idx].mean(axis=0)
+        y_mean = Y[train_idx].mean(axis=0)
+        Xc_train = X[train_idx] - x_mean
+        Xc_test  = X[test_idx]  - x_mean
+        Yc_train = Y[train_idx] - y_mean
+
+        U, S, Vt = np.linalg.svd(Xc_train, full_matrices=False)
+        V = Vt.T
+        shrink     = (S[None, :] ** 2) / (S[None, :] ** 2 + alphas[:, None])   # (K,r)
+        coef_scale = (S[None, :])      / (S[None, :] ** 2 + alphas[:, None])   # (K,r)
+        H = (U ** 2) @ shrink.T                                                 # (n_tr,K)
+
+        z = U.T @ Yc_train   # (r,d)
+        loo_err = np.empty((K, Y.shape[1]))
+        for kk in range(K):
+            yhat = U @ (shrink[kk][:, None] * z)
+            resid = Yc_train - yhat
+            loo_resid = resid / (1.0 - H[:, kk])[:, None]
+            loo_err[kk] = (loo_resid ** 2).sum(axis=0)
+        best_idx = loo_err.argmin(axis=0)                 # (d,) selected alpha index per dimension
+
+        chosen_scale = coef_scale[best_idx]                # (d,r)
+        beta = V @ (chosen_scale.T * z)                     # (p,d)
+        pred = Xc_test @ beta + y_mean
         ss_res += ((Y[test_idx] - pred) ** 2).sum(axis=0)
         ss_tot += ((Y[test_idx] - Y_mean) ** 2).sum(axis=0)
     return 1.0 - ss_res / np.maximum(ss_tot, 1e-10)
@@ -270,10 +317,11 @@ for ds in ["THINGS66d", "THINGS", "STUFF"]:
                 print(f"  Running {combo}…", end="", flush=True)
 
                 # original R²
-                if isinstance(reg, (LinearRegression, Ridge)) and not getattr(reg, 'positive', False):
-                    # alpha=0 for Linear, reg.alpha for Ridge
-                    alpha = getattr(reg, 'alpha', 0.0)
-                    r2_dict = {L: compute_r2_linear_kfold(pca_feats[L], Y, k=CV, alpha=alpha) for L in layers}
+                if isinstance(reg, Ridge) and not getattr(reg, 'positive', False):
+                    # alpha is selected per fold/dimension via nested LOO CV, not fixed
+                    r2_dict = {L: compute_r2_ridge_loo_kfold(pca_feats[L], Y, k=CV, alphas=RIDGE_ALPHA_GRID) for L in layers}
+                elif isinstance(reg, LinearRegression) and not getattr(reg, 'positive', False):
+                    r2_dict = {L: compute_r2_linear_kfold(pca_feats[L], Y, k=CV, alpha=0.0) for L in layers}
                 elif getattr(reg, 'positive', False):  # NNLS
                     r2_dict = {L: compute_r2_nnls_kfold(pca_feats[L], Y, k=CV) for L in layers}
                 else:
@@ -299,8 +347,76 @@ for ds in ["THINGS66d", "THINGS", "STUFF"]:
                         print(f"\n    → Layer {L}: starting permutation test")
                         layer_start = time.time()
 
-                        if isinstance(reg, (LinearRegression, Ridge)) and not getattr(reg, 'positive', False):
-                            alpha = getattr(reg, 'alpha', 0.0)
+                        if isinstance(reg, Ridge) and not getattr(reg, 'positive', False):
+                            alphas = RIDGE_ALPHA_GRID
+                            K = len(alphas)
+                            n_samples, n_dims = Y.shape
+
+                            # global mean, same for every permutation
+                            Y_mean_global = Y.mean(axis=0, keepdims=True)
+                            ss_tot = ((Y - Y_mean_global) ** 2).sum(axis=0)
+
+                            # generate all permuted Ys with a progress bar
+                            rng = np.random.RandomState(42)
+                            perm_idx = np.empty((n_perm, n_samples), dtype=int)
+                            for i in tqdm(range(n_perm), desc=f"{L} perm-idx", leave=False):
+                                perm_idx[i] = rng.permutation(n_samples)
+                            Yp_all = Y[perm_idx]  # shape (n_perm, n_samples, n_dims)
+
+                            # null via nested-CV ridge: for every permutation, alpha is
+                            # re-selected via closed-form LOO on the training fold only
+                            # (never the outer test fold), so no information from the
+                            # real labels leaks into how the null is generated.
+                            kf = KFold(n_splits=CV, shuffle=False)
+                            ss_res = np.zeros((n_perm, n_dims))
+                            perm_chunk = 100
+                            for train_idx, test_idx in tqdm(list(kf.split(X)), desc=f"{L} {reg_name}-perm-folds", leave=False):
+                                x_mean   = X[train_idx].mean(axis=0)
+                                Xc_train = X[train_idx] - x_mean
+                                Xc_test  = X[test_idx]  - x_mean
+                                n_tr = len(train_idx)
+
+                                U, S, Vt = np.linalg.svd(Xc_train, full_matrices=False)
+                                V = Vt.T
+                                shrink     = (S[None, :] ** 2) / (S[None, :] ** 2 + alphas[:, None])   # (K,r)
+                                coef_scale = (S[None, :])      / (S[None, :] ** 2 + alphas[:, None])   # (K,r)
+                                Hcol = (U ** 2) @ shrink.T                                               # (n_tr,K)
+                                r = U.shape[1]
+
+                                for start in range(0, n_perm, perm_chunk):
+                                    stop = min(start + perm_chunk, n_perm)
+                                    b = stop - start
+                                    Yp_train = Yp_all[start:stop, train_idx, :]
+                                    y_mean   = Yp_train.mean(axis=1, keepdims=True)
+                                    Yc_train = Yp_train - y_mean
+
+                                    Yc_flat = Yc_train.transpose(1, 0, 2).reshape(n_tr, b * n_dims)
+                                    z_flat  = U.T @ Yc_flat                                           # (r,b*d)
+
+                                    # alpha is selected independently per (permutation, dimension) pair,
+                                    # matching compute_r2_ridge_loo_kfold's convention for the real R² --
+                                    # summing the dimension axis away here would pick one alpha shared
+                                    # across all dimensions, which would not match the real-data procedure.
+                                    loo_err = np.empty((K, b, n_dims))
+                                    for kk in range(K):
+                                        yhat_flat = U @ (shrink[kk][:, None] * z_flat)
+                                        resid_flat = Yc_flat - yhat_flat
+                                        loo_resid_flat = resid_flat / (1.0 - Hcol[:, kk])[:, None]
+                                        loo_resid = loo_resid_flat.reshape(n_tr, b, n_dims)
+                                        loo_err[kk] = (loo_resid ** 2).sum(axis=0)                      # (b,d)
+                                    best_alpha_idx = loo_err.argmin(axis=0)                              # (b,d)
+
+                                    z = z_flat.reshape(r, b, n_dims).transpose(1, 0, 2)                 # (b,r,d)
+                                    chosen_scale = coef_scale[best_alpha_idx].transpose(0, 2, 1)          # (b,r,d)
+                                    scaled_z = chosen_scale * z                                           # (b,r,d)
+                                    B_all = np.einsum('qr,brd->bqd', V, scaled_z)                         # (b,p,d)
+                                    pred  = np.einsum('nq,bqd->bnd', Xc_test, B_all) + y_mean
+                                    ss_res[start:stop] += ((Yp_all[start:stop, test_idx, :] - pred) ** 2).sum(axis=1)
+
+                            perms = 1.0 - ss_res / ss_tot[None, :]
+
+                        elif isinstance(reg, LinearRegression) and not getattr(reg, 'positive', False):
+                            alpha = 0.0
                             n_samples, n_dims = Y.shape
 
                             # global mean, same for every permutation
@@ -323,10 +439,7 @@ for ds in ["THINGS66d", "THINGS", "STUFF"]:
                                 x_mean   = X[train_idx].mean(axis=0)
                                 Xc_train = X[train_idx] - x_mean
                                 Xc_test  = X[test_idx]  - x_mean
-                                if alpha == 0:
-                                    pinv = np.linalg.pinv(Xc_train)
-                                else:
-                                    pinv = np.linalg.solve(Xc_train.T @ Xc_train + alpha * np.eye(p), Xc_train.T)
+                                pinv = np.linalg.pinv(Xc_train)
 
                                 for start in range(0, n_perm, perm_chunk):
                                     stop = min(start + perm_chunk, n_perm)
