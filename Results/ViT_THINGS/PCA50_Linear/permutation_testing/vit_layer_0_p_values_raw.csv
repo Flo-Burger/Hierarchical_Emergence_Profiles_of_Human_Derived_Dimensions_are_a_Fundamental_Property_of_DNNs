@@ -1,50 +1,50 @@
 dimension,p_value_raw
-made of metal / artificial / hard,0.022977022977022976
+made of metal / artificial / hard,0.000999000999000999
 food-related / eating-related / kitchen-related,0.000999000999000999
 animal-related / organic,0.000999000999000999
-clothing-related / fabric / covering,1.0
-furniture-related / household-related / artifact,0.6553446553446554
+clothing-related / fabric / covering,0.000999000999000999
+furniture-related / household-related / artifact,0.000999000999000999
 plant-related / green,0.000999000999000999
 outdoors-related,0.000999000999000999
 transportation / motorized / dynamic,0.000999000999000999
 wood-related / brownish,0.000999000999000999
-body part-related,0.977022977022977
+body part-related,0.000999000999000999
 colorful,0.000999000999000999
-valuable / special occasion-related,1.0
-electronic / technology,0.957042957042957
-sport-related / recreational activity-related,1.0
-disc-shaped / round,1.0
-tool-related,1.0
+valuable / special occasion-related,0.000999000999000999
+electronic / technology,0.000999000999000999
+sport-related / recreational activity-related,0.000999000999000999
+disc-shaped / round,0.17382617382617382
+tool-related,0.000999000999000999
 many small things / course pattern,0.000999000999000999
-paper-related / thin / flat / text-related,1.0
-fluid-related / drink-related,1.0
-long / thin,1.0
-water-related / blue,0.08691308691308691
-powdery / fine-scale pattern,0.2517482517482518
+paper-related / thin / flat / text-related,0.000999000999000999
+fluid-related / drink-related,0.1048951048951049
+long / thin,0.000999000999000999
+water-related / blue,0.000999000999000999
+powdery / fine-scale pattern,0.000999000999000999
 red,0.000999000999000999
-feminine (stereotypically) / decorative,1.0
-bathroom-related / sanitary,0.06593406593406594
-black / noble,0.14585414585414586
-weapon / danger-related / violence,1.0
-musical instrument-related / noise-related,1.0
+feminine (stereotypically) / decorative,0.000999000999000999
+bathroom-related / sanitary,0.000999000999000999
+black / noble,0.000999000999000999
+weapon / danger-related / violence,0.000999000999000999
+musical instrument-related / noise-related,0.000999000999000999
 sky-related / flying-related / floating-related,0.000999000999000999
-spherical / ellipsoid / rounded / voluminous,1.0
-repetitive,0.5684315684315684
-flat / patterned,1.0
-white,0.6193806193806194
-thin / flat,1.0
-disgusting / bugs,1.0
-string-related,1.0
-arms/legs/skin-related,1.0
-shiny / transparent,1.0
-construction-related / physical work-related,1.0
-fire-related / heat-related,1.0
-head-related / face-related,1.0
-beams-related,1.0
-seating-related / put things on top,1.0
-container-related / hollow,1.0
-child-related / toy-related,1.0
-medicine-related,1.0
-has grating,1.0
-handicraft-related,1.0
-cylindrical / conical,1.0
+spherical / ellipsoid / rounded / voluminous,0.000999000999000999
+repetitive,0.000999000999000999
+flat / patterned,0.000999000999000999
+white,0.000999000999000999
+thin / flat,0.000999000999000999
+disgusting / bugs,0.000999000999000999
+string-related,0.2707292707292707
+arms/legs/skin-related,0.000999000999000999
+shiny / transparent,0.017982017982017984
+construction-related / physical work-related,0.08091908091908091
+fire-related / heat-related,0.03196803196803197
+head-related / face-related,0.000999000999000999
+beams-related,0.000999000999000999
+seating-related / put things on top,0.002997002997002997
+container-related / hollow,0.14585414585414586
+child-related / toy-related,0.001998001998001998
+medicine-related,0.005994005994005994
+has grating,0.000999000999000999
+handicraft-related,0.4085914085914086
+cylindrical / conical,0.015984015984015984

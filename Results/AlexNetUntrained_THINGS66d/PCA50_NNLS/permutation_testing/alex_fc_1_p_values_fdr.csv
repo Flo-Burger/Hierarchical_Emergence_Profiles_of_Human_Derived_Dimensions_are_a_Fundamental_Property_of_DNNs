@@ -1,67 +1,67 @@
 dimension,p_value_fdr
-metallic/artificial,0.0028666985188724316
-food-related,0.0028666985188724316
-animal-related,0.0028666985188724316
-textile,0.02476396842594026
-plant-related,0.0028666985188724316
-house-related/furnishing-related,0.0028666985188724316
-valuable/precious,0.23800589654248194
-transportation-/movement-related,0.0028666985188724316
-body-/people-related,0.8835640893402626
-wood-related/brown,1.0
-electronics/technology,0.38287581144724
-colorful/playful,0.0028666985188724316
-outdoors,0.0028666985188724316
-circular/round,1.0
-paper-related/flat,0.010342598577892695
-sports-/playing-related,1.0
-tools/handheld/elongated,0.0028666985188724316
-fluid-related/drink-related,1.0
-water-related,0.0028666985188724316
-oriented/many things,0.0028666985188724316
-powdery/earth-related,0.0028666985188724316
-white,0.0028666985188724316
-coarse pattern/many things,0.0028666985188724316
-red,0.0028666985188724316
-long/thin,0.010342598577892695
-weapon-/danger-related,1.0
-black,0.0028666985188724316
-household,1.0
-feminine (stereotypical),0.2018722018722019
-body part-related,0.49738854301591945
-tubular,1.0
-music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,0.0028666985188724316
-repetitive/spiky,0.0028666985188724316
-construction-/craftsmanship-related,1.0
-spherical/voluminous,1.0
-string-related/curved,1.0
-seating-/standing-/lying-related,1.0
-flying-/sky-related,0.0028666985188724316
-bug-related/non-mammalian/disgusting,1.0
-transparent/shiny/crystalline,1.0
-sand-colored,0.0028666985188724316
-green,0.0028666985188724316
-bathroom-/wetness-related,0.5094905094905094
-yellow,0.0028666985188724316
-heat-/fire-/light-related,1.0
-beams-/mesh-related,0.0054378611079642005
-foot-/walking-related,1.0
-box-related/container,1.0
-stick-shaped/container,1.0
-head-related,1.0
-upright/elongated/volumous,1.0
-pointed/spiky,1.0
-child-/toy-related/cute,1.0
-farm-related/historical,1.0
-seeing-related,1.0
-medicine-/health-related,0.01280273124933319
-sweet / dessert-related,1.0
-orange,0.0028666985188724316
-thin/flat/wrapping,0.0028666985188724316
-cylindrical/conical/cushioning,1.0
-coldness-related/winter-related,1.0
-measurement-related/numbers-related,1.0
-fluffy/soft,1.0
-masculine (stereotypical),1.0
-fine-grained pattern,0.653907889862946
+metallic/artificial,0.0014652014652014654
+food-related,0.0014652014652014654
+animal-related,0.0014652014652014654
+textile,0.0014652014652014654
+plant-related,0.0014652014652014654
+house-related/furnishing-related,0.0014652014652014654
+valuable/precious,0.0014652014652014654
+transportation-/movement-related,0.0014652014652014654
+body-/people-related,0.0014652014652014654
+wood-related/brown,0.0014652014652014654
+electronics/technology,0.0014652014652014654
+colorful/playful,0.0014652014652014654
+outdoors,0.0014652014652014654
+circular/round,0.004208557400046761
+paper-related/flat,0.0014652014652014654
+sports-/playing-related,0.0014652014652014654
+tools/handheld/elongated,0.0014652014652014654
+fluid-related/drink-related,0.0014652014652014654
+water-related,0.0014652014652014654
+oriented/many things,0.0014652014652014654
+powdery/earth-related,0.0014652014652014654
+white,0.0014652014652014654
+coarse pattern/many things,0.0014652014652014654
+red,0.0014652014652014654
+long/thin,0.0014652014652014654
+weapon-/danger-related,0.23792377834931025
+black,0.0014652014652014654
+household,0.0014652014652014654
+feminine (stereotypical),0.0014652014652014654
+body part-related,0.0014652014652014654
+tubular,0.0014652014652014654
+music-/hearing-/hobby-related/loud,0.016563146997929608
+grid-/grating-related,0.0014652014652014654
+repetitive/spiky,0.0014652014652014654
+construction-/craftsmanship-related,0.08988321095944414
+spherical/voluminous,0.15778108354527567
+string-related/curved,0.6521478521478521
+seating-/standing-/lying-related,0.00683254569264932
+flying-/sky-related,0.0014652014652014654
+bug-related/non-mammalian/disgusting,0.0014652014652014654
+transparent/shiny/crystalline,0.002835873803615739
+sand-colored,0.0014652014652014654
+green,0.0014652014652014654
+bathroom-/wetness-related,0.0014652014652014654
+yellow,0.0014652014652014654
+heat-/fire-/light-related,0.19211822660098524
+beams-/mesh-related,0.0014652014652014654
+foot-/walking-related,0.08988321095944414
+box-related/container,0.2048766683959817
+stick-shaped/container,0.009300523154427436
+head-related,0.23041626467750664
+upright/elongated/volumous,0.0014652014652014654
+pointed/spiky,0.004208557400046761
+child-/toy-related/cute,0.5013707941542993
+farm-related/historical,0.007992007992007992
+seeing-related,0.007992007992007992
+medicine-/health-related,0.0014652014652014654
+sweet / dessert-related,0.0014652014652014654
+orange,0.0014652014652014654
+thin/flat/wrapping,0.0014652014652014654
+cylindrical/conical/cushioning,0.04960177437241657
+coldness-related/winter-related,0.0014652014652014654
+measurement-related/numbers-related,0.12109744560075687
+fluffy/soft,0.6218172071830609
+masculine (stereotypical),0.6082081184122
+fine-grained pattern,0.0014652014652014654

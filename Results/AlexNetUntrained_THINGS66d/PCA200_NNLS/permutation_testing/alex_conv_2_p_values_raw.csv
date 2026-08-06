@@ -1,67 +1,67 @@
 dimension,p_value_raw
-metallic/artificial,0.9920079920079921
+metallic/artificial,0.000999000999000999
 food-related,0.000999000999000999
-animal-related,0.013986013986013986
-textile,1.0
+animal-related,0.000999000999000999
+textile,0.15784215784215785
 plant-related,0.000999000999000999
-house-related/furnishing-related,1.0
-valuable/precious,1.0
-transportation-/movement-related,1.0
-body-/people-related,1.0
-wood-related/brown,0.993006993006993
-electronics/technology,1.0
-colorful/playful,0.7892107892107892
-outdoors,0.003996003996003996
-circular/round,1.0
-paper-related/flat,1.0
+house-related/furnishing-related,0.000999000999000999
+valuable/precious,0.5964035964035964
+transportation-/movement-related,0.04295704295704296
+body-/people-related,0.000999000999000999
+wood-related/brown,0.000999000999000999
+electronics/technology,0.8621378621378621
+colorful/playful,0.000999000999000999
+outdoors,0.000999000999000999
+circular/round,0.985014985014985
+paper-related/flat,0.002997002997002997
 sports-/playing-related,1.0
-tools/handheld/elongated,1.0
-fluid-related/drink-related,1.0
-water-related,1.0
+tools/handheld/elongated,0.000999000999000999
+fluid-related/drink-related,0.6963036963036963
+water-related,0.9280719280719281
 oriented/many things,1.0
-powdery/earth-related,0.04095904095904096
+powdery/earth-related,0.000999000999000999
 white,0.000999000999000999
-coarse pattern/many things,1.0
+coarse pattern/many things,0.000999000999000999
 red,0.000999000999000999
-long/thin,1.0
-weapon-/danger-related,1.0
-black,0.06293706293706294
-household,1.0
-feminine (stereotypical),1.0
-body part-related,0.6553446553446554
-tubular,1.0
+long/thin,0.006993006993006993
+weapon-/danger-related,0.5614385614385614
+black,0.000999000999000999
+household,0.004995004995004995
+feminine (stereotypical),0.000999000999000999
+body part-related,0.000999000999000999
+tubular,0.967032967032967
 music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,0.3106893106893107
-repetitive/spiky,0.6903096903096904
-construction-/craftsmanship-related,1.0
-spherical/voluminous,1.0
+grid-/grating-related,0.000999000999000999
+repetitive/spiky,0.000999000999000999
+construction-/craftsmanship-related,0.9400599400599401
+spherical/voluminous,0.000999000999000999
 string-related/curved,1.0
-seating-/standing-/lying-related,1.0
-flying-/sky-related,1.0
-bug-related/non-mammalian/disgusting,1.0
-transparent/shiny/crystalline,1.0
+seating-/standing-/lying-related,0.20679320679320679
+flying-/sky-related,0.000999000999000999
+bug-related/non-mammalian/disgusting,0.061938061938061936
+transparent/shiny/crystalline,0.04495504495504495
 sand-colored,0.000999000999000999
 green,0.000999000999000999
-bathroom-/wetness-related,1.0
+bathroom-/wetness-related,0.002997002997002997
 yellow,0.000999000999000999
 heat-/fire-/light-related,1.0
-beams-/mesh-related,1.0
-foot-/walking-related,1.0
-box-related/container,1.0
-stick-shaped/container,1.0
-head-related,1.0
-upright/elongated/volumous,1.0
+beams-/mesh-related,0.34465534465534464
+foot-/walking-related,0.999000999000999
+box-related/container,0.8061938061938062
+stick-shaped/container,0.7082917082917083
+head-related,0.8851148851148851
+upright/elongated/volumous,0.000999000999000999
 pointed/spiky,1.0
-child-/toy-related/cute,1.0
-farm-related/historical,1.0
-seeing-related,1.0
-medicine-/health-related,1.0
-sweet / dessert-related,1.0
+child-/toy-related/cute,0.999000999000999
+farm-related/historical,0.5084915084915085
+seeing-related,0.9590409590409591
+medicine-/health-related,0.028971028971028972
+sweet / dessert-related,0.8231768231768232
 orange,0.000999000999000999
-thin/flat/wrapping,1.0
-cylindrical/conical/cushioning,1.0
-coldness-related/winter-related,1.0
+thin/flat/wrapping,0.000999000999000999
+cylindrical/conical/cushioning,0.23076923076923078
+coldness-related/winter-related,0.9820179820179821
 measurement-related/numbers-related,1.0
-fluffy/soft,1.0
+fluffy/soft,0.949050949050949
 masculine (stereotypical),1.0
-fine-grained pattern,1.0
+fine-grained pattern,0.34665334665334663

@@ -1,50 +1,50 @@
 dimension,p_value_fdr
-made of metal / artificial / hard,1.0
-food-related / eating-related / kitchen-related,1.0
-animal-related / organic,1.0
-clothing-related / fabric / covering,1.0
-furniture-related / household-related / artifact,1.0
-plant-related / green,1.0
-outdoors-related,1.0
-transportation / motorized / dynamic,1.0
-wood-related / brownish,1.0
-body part-related,1.0
-colorful,1.0
-valuable / special occasion-related,1.0
-electronic / technology,1.0
-sport-related / recreational activity-related,1.0
-disc-shaped / round,1.0
-tool-related,1.0
-many small things / course pattern,1.0
-paper-related / thin / flat / text-related,1.0
-fluid-related / drink-related,1.0
-long / thin,1.0
-water-related / blue,1.0
-powdery / fine-scale pattern,1.0
-red,1.0
-feminine (stereotypically) / decorative,1.0
+made of metal / artificial / hard,0.0022000471438673687
+food-related / eating-related / kitchen-related,0.0022000471438673687
+animal-related / organic,0.0022000471438673687
+clothing-related / fabric / covering,0.0022000471438673687
+furniture-related / household-related / artifact,0.005933460478915025
+plant-related / green,0.0022000471438673687
+outdoors-related,0.0022000471438673687
+transportation / motorized / dynamic,0.0022000471438673687
+wood-related / brownish,0.302967302967303
+body part-related,0.404406051464875
+colorful,0.0022000471438673687
+valuable / special occasion-related,0.005933460478915025
+electronic / technology,0.02425892691379417
+sport-related / recreational activity-related,0.004122193595877807
+disc-shaped / round,0.012691012691012693
+tool-related,0.7660409765672923
+many small things / course pattern,0.0022000471438673687
+paper-related / thin / flat / text-related,0.2862792380033759
+fluid-related / drink-related,0.21552548171253208
+long / thin,0.9995240361732508
+water-related / blue,0.778715537336227
+powdery / fine-scale pattern,0.03091645196908355
+red,0.0022000471438673687
+feminine (stereotypically) / decorative,0.062004662004662
 bathroom-related / sanitary,1.0
-black / noble,1.0
-weapon / danger-related / violence,1.0
-musical instrument-related / noise-related,1.0
-sky-related / flying-related / floating-related,1.0
-spherical / ellipsoid / rounded / voluminous,1.0
-repetitive,1.0
-flat / patterned,1.0
-white,1.0
+black / noble,0.9725302321987406
+weapon / danger-related / violence,0.6859080313625768
+musical instrument-related / noise-related,0.08211143695014662
+sky-related / flying-related / floating-related,0.899371814626052
+spherical / ellipsoid / rounded / voluminous,0.1442767758557232
+repetitive,0.007678595913890031
+flat / patterned,0.9995240361732508
+white,0.39549854119390543
 thin / flat,1.0
-disgusting / bugs,1.0
-string-related,1.0
+disgusting / bugs,0.7496172466586668
+string-related,0.4832347140039448
 arms/legs/skin-related,1.0
-shiny / transparent,1.0
-construction-related / physical work-related,1.0
+shiny / transparent,0.7195214424130086
+construction-related / physical work-related,0.009413663259817105
 fire-related / heat-related,1.0
-head-related / face-related,1.0
-beams-related,1.0
-seating-related / put things on top,1.0
-container-related / hollow,1.0
-child-related / toy-related,1.0
-medicine-related,1.0
-has grating,1.0
-handicraft-related,1.0
-cylindrical / conical,1.0
+head-related / face-related,0.29437229437229434
+beams-related,0.778715537336227
+seating-related / put things on top,0.004122193595877807
+container-related / hollow,0.054014950566674706
+child-related / toy-related,0.09324009324009323
+medicine-related,0.9995240361732508
+has grating,0.23468729851708575
+handicraft-related,0.12460267005721552
+cylindrical / conical,0.9995240361732508

@@ -34,17 +34,17 @@ flat / patterned,0.000999000999000999
 white,0.000999000999000999
 thin / flat,0.000999000999000999
 disgusting / bugs,0.000999000999000999
-string-related,0.000999000999000999
-arms/legs/skin-related,0.001998001998001998
+string-related,0.9040959040959041
+arms/legs/skin-related,0.000999000999000999
 shiny / transparent,0.000999000999000999
 construction-related / physical work-related,0.000999000999000999
-fire-related / heat-related,1.0
+fire-related / heat-related,0.000999000999000999
 head-related / face-related,0.000999000999000999
 beams-related,0.000999000999000999
-seating-related / put things on top,0.014985014985014986
-container-related / hollow,0.001998001998001998
-child-related / toy-related,0.7242757242757243
-medicine-related,0.07092907092907093
-has grating,1.0
-handicraft-related,0.000999000999000999
+seating-related / put things on top,0.000999000999000999
+container-related / hollow,0.000999000999000999
+child-related / toy-related,0.008991008991008992
+medicine-related,0.000999000999000999
+has grating,0.000999000999000999
+handicraft-related,0.025974025974025976
 cylindrical / conical,0.000999000999000999

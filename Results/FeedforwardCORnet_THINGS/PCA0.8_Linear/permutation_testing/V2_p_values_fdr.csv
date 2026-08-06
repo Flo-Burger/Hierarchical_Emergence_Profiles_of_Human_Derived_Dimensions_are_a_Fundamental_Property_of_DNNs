@@ -1,0 +1,50 @@
+dimension,p_value_fdr
+made of metal / artificial / hard,0.0019196489784725078
+food-related / eating-related / kitchen-related,0.0019196489784725078
+animal-related / organic,0.0019196489784725078
+clothing-related / fabric / covering,0.0019196489784725078
+furniture-related / household-related / artifact,0.0019196489784725078
+plant-related / green,0.0019196489784725078
+outdoors-related,0.0019196489784725078
+transportation / motorized / dynamic,0.0019196489784725078
+wood-related / brownish,0.0019196489784725078
+body part-related,0.0019196489784725078
+colorful,0.0019196489784725078
+valuable / special occasion-related,0.0019196489784725078
+electronic / technology,0.0019196489784725078
+sport-related / recreational activity-related,0.5701039292199513
+disc-shaped / round,0.013350286077558806
+tool-related,0.0019196489784725078
+many small things / course pattern,0.0019196489784725078
+paper-related / thin / flat / text-related,0.0019196489784725078
+fluid-related / drink-related,0.7852670889320104
+long / thin,0.0019196489784725078
+water-related / blue,0.005020620405235789
+powdery / fine-scale pattern,0.0019196489784725078
+red,0.0019196489784725078
+feminine (stereotypically) / decorative,0.06526806526806528
+bathroom-related / sanitary,0.0019196489784725078
+black / noble,0.09539178769948001
+weapon / danger-related / violence,0.007832167832167832
+musical instrument-related / noise-related,0.012049488972565896
+sky-related / flying-related / floating-related,0.0019196489784725078
+spherical / ellipsoid / rounded / voluminous,0.6366311284344071
+repetitive,0.028377419681767508
+flat / patterned,0.0019196489784725078
+white,0.0034965034965034965
+thin / flat,0.005020620405235789
+disgusting / bugs,0.18056195301704284
+string-related,0.6979472140762463
+arms/legs/skin-related,0.00658165364047717
+shiny / transparent,0.04051121292500603
+construction-related / physical work-related,0.24962172330593382
+fire-related / heat-related,0.5895642818719742
+head-related / face-related,0.027155326425399414
+beams-related,0.08518753973299427
+seating-related / put things on top,0.16096786648933886
+container-related / hollow,0.005020620405235789
+child-related / toy-related,0.08518753973299427
+medicine-related,0.5199320453557742
+has grating,0.005020620405235789
+handicraft-related,0.9080919080919081
+cylindrical / conical,0.4441958041958042

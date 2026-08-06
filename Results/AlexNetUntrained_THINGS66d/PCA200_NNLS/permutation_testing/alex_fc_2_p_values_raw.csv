@@ -1,67 +1,67 @@
 dimension,p_value_raw
 metallic/artificial,0.000999000999000999
-food-related,1.0
-animal-related,1.0
-textile,1.0
-plant-related,1.0
-house-related/furnishing-related,0.994005994005994
-valuable/precious,1.0
+food-related,0.056943056943056944
+animal-related,0.000999000999000999
+textile,0.000999000999000999
+plant-related,0.000999000999000999
+house-related/furnishing-related,0.000999000999000999
+valuable/precious,0.000999000999000999
 transportation-/movement-related,0.000999000999000999
-body-/people-related,1.0
-wood-related/brown,1.0
-electronics/technology,1.0
-colorful/playful,0.003996003996003996
-outdoors,1.0
-circular/round,1.0
-paper-related/flat,1.0
-sports-/playing-related,1.0
-tools/handheld/elongated,1.0
-fluid-related/drink-related,1.0
-water-related,0.997002997002997
-oriented/many things,1.0
-powdery/earth-related,1.0
+body-/people-related,0.000999000999000999
+wood-related/brown,0.12287712287712288
+electronics/technology,0.000999000999000999
+colorful/playful,0.000999000999000999
+outdoors,0.000999000999000999
+circular/round,0.029970029970029972
+paper-related/flat,0.000999000999000999
+sports-/playing-related,0.000999000999000999
+tools/handheld/elongated,0.000999000999000999
+fluid-related/drink-related,0.000999000999000999
+water-related,0.000999000999000999
+oriented/many things,0.000999000999000999
+powdery/earth-related,0.000999000999000999
 white,0.000999000999000999
-coarse pattern/many things,0.995004995004995
+coarse pattern/many things,0.000999000999000999
 red,0.000999000999000999
-long/thin,1.0
-weapon-/danger-related,1.0
+long/thin,0.000999000999000999
+weapon-/danger-related,0.07092907092907093
 black,0.000999000999000999
-household,1.0
-feminine (stereotypical),1.0
-body part-related,1.0
-tubular,1.0
-music-/hearing-/hobby-related/loud,1.0
-grid-/grating-related,0.998001998001998
-repetitive/spiky,1.0
-construction-/craftsmanship-related,1.0
-spherical/voluminous,1.0
-string-related/curved,1.0
-seating-/standing-/lying-related,1.0
-flying-/sky-related,0.8501498501498501
-bug-related/non-mammalian/disgusting,1.0
-transparent/shiny/crystalline,1.0
-sand-colored,1.0
-green,1.0
-bathroom-/wetness-related,1.0
-yellow,1.0
-heat-/fire-/light-related,1.0
-beams-/mesh-related,1.0
-foot-/walking-related,1.0
-box-related/container,1.0
-stick-shaped/container,1.0
-head-related,1.0
-upright/elongated/volumous,1.0
-pointed/spiky,1.0
-child-/toy-related/cute,1.0
-farm-related/historical,1.0
-seeing-related,1.0
-medicine-/health-related,1.0
-sweet / dessert-related,1.0
-orange,1.0
-thin/flat/wrapping,1.0
-cylindrical/conical/cushioning,1.0
-coldness-related/winter-related,1.0
-measurement-related/numbers-related,1.0
-fluffy/soft,1.0
-masculine (stereotypical),1.0
-fine-grained pattern,1.0
+household,0.001998001998001998
+feminine (stereotypical),0.003996003996003996
+body part-related,0.000999000999000999
+tubular,0.000999000999000999
+music-/hearing-/hobby-related/loud,0.000999000999000999
+grid-/grating-related,0.000999000999000999
+repetitive/spiky,0.000999000999000999
+construction-/craftsmanship-related,0.7092907092907093
+spherical/voluminous,0.022977022977022976
+string-related/curved,0.1048951048951049
+seating-/standing-/lying-related,0.13986013986013987
+flying-/sky-related,0.000999000999000999
+bug-related/non-mammalian/disgusting,0.015984015984015984
+transparent/shiny/crystalline,0.053946053946053944
+sand-colored,0.000999000999000999
+green,0.000999000999000999
+bathroom-/wetness-related,0.03796203796203796
+yellow,0.000999000999000999
+heat-/fire-/light-related,0.26073926073926074
+beams-/mesh-related,0.000999000999000999
+foot-/walking-related,0.44155844155844154
+box-related/container,0.000999000999000999
+stick-shaped/container,0.17182817182817184
+head-related,0.023976023976023976
+upright/elongated/volumous,0.000999000999000999
+pointed/spiky,0.2547452547452547
+child-/toy-related/cute,0.6803196803196803
+farm-related/historical,0.007992007992007992
+seeing-related,0.000999000999000999
+medicine-/health-related,0.000999000999000999
+sweet / dessert-related,0.18181818181818182
+orange,0.000999000999000999
+thin/flat/wrapping,0.002997002997002997
+cylindrical/conical/cushioning,0.000999000999000999
+coldness-related/winter-related,0.001998001998001998
+measurement-related/numbers-related,0.12987012987012986
+fluffy/soft,0.36163836163836166
+masculine (stereotypical),0.9340659340659341
+fine-grained pattern,0.000999000999000999

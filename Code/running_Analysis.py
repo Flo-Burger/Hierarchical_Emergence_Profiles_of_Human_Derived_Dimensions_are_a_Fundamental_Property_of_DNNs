@@ -30,10 +30,10 @@ START_FROM_MODEL = None  # set to None to run all models
 
 OVERWRITE = True  # set to True to recompute and overwrite existing results
 
-PCA_COMPONENTS_LIST = [0.95]
+PCA_COMPONENTS_LIST = [0.80, 0.95, 50, 100]
 
 REGRESSORS = {
-    # "Linear": LinearRegression(),
+    "Linear": LinearRegression(),
     "Ridge":  Ridge(alpha=1.0),
     # "NNLS":   LinearRegression(positive=True),
 }
@@ -41,7 +41,7 @@ REGRESSORS = {
 CV = 10 # Cross-validation splits for each prediction
 # Permutation testing is computationally expensive
 run_permutation = True
-n_perm            = 5000
+n_perm            = 1000
 alpha_thresh      = 0.05   # FDR threshold
 
 # Ridge regularization strength is no longer fixed. It is selected via

@@ -24,13 +24,13 @@ white,0.000999000999000999
 coarse pattern/many things,0.000999000999000999
 red,0.000999000999000999
 long/thin,0.000999000999000999
-weapon-/danger-related,1.0
+weapon-/danger-related,0.000999000999000999
 black,0.000999000999000999
 household,0.000999000999000999
 feminine (stereotypical),0.000999000999000999
 body part-related,0.000999000999000999
 tubular,0.000999000999000999
-music-/hearing-/hobby-related/loud,1.0
+music-/hearing-/hobby-related/loud,0.000999000999000999
 grid-/grating-related,0.000999000999000999
 repetitive/spiky,0.000999000999000999
 construction-/craftsmanship-related,0.000999000999000999
@@ -42,26 +42,26 @@ bug-related/non-mammalian/disgusting,0.000999000999000999
 transparent/shiny/crystalline,0.000999000999000999
 sand-colored,0.000999000999000999
 green,0.000999000999000999
-bathroom-/wetness-related,1.0
+bathroom-/wetness-related,0.000999000999000999
 yellow,0.000999000999000999
-heat-/fire-/light-related,1.0
+heat-/fire-/light-related,0.000999000999000999
 beams-/mesh-related,0.000999000999000999
-foot-/walking-related,1.0
+foot-/walking-related,0.000999000999000999
 box-related/container,0.000999000999000999
-stick-shaped/container,0.3776223776223776
-head-related,0.08291708291708291
+stick-shaped/container,0.000999000999000999
+head-related,0.000999000999000999
 upright/elongated/volumous,0.000999000999000999
-pointed/spiky,0.055944055944055944
-child-/toy-related/cute,1.0
-farm-related/historical,0.7332667332667333
-seeing-related,1.0
-medicine-/health-related,1.0
-sweet / dessert-related,0.985014985014985
+pointed/spiky,0.000999000999000999
+child-/toy-related/cute,0.000999000999000999
+farm-related/historical,0.000999000999000999
+seeing-related,0.000999000999000999
+medicine-/health-related,0.000999000999000999
+sweet / dessert-related,0.000999000999000999
 orange,0.000999000999000999
-thin/flat/wrapping,1.0
-cylindrical/conical/cushioning,1.0
-coldness-related/winter-related,1.0
-measurement-related/numbers-related,1.0
-fluffy/soft,1.0
-masculine (stereotypical),1.0
-fine-grained pattern,1.0
+thin/flat/wrapping,0.000999000999000999
+cylindrical/conical/cushioning,0.000999000999000999
+coldness-related/winter-related,0.000999000999000999
+measurement-related/numbers-related,0.000999000999000999
+fluffy/soft,0.000999000999000999
+masculine (stereotypical),0.000999000999000999
+fine-grained pattern,0.000999000999000999

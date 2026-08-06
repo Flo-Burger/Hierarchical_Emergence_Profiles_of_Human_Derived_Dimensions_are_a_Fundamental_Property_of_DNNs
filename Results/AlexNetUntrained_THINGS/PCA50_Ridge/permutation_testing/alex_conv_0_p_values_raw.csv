@@ -12,15 +12,15 @@ body part-related,0.000999000999000999
 colorful,0.000999000999000999
 valuable / special occasion-related,0.000999000999000999
 electronic / technology,0.000999000999000999
-sport-related / recreational activity-related,0.000999000999000999
-disc-shaped / round,0.000999000999000999
+sport-related / recreational activity-related,0.3226773226773227
+disc-shaped / round,0.957042957042957
 tool-related,0.000999000999000999
 many small things / course pattern,0.000999000999000999
 paper-related / thin / flat / text-related,0.000999000999000999
 fluid-related / drink-related,0.000999000999000999
-long / thin,0.000999000999000999
+long / thin,0.004995004995004995
 water-related / blue,0.000999000999000999
-powdery / fine-scale pattern,0.000999000999000999
+powdery / fine-scale pattern,0.006993006993006993
 red,0.000999000999000999
 feminine (stereotypically) / decorative,0.000999000999000999
 bathroom-related / sanitary,0.000999000999000999
@@ -28,23 +28,23 @@ black / noble,0.000999000999000999
 weapon / danger-related / violence,0.000999000999000999
 musical instrument-related / noise-related,0.000999000999000999
 sky-related / flying-related / floating-related,0.000999000999000999
-spherical / ellipsoid / rounded / voluminous,0.000999000999000999
-repetitive,0.000999000999000999
+spherical / ellipsoid / rounded / voluminous,0.001998001998001998
+repetitive,0.04895104895104895
 flat / patterned,0.000999000999000999
 white,0.000999000999000999
 thin / flat,0.000999000999000999
-disgusting / bugs,0.000999000999000999
-string-related,0.000999000999000999
-arms/legs/skin-related,0.000999000999000999
+disgusting / bugs,0.001998001998001998
+string-related,0.7802197802197802
+arms/legs/skin-related,0.002997002997002997
 shiny / transparent,0.000999000999000999
-construction-related / physical work-related,0.000999000999000999
-fire-related / heat-related,0.000999000999000999
-head-related / face-related,0.000999000999000999
+construction-related / physical work-related,0.1938061938061938
+fire-related / heat-related,0.03696303696303696
+head-related / face-related,0.001998001998001998
 beams-related,0.000999000999000999
-seating-related / put things on top,0.000999000999000999
-container-related / hollow,0.000999000999000999
-child-related / toy-related,0.000999000999000999
-medicine-related,0.000999000999000999
-has grating,0.000999000999000999
-handicraft-related,0.000999000999000999
-cylindrical / conical,0.000999000999000999
+seating-related / put things on top,0.5664335664335665
+container-related / hollow,0.8441558441558441
+child-related / toy-related,0.977022977022977
+medicine-related,0.001998001998001998
+has grating,0.989010989010989
+handicraft-related,0.030969030969030968
+cylindrical / conical,0.6783216783216783

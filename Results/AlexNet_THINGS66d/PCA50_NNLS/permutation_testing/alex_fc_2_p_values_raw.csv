@@ -1,7 +1,7 @@
 dimension,p_value_raw
 metallic/artificial,0.000999000999000999
 food-related,0.000999000999000999
-animal-related,1.0
+animal-related,0.016983016983016984
 textile,0.000999000999000999
 plant-related,0.000999000999000999
 house-related/furnishing-related,0.000999000999000999
@@ -52,16 +52,16 @@ stick-shaped/container,0.000999000999000999
 head-related,0.000999000999000999
 upright/elongated/volumous,0.000999000999000999
 pointed/spiky,0.000999000999000999
-child-/toy-related/cute,0.011988011988011988
-farm-related/historical,0.001998001998001998
+child-/toy-related/cute,0.000999000999000999
+farm-related/historical,0.000999000999000999
 seeing-related,0.000999000999000999
 medicine-/health-related,0.000999000999000999
 sweet / dessert-related,0.000999000999000999
 orange,0.000999000999000999
 thin/flat/wrapping,0.000999000999000999
 cylindrical/conical/cushioning,0.000999000999000999
-coldness-related/winter-related,0.057942057942057944
+coldness-related/winter-related,0.000999000999000999
 measurement-related/numbers-related,0.000999000999000999
 fluffy/soft,0.000999000999000999
-masculine (stereotypical),0.03696303696303696
+masculine (stereotypical),0.000999000999000999
 fine-grained pattern,0.000999000999000999

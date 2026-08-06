@@ -25,26 +25,26 @@ red,0.000999000999000999
 feminine (stereotypically) / decorative,0.000999000999000999
 bathroom-related / sanitary,0.000999000999000999
 black / noble,0.000999000999000999
-weapon / danger-related / violence,0.6433566433566433
-musical instrument-related / noise-related,0.975024975024975
+weapon / danger-related / violence,0.000999000999000999
+musical instrument-related / noise-related,0.000999000999000999
 sky-related / flying-related / floating-related,0.000999000999000999
 spherical / ellipsoid / rounded / voluminous,0.000999000999000999
 repetitive,0.000999000999000999
 flat / patterned,0.000999000999000999
 white,0.000999000999000999
 thin / flat,0.000999000999000999
-disgusting / bugs,0.04295704295704296
-string-related,1.0
+disgusting / bugs,0.000999000999000999
+string-related,0.000999000999000999
 arms/legs/skin-related,0.000999000999000999
-shiny / transparent,0.974025974025974
-construction-related / physical work-related,0.994005994005994
-fire-related / heat-related,1.0
+shiny / transparent,0.000999000999000999
+construction-related / physical work-related,0.000999000999000999
+fire-related / heat-related,0.000999000999000999
 head-related / face-related,0.000999000999000999
 beams-related,0.000999000999000999
-seating-related / put things on top,0.014985014985014986
-container-related / hollow,1.0
-child-related / toy-related,1.0
-medicine-related,1.0
+seating-related / put things on top,0.000999000999000999
+container-related / hollow,0.000999000999000999
+child-related / toy-related,0.000999000999000999
+medicine-related,0.001998001998001998
 has grating,0.000999000999000999
-handicraft-related,1.0
-cylindrical / conical,1.0
+handicraft-related,0.004995004995004995
+cylindrical / conical,0.000999000999000999

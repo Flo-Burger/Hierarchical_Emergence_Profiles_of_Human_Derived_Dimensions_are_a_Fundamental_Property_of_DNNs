@@ -35,8 +35,8 @@ grid-/grating-related,0.0010570591732916382
 repetitive/spiky,0.0010570591732916382
 construction-/craftsmanship-related,0.0010570591732916382
 spherical/voluminous,0.0010570591732916382
-string-related/curved,0.3448858833474218
-seating-/standing-/lying-related,0.0020931449502878076
+string-related/curved,0.997002997002997
+seating-/standing-/lying-related,0.0020848716500890415
 flying-/sky-related,0.0010570591732916382
 bug-related/non-mammalian/disgusting,0.0010570591732916382
 transparent/shiny/crystalline,0.0010570591732916382
@@ -44,15 +44,15 @@ sand-colored,0.0010570591732916382
 green,0.0010570591732916382
 bathroom-/wetness-related,0.0010570591732916382
 yellow,0.0010570591732916382
-heat-/fire-/light-related,0.004161518954418362
+heat-/fire-/light-related,0.0020848716500890415
 beams-/mesh-related,0.0010570591732916382
-foot-/walking-related,0.0072256510612675
+foot-/walking-related,0.00518145901250027
 box-related/container,0.0010570591732916382
 stick-shaped/container,0.0010570591732916382
 head-related,0.0010570591732916382
 upright/elongated/volumous,0.0010570591732916382
-pointed/spiky,0.4417456348622697
-child-/toy-related/cute,0.004161518954418362
+pointed/spiky,0.7749788672865596
+child-/toy-related/cute,0.0020848716500890415
 farm-related/historical,0.0010570591732916382
 seeing-related,0.0010570591732916382
 medicine-/health-related,0.0010570591732916382
@@ -60,8 +60,8 @@ sweet / dessert-related,0.0010570591732916382
 orange,0.0010570591732916382
 thin/flat/wrapping,0.0010570591732916382
 cylindrical/conical/cushioning,0.0010570591732916382
-coldness-related/winter-related,0.0010570591732916382
-measurement-related/numbers-related,0.0020931449502878076
+coldness-related/winter-related,0.0020848716500890415
+measurement-related/numbers-related,0.0020848716500890415
 fluffy/soft,0.0010570591732916382
-masculine (stereotypical),0.006217750815000324
+masculine (stereotypical),0.014423076923076922
 fine-grained pattern,0.0010570591732916382

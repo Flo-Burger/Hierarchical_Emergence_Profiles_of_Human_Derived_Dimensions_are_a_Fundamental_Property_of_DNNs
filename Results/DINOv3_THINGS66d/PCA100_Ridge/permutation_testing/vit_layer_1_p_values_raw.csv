@@ -46,7 +46,7 @@ bathroom-/wetness-related,0.000999000999000999
 yellow,0.000999000999000999
 heat-/fire-/light-related,0.000999000999000999
 beams-/mesh-related,0.000999000999000999
-foot-/walking-related,0.000999000999000999
+foot-/walking-related,0.001998001998001998
 box-related/container,0.000999000999000999
 stick-shaped/container,0.000999000999000999
 head-related,0.000999000999000999
@@ -64,4 +64,4 @@ coldness-related/winter-related,0.000999000999000999
 measurement-related/numbers-related,0.000999000999000999
 fluffy/soft,0.000999000999000999
 masculine (stereotypical),0.000999000999000999
-fine-grained pattern,1.0
+fine-grained pattern,0.000999000999000999

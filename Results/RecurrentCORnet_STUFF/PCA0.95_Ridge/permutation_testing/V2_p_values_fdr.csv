@@ -1,37 +1,37 @@
 dimension,p_value_fdr
-mineral,1.0
-wood,1.0
-metallic,1.0
-fabric,1.0
-white colour,1.0
-grainy,1.0
-crystalline,1.0
-"straw, fibrous",1.0
-cloudy,1.0
-small,1.0
-"beige colour, tan colour",1.0
-viscous,1.0
-black colour,1.0
-brick,1.0
-swirly,1.0
-maroon colour,1.0
-"lines, long, tubular, vertical",1.0
-mesh,1.0
-yellow colour,1.0
-multi-coloured,1.0
-thin,1.0
-bulbous,1.0
-green colour,1.0
-blue colour,1.0
-shell,1.0
-"gemstone, smooth",1.0
-sheet,1.0
-hair,1.0
-spongy,1.0
-golden,1.0
-red colour,1.0
-"round, smooth",1.0
-cream colour,1.0
-bumpy,1.0
-hot,1.0
-turquoise colour,1.0
+mineral,0.14533919688558863
+wood,0.15809932641615812
+metallic,0.16629242317315715
+fabric,0.16629242317315715
+white colour,0.16629242317315715
+grainy,0.13931331826068669
+crystalline,0.16620272930952543
+"straw, fibrous",0.12587412587412586
+cloudy,0.14673326673326675
+small,0.14673326673326675
+"beige colour, tan colour",0.16629242317315715
+viscous,0.16078039607451372
+black colour,0.19569619569619567
+brick,0.6372294372294373
+swirly,0.533181104609676
+maroon colour,0.16629242317315715
+"lines, long, tubular, vertical",0.13586413586413587
+mesh,0.43039886942325967
+yellow colour,0.14673326673326675
+multi-coloured,0.12930889335383716
+thin,0.16629242317315715
+bulbous,0.22746484284945823
+green colour,0.13760152890587676
+blue colour,0.20679320679320679
+shell,0.2119985277880015
+"gemstone, smooth",0.6132814553867185
+sheet,0.40562715972552044
+hair,0.48261416003351487
+spongy,0.5698916468147237
+golden,0.6859227728792945
+red colour,0.08969853675736028
+"round, smooth",0.14533919688558863
+cream colour,0.3899571502877288
+bumpy,0.967032967032967
+hot,0.06679035250463822
+turquoise colour,0.6323229009796173
